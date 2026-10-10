@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circuito Cinemas, estudo de caso | Gabriel Rocha</title>
+  <meta name="description" content="Estudo conceitual de redesign do app de uma rede de cinemas: auditoria com 34 pontos de atrito, nova navegação, compra em 4 etapas, Circuito Club visível e design system.">
+  <meta name="author" content="Gabriel Rocha">
+  <meta name="theme-color" content="#0A1630">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Gabriel Rocha">
+  <meta property="og:title" content="Circuito Cinemas, estudo de caso | Gabriel Rocha">
+  <meta property="og:description" content="Redesign conceitual do app de uma rede de cinemas: do diagnóstico às telas e ao design system, com o que é hipótese separado do que foi decidido.">
+  <meta property="og:image" content="../assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Telas do redesign conceitual do app Circuito Cinemas.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="../assets/fonts/inter-display-500.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial">Gabriel Rocha</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__icon" aria-hidden="true"></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Início</a></li>
+          <li><a class="nav__link" href="../index.html#projetos" aria-current="true">Projetos</a></li>
+          <li><a class="nav__link" href="../index.html#sobre">Sobre</a></li>
+        </ul>
+        <a class="btn btn--light btn--sm" href="../index.html#contato">Falar comigo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="on-dark">
+      <div class="container">
+        <nav class="crumbs" aria-label="Você está em">
+          <ol>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../index.html#projetos">Projetos</a></li>
+            <li aria-current="page">Circuito Cinemas</li>
+          </ol>
+        </nav>
+      </div>
+
+      <section class="case-hero" aria-labelledby="case-title">
+        <div class="container">
+          <h1 class="case-hero__title" id="case-title">Circuito Cinemas</h1>
+          <p class="case-hero__summary">Estudo conceitual de redesign do app de uma rede de cinemas: de uma compra em 7 etapas e um programa de fidelidade escondido para uma home de descoberta, um fluxo de 4 etapas e um design system.</p>
+          <dl class="meta">
+            <div><dt>Tipo</dt><dd>Estudo conceitual de redesign</dd></div>
+            <div><dt>Minha atuação</dt><dd>UX/UI Designer</dd></div>
+            <div><dt>Ferramentas</dt><dd>Figma e Notion</dd></div>
+            <div><dt>Ano</dt><dd>2026</dd></div>
+          </dl>
+          <div class="status" role="note">
+            <p><strong>Sem vínculo com a empresa e sem pesquisa com usuários.</strong> Personas, jornada e métricas deste case são hipóteses construídas a partir da análise do app e de benchmarks. Cada uma está identificada como tal.</p>
+          </div>
+          <div class="cta-row cta-row--hero">
+            <a class="btn btn--light" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener">Abrir protótipo no Figma<span class="visually-hidden"> (abre em nova aba)</span></a>
+            <a class="link link--arrow" href="#solucao">Ver a solução final</a>
+          </div>
+        </div>
+        <div class="case-hero__media">
+          <figure class="case-hero__item">
+            <figcaption class="frame-label"><strong>Antes</strong><span>Escolha de ingressos</span></figcaption>
+            <img class="shot" src="../assets/img/cc-antes-ingressos.webp" width="570" height="1232" alt="Tela de escolha de ingressos do app atual do Circuito Cinemas, com indicador de cinco etapas, aviso do Circuito Club e lista de promoções.">
+          </figure>
+          <figure class="case-hero__item">
+            <figcaption class="frame-label"><strong>Depois</strong><span>Nova home</span></figcaption>
+            <img class="shot" src="../assets/img/cc-nova-home.webp" width="724" height="1566" alt="Home redesenhada do Circuito Cinemas, com filme em destaque, cartão do Circuito Club com 9 de 20 pontos e seções Em breve e Em cartaz.">
+          </figure>
+          <figure class="case-hero__item">
+            <figcaption class="frame-label"><strong>Depois</strong><span>Pagamento</span></figcaption>
+            <img class="shot" src="../assets/img/cc-depois-pagamento.webp" width="564" height="1232" alt="Tela de pagamento redesenhada, com indicador de quatro etapas, resumo da sessão, formas de pagamento e botão Finalizar compra de R$ 62,00.">
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <div class="on-light section case-layout-wrap">
+      <div class="container">
+        <div class="case">
+
+          <details class="toc-mobile">
+            <summary><span class="toc-mobile__title">Nesta página</span><span class="toc-mobile__current">Visão geral</span></summary>
+            <ol>
+              <li><a href="#visao-geral">Visão geral</a></li>
+              <li><a href="#contexto">Contexto</a></li>
+              <li><a href="#problema">Problema e oportunidade</a></li>
+              <li><a href="#objetivos">Objetivos</a></li>
+              <li><a href="#publico">Público e necessidades</a></li>
+              <li><a href="#diagnostico">Análise da experiência atual</a></li>
+              <li><a href="#decisoes">Decisões e fluxos</a></li>
+              <li><a href="#solucao">Solução final</a></li>
+              <li><a href="#design-system">Design system</a></li>
+              <li><a href="#justificativas">Justificativas</a></li>
+              <li><a href="#limites">Limites e próximos passos</a></li>
+            </ol>
+          </details>
+
+          <nav class="toc" aria-label="Nesta página">
+            <p class="toc__title">Nesta página</p>
+            <ol>
+              <li><a href="#visao-geral">Visão geral</a></li>
+              <li><a href="#contexto">Contexto</a></li>
+              <li><a href="#problema">Problema e oportunidade</a></li>
+              <li><a href="#objetivos">Objetivos</a></li>
+              <li><a href="#publico">Público e necessidades</a></li>
+              <li><a href="#diagnostico">Análise da experiência atual</a></li>
+              <li><a href="#decisoes">Decisões e fluxos</a></li>
+              <li><a href="#solucao">Solução final</a></li>
+              <li><a href="#design-system">Design system</a></li>
+              <li><a href="#justificativas">Justificativas</a></li>
+              <li><a href="#limites">Limites e próximos passos</a></li>
+            </ol>
+          </nav>
+
+          <div class="prose">
+
+            <!-- 1. Visão geral -->
+            <section id="visao-geral" aria-labelledby="h-visao">
+              <h2 class="h2" id="h-visao">Visão geral</h2>
+              <p class="lead">Redesenhei a experiência do aplicativo do Circuito Cinemas em três frentes: como as pessoas descobrem filmes, como compram ingressos e como encontram o programa de fidelidade, o Circuito Club.</p>
+              <div class="read">
+                <p>É um estudo conceitual, feito a partir do app existente. Comecei por uma auditoria heurística, comparei o app com outros oito e transformei o diagnóstico em uma nova arquitetura de navegação, um fluxo de compra mais curto, uma home de descoberta e um design system.</p>
+              </div>
+              <dl class="spec">
+                <div class="spec__row"><dt>Tipo</dt><dd>Estudo conceitual de redesign, 2026. Sem vínculo com a empresa.</dd></div>
+                <div class="spec__row"><dt>Plataforma</dt><dd>iOS e Android.</dd></div>
+                <div class="spec__row"><dt>Duração</dt><dd>8 semanas.</dd></div>
+                <div class="spec__row"><dt>Minha atuação</dt><dd>UX/UI Designer: auditoria, benchmark, arquitetura da informação, fluxos, UI e design system.</dd></div>
+                <div class="spec__row"><dt>Base de análise</dt><dd>Auditoria heurística (heurísticas de Nielsen) do app atual, benchmark de 8 aplicativos e simulação de card sorting.</dd></div>
+                <div class="spec__row"><dt>Entregas</dt><dd>34 atritos documentados, 3 proto-personas, jornada de compra, nova taxonomia de navegação, 21 telas e estados de interface no Figma, 4 fluxos repensados e um design system com mais de 20 componentes.</dd></div>
+              </dl>
+            </section>
+
+            <!-- 2. Contexto -->
+            <section id="contexto" aria-labelledby="h-contexto">
+              <h2 class="h2" id="h-contexto">Contexto</h2>
+              <div class="read">
+                <p>O Circuito Cinemas é uma rede de cinemas, e o app é o canal em que as pessoas escolhem filme e sessão, compram ingressos e acumulam pontos no Circuito Club. Usei as telas do app atual como ponto de partida e as mantive ao lado das telas novas para comparar.</p>
+              </div>
+              <div class="callout callout--hyp">
+                <span class="tag tag--hyp">Premissa de projeto</span>
+                <p>Parti da ideia de que cinema é um produto usado em condições adversas: sala escura, uma mão ocupada, pressa na fila. Essa premissa vem da análise do contexto, não de observação em campo. Ela orienta as escolhas de tema escuro, alvos de toque de 44 px ou mais e hierarquia direta.</p>
+              </div>
+            </section>
+
+            <!-- 3. Problema -->
+            <section id="problema" aria-labelledby="h-problema">
+              <h2 class="h2" id="h-problema">Problema e oportunidade</h2>
+              <p class="lead">Na auditoria, quatro problemas apareceram em várias telas e se reforçavam entre si.</p>
+              <div class="cards cards--2">
+                <div>
+                  <h3>Navegação confusa</h3>
+                  <p>A barra inferior tem cinco itens que misturam função e destino, não há indicador de localização em fluxos profundos e o botão voltar muda de comportamento conforme a tela.</p>
+                </div>
+                <div>
+                  <h3>Excesso de opções</h3>
+                  <p>A home acumula carrosséis sem um ponto focal definido. Quem chega sem saber o que quer assistir não encontra por onde começar.</p>
+                </div>
+                <div>
+                  <h3>Compra fragmentada</h3>
+                  <p>Comprar um ingresso leva 7 etapas: buscar, filtrar, escolher o cinema, o horário, a poltrona, os extras e pagar.</p>
+                </div>
+                <div>
+                  <h3>Club invisível</h3>
+                  <p>O programa de fidelidade fica em menus secundários. Na tela de compra, ele aparece como um aviso para fazer login e recarregar a página.</p>
+                </div>
+              </div>
+              <div class="read">
+                <p>A oportunidade estava no que o app já tinha. O Circuito Club é, na minha análise, o principal diferencial da rede, e ficava dois níveis abaixo da home. A compra podia ser reorganizada em menos etapas, e a home podia deixar de ser um catálogo para virar uma porta de entrada.</p>
+              </div>
+            </section>
+
+            <!-- 4. Objetivos -->
+            <section id="objetivos" aria-labelledby="h-objetivos">
+              <h2 class="h2" id="h-objetivos">Objetivos do redesign</h2>
+              <div class="read">
+                <ul>
+                  <li>Dar à home um ponto focal e separar a busca intencional da descoberta.</li>
+                  <li>Organizar a navegação em destinos com função clara e fixa.</li>
+                  <li>Encurtar a compra, com progresso sempre visível e um resumo antes de pagar.</li>
+                  <li>Tornar o Circuito Club visível ao longo da jornada, não só em um menu.</li>
+                  <li>Criar um design system para que as decisões visuais tenham justificativa estrutural.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- 5. Público -->
+            <section id="publico" aria-labelledby="h-publico">
+              <h2 class="h2" id="h-publico">Público e necessidades</h2>
+              <div class="callout callout--hyp">
+                <span class="tag tag--hyp">Hipótese: proto-personas</span>
+                <p>O projeto não inclui entrevistas nem pesquisa com usuários. As três personas abaixo foram montadas a partir da auditoria heurística, do benchmark e de uma simulação de card sorting com padrões de uso de apps de cinema. Servem para orientar decisões e precisam ser validadas com pessoas reais.</p>
+              </div>
+
+              <div class="figure figure--wide">
+                <a class="zoom" href="../assets/img/cc-personas.webp" data-lightbox data-title="Proto-personas do Circuito Cinemas">
+                  <img src="../assets/img/cc-personas.webp" width="1427" height="860" loading="lazy" alt="Prancha com as três proto-personas: Lucas, 24, cinéfilo digital; Mariana, 32, mãe ocupada; Roberto, 55, espectador clássico. Cada uma tem objetivos, dores, frequência de uso e dispositivo.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Proto-personas. Clique para ampliar.</figcaption>
+              </div>
+
+              <div class="cards cards--3">
+                <div>
+                  <h3>Lucas, 24</h3>
+                  <p><strong>Cinéfilo digital.</strong> Vai ao cinema 2 a 3 vezes por semana. Quer descobrir filmes de arte, acumular pontos e comprar em menos de 3 toques. Incomoda-se com a home poluída, o Club escondido e a lentidão para carregar sessões.</p>
+                  <span class="tag tag--hyp">Proto-persona</span>
+                </div>
+                <div>
+                  <h3>Mariana, 32</h3>
+                  <p><strong>Mãe ocupada.</strong> Vai uma vez por mês, com a família. Quer comprar vários ingressos rápido, escolher boas cadeiras para a criança e pagar com cartão salvo. Sofre com as 7 etapas, o mapa de poltronas confuso e a falta de revisão antes de confirmar.</p>
+                  <span class="tag tag--hyp">Proto-persona</span>
+                </div>
+                <div>
+                  <h3>Roberto, 55</h3>
+                  <p><strong>Espectador clássico.</strong> Vai de 2 a 3 vezes por ano, quando um filme interessa muito. Quer achar o filme certo, entender o que está passando e pagar com Pix sem complicação. Esbarra em ícones sem rótulo, links quebrados e erros sem mensagem clara.</p>
+                  <span class="tag tag--hyp">Proto-persona</span>
+                </div>
+              </div>
+
+              <div class="figure figure--wide">
+                <a class="zoom" href="../assets/img/cc-jornada.webp" data-lightbox data-title="Jornada de compra de ingresso (Lucas)">
+                  <img src="../assets/img/cc-jornada.webp" width="1440" height="860" loading="lazy" alt="Mapa da jornada de compra de ingresso do Lucas em cinco fases: descoberta, seleção, compra, confirmação e pós-experiência, com ações, pensamentos, emoções, pontos de fricção e oportunidades.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Jornada de compra do Lucas, em cinco fases. Assim como as personas, vem da análise e não de testes com usuários. A fase de compra é a mais crítica: concentra as 7 etapas, o mapa confuso e a falta de revisão.</figcaption>
+              </div>
+            </section>
+
+            <!-- 6. Diagnóstico -->
+            <section id="diagnostico" aria-labelledby="h-diagnostico">
+              <h2 class="h2" id="h-diagnostico">Análise da experiência atual</h2>
+              <p class="lead">Três fontes alimentaram o diagnóstico: uma auditoria das telas do app, um benchmark com 8 aplicativos e a síntese dos dois em um mapa de insights.</p>
+
+              <h3 class="h3">Auditoria heurística: 34 pontos de atrito</h3>
+              <div class="read">
+                <p>Avaliei o app atual com as heurísticas de Nielsen e registrei 34 pontos de atrito: 11 críticos, 14 moderados e 9 menores, em quatro categorias. A prancha detalha 16 deles, quatro por categoria.</p>
+              </div>
+              <div class="table-wrap table-wrap--stack">
+                <table class="table table--stack">
+                  <caption class="visually-hidden">Categorias da auditoria, exemplos documentados e gravidade dos pontos detalhados na prancha</caption>
+                  <thead><tr><th scope="col">Categoria</th><th scope="col">Exemplos documentados</th><th scope="col">Gravidade (pontos na prancha)</th></tr></thead>
+                  <tbody>
+                    <tr><td>Hierarquia visual</td><td data-label="Exemplos documentados">Sem contraste entre elementos primários e secundários; tipografia sem escala; cor usada indiscriminadamente para destacar.</td><td data-label="Gravidade (pontos na prancha)">1 crítico, 2 moderados, 1 menor</td></tr>
+                    <tr><td>Navegação</td><td data-label="Exemplos documentados">Barra inferior com 5 ou mais itens sem distinção entre função e destino; sem indicador de localização em fluxos profundos; botão voltar inconsistente; links diretos quebrados em notificações push.</td><td data-label="Gravidade (pontos na prancha)">4 críticos</td></tr>
+                    <tr><td>Consistência</td><td data-label="Exemplos documentados">Três padrões de card de filme na mesma versão; botões primários com tamanho e cor variáveis; modais e bottom sheets misturados; ícones de famílias diferentes.</td><td data-label="Gravidade (pontos na prancha)">1 crítico, 3 moderados</td></tr>
+                    <tr><td>Usabilidade</td><td data-label="Exemplos documentados">Área de toque abaixo de 44 px em vários elementos; sem feedback de carregamento em transições críticas; erros de formulário sem mensagem descritiva; estados vazios sem ação sugerida.</td><td data-label="Gravidade (pontos na prancha)">2 críticos, 1 moderado, 1 menor</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="figure figure--wide">
+                <a class="zoom" href="../assets/img/cc-auditoria.webp" data-lightbox data-title="Mapeamento de fricções">
+                  <img src="../assets/img/cc-auditoria.webp" width="1440" height="860" loading="lazy" alt="Prancha do mapeamento de fricções: 34 pontos, 11 críticos, 14 moderados e 9 menores, organizados em hierarquia visual, navegação, consistência e usabilidade.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Prancha da auditoria, como foi documentada.</figcaption>
+              </div>
+
+              <h3 class="h3">Benchmark: 8 aplicativos</h3>
+              <div class="read">
+                <p>Comparei o app com três concorrentes diretos (Cinemark Brasil, Cineflix e UCI Cinemas) e cinco referências de experiência fora ou na borda do setor. A última coluna indica onde cada referência entrou no redesign.</p>
+              </div>
+              <div class="table-wrap table-wrap--stack">
+                <table class="table table--stack">
+                  <caption class="visually-hidden">Referências do benchmark e o que cada uma inspirou</caption>
+                  <thead><tr><th scope="col">Referência</th><th scope="col">O que observei</th><th scope="col">Onde entrou</th></tr></thead>
+                  <tbody>
+                    <tr><td>Letterboxd</td><td data-label="O que observei">Descoberta exploratória e prova social como motor de engajamento.</td><td data-label="Onde entrou">Descoberta na home.</td></tr>
+                    <tr><td>Ingresso.com</td><td data-label="O que observei">Fluxo de compra mais limpo do mercado nacional, com progressão clara de etapas.</td><td data-label="Onde entrou">Fluxo de compra e progresso por etapas.</td></tr>
+                    <tr><td>Disney+</td><td data-label="O que observei">Hierarquia visual de catálogo, com hero dominante e contexto.</td><td data-label="Onde entrou">Hierarquia da home e hero.</td></tr>
+                    <tr><td>Nubank</td><td data-label="O que observei">Feedback de estado mais claro: cada ação tem resposta imediata.</td><td data-label="Onde entrou">Clareza de estado e feedback.</td></tr>
+                    <tr><td>Spotify</td><td data-label="O que observei">Personalização por contexto e histórico.</td><td data-label="Onde entrou">Seções contextuais da home.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="figure figure--wide">
+                <a class="zoom" href="../assets/img/cc-benchmark.webp" data-lightbox data-title="Benchmark competitivo">
+                  <img src="../assets/img/cc-benchmark.webp" width="1440" height="860" loading="lazy" alt="Prancha de benchmark com três concorrentes diretos, Cinemark Brasil, Cineflix e UCI Cinemas, e cinco referências de experiência: Letterboxd, Ingresso.com, Disney+, Nubank e Spotify.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Prancha do benchmark. A pontuação de cada concorrente é uma avaliação qualitativa minha, sem método formal de pontuação.</figcaption>
+              </div>
+
+              <h3 class="h3">Insights que guiaram o redesign</h3>
+              <div class="cards cards--2">
+                <div>
+                  <h4>Apps de cinema priorizam a busca, não a descoberta</h4>
+                  <p>A maioria assume que a pessoa já sabe o que quer assistir. Há pouco espaço para navegar sem objetivo definido.</p>
+                  <p><strong>Decisão:</strong> hero dinâmico por perfil e seções contextuais.</p>
+                </div>
+                <div>
+                  <h4>Funcionalidade invisível não existe para o usuário</h4>
+                  <p>O Circuito Club estava enterrado em menus secundários. Usuários frequentes provavelmente desconheciam seu saldo e seus benefícios.</p>
+                  <p><strong>Decisão:</strong> Club na navegação principal e na confirmação da compra.</p>
+                </div>
+                <div>
+                  <h4>Problemas isolados formam um ecossistema de atrito</h4>
+                  <p>Navegação confusa, compra em 7 etapas e Club invisível pareciam problemas separados, mas são sintomas de um app sem visão de conjunto.</p>
+                  <p><strong>Decisão:</strong> tratar a experiência de ponta a ponta, com um design system como base.</p>
+                </div>
+                <div>
+                  <h4>Tokens antes de pixels</h4>
+                  <p>Construir o design system antes das telas finais obriga cada escolha visual a ter justificativa estrutural, e não só estética.</p>
+                  <p><strong>Decisão:</strong> componentes e tokens definidos antes da diagramação das telas.</p>
+                </div>
+              </div>
+              <div class="figure figure--wide">
+                <a class="zoom" href="../assets/img/cc-insights.webp" data-lightbox data-title="Mapa de insights">
+                  <img src="../assets/img/cc-insights.webp" width="1440" height="860" loading="lazy" alt="Mapa de insights com seis descobertas do projeto: descoberta, fidelidade, contexto de uso, sistemas, design system e próximos passos de validação.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Mapa de insights completo, com os seis achados do projeto.</figcaption>
+              </div>
+            </section>
+
+            <!-- 7. Decisões e fluxos -->
+            <section id="decisoes" aria-labelledby="h-decisoes">
+              <h2 class="h2" id="h-decisoes">Decisões e fluxos</h2>
+
+              <h3 class="h3">Arquitetura: de 8 ou mais destinos para 5</h3>
+              <div class="read">
+                <p>O app anterior tinha oito ou mais destinos de navegação sem hierarquia clara. A nova taxonomia tem cinco destinos fixos, cada um com uma função: <strong>Início</strong>, <strong>Filmes</strong>, <strong>Ingressos</strong>, <strong>Club</strong> e <strong>Perfil</strong>. Montei a taxonomia com uma simulação de card sorting com as proto-personas, então ela ainda precisa ser testada com pessoas de verdade.</p>
+                <p>Nas telas finais, a barra inferior tem quatro abas: <strong>Home</strong>, <strong>Compras</strong>, <strong>Clube</strong> e <strong>Menu</strong>. O app anterior tinha cinco abas, e o Club ficava fora delas.</p>
+              </div>
+              <div class="figure figure--wide">
+                <a class="zoom" href="../assets/img/cc-arquitetura.webp" data-lightbox data-title="Nova taxonomia de navegação">
+                  <img src="../assets/img/cc-arquitetura.webp" width="1440" height="860" loading="lazy" alt="Nova taxonomia de navegação com cinco destinos, Início, Filmes, Ingressos, Club e Perfil, cada um com cinco itens de conteúdo.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Taxonomia proposta: cinco destinos, cinco itens em cada um.</figcaption>
+              </div>
+
+              <h3 class="h3">Compra: de 7 para 4 etapas</h3>
+              <p class="flow-label">Antes, 7 etapas</p>
+              <ol class="flow">
+                <li>Buscar</li><li>Filtrar</li><li>Cinema</li><li>Horário</li><li>Poltrona</li><li>Extras</li><li>Pagar</li>
+              </ol>
+              <p class="flow-label">Depois, 4 etapas</p>
+              <ol class="flow flow--after">
+                <li>Sessão</li><li>Poltronas</li><li>Extras</li><li>Pagar</li>
+              </ol>
+              <div class="read">
+                <ul>
+                  <li><strong>Sessão:</strong> data, horário e sala em um seletor unificado, no lugar de três telas.</li>
+                  <li><strong>Poltronas:</strong> mapa interativo com legenda clara.</li>
+                  <li><strong>Extras:</strong> combos opcionais, sem interromper quem não quer.</li>
+                  <li><strong>Pagar:</strong> resumo completo antes de confirmar.</li>
+                </ul>
+                <p>Um indicador de progresso fica visível durante todo o fluxo, para que a pessoa saiba sempre onde está. A redução é de 43% no número de etapas (de 7 para 4). Isso é uma contagem do desenho, não um resultado medido.</p>
+              </div>
+
+              <h3 class="h3">Home: de catálogo a descoberta</h3>
+              <div class="read">
+                <p>Separei estruturalmente a busca intencional da exploração passiva, cada uma com sua entrada clara. A home passa a ter um hero dinâmico, o Circuito Club sempre à vista e seções contextuais como Em breve e Em cartaz.</p>
+              </div>
+
+              <h3 class="h3">Circuito Club: da invisibilidade à primeira camada</h3>
+              <div class="read">
+                <p>O Club ganhou um widget na home, uma tela própria e um papel na compra: o pagamento avisa quantos pontos a pessoa vai ganhar. A tabela mostra o que mudou.</p>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <caption class="visually-hidden">Circuito Club antes e depois do redesign</caption>
+                  <thead><tr><th scope="col">Antes</th><th scope="col">Depois</th></tr></thead>
+                  <tbody>
+                    <tr><td>Enterrado em menus secundários</td><td>Widget na home e tela dedicada</td></tr>
+                    <tr><td>Saldo sem contexto de resgate</td><td>Benefícios categorizados, com chamada para ação clara</td></tr>
+                    <tr><td>Sem reforço positivo na compra</td><td>Pontos atualizados em tempo real e aviso de pontos no pagamento</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- 8. Solução final -->
+            <section id="solucao" aria-labelledby="h-solucao">
+              <h2 class="h2" id="h-solucao">Solução final</h2>
+              <p class="lead">As telas abaixo são as que tenho em alta resolução: a nova home, o pagamento e o Circuito Club.</p>
+              <div class="cta-row">
+                <a class="btn btn--dark" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener">Abrir protótipo no Figma<span class="visually-hidden"> (abre em nova aba)</span></a>
+              </div>
+              <p class="demo-note">O protótipo abre na tela Home. O arquivo reúne as 21 telas e estados de interface do projeto.</p>
+
+              <h3 class="h3">Nova home</h3>
+              <div class="panel panel--black">
+                <div class="annot">
+                  <figure>
+                    <img class="shot" src="../assets/img/cc-nova-home.webp" width="724" height="1566" loading="lazy" alt="Home redesenhada do Circuito Cinemas, com boas-vindas, filme em destaque com botão Comprar, cartão do Circuito Club Bronze, e carrosséis Em breve e Em cartaz.">
+                  </figure>
+                  <ul class="annot__list">
+                    <li><strong>Hero dinâmico personalizado</strong><span>Um filme em destaque, com ação de compra direta. Dá à home um único ponto focal.</span></li>
+                    <li><strong>Club sempre visível</strong><span>O cartão mostra o nível e quantos pontos faltam para o ingresso grátis: 9 de 20, faltam 11.</span></li>
+                    <li><strong>Seções contextuais</strong><span>Em breve e Em cartaz separam o que está por vir do que se pode ver hoje.</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3 class="h3">Compra e pagamento</h3>
+              <div class="panel panel--black">
+                <div class="compare compare--narrow">
+                  <figure>
+                    <img class="shot" src="../assets/img/cc-antes-ingressos.webp" width="570" height="1232" loading="lazy" alt="Tela de escolha de ingressos do app atual, com indicador de cinco etapas, aviso do Circuito Club e promoções.">
+                    <figcaption><strong>Antes: escolha de ingressos</strong>Indicador de cinco passos, aviso do Club que pede login e recarregar a página, e muito texto na mesma tela.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/cc-depois-pagamento.webp" width="564" height="1232" loading="lazy" alt="Tela de pagamento redesenhada, com resumo da sessão, formas de pagamento Cartão, Pix e Wallet, campo de código promocional e botão Finalizar compra.">
+                    <figcaption><strong>Depois: pagamento</strong>Indicador de quatro etapas, resumo da sessão com total, formas de pagamento, aviso de pontos do Club e um botão principal.</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <p class="note">As duas telas não são equivalentes um a um. Mostram etapas diferentes do fluxo, uma de cada versão, para comparar a densidade e a clareza.</p>
+
+              <h3 class="h3">Circuito Club</h3>
+              <div class="figure figure--sq">
+                <a class="zoom" href="../assets/img/cc-slide-club.webp" data-lightbox data-title="Circuito Club, antes e depois">
+                  <img src="../assets/img/cc-slide-club.webp" width="1080" height="1080" loading="lazy" alt="Antes e depois do Circuito Club: no app atual o programa fica em menus secundários e a página pede login; na proposta há uma tela dedicada com nível Bronze, 9 pontos acumulados e recompensas para resgatar.">
+                  <span class="zoom__hint" aria-hidden="true">Ampliar</span>
+                </a>
+                <figcaption>Antes e depois do Circuito Club, na prancha do projeto. À esquerda, o programa dentro de menus. À direita, a tela dedicada, com nível, pontos, recompensas, histórico e benefícios.</figcaption>
+              </div>
+            </section>
+
+            <!-- 9. Design system -->
+            <section id="design-system" aria-labelledby="h-ds">
+              <h2 class="h2" id="h-ds">Design system</h2>
+              <div class="read">
+                <p>O design system responde ao que a auditoria encontrou: padrões de card, botões e ícones inconsistentes. No Figma, ele reúne 12 cores, uma escala tipográfica em Inter, espaçamentos em grade de 8 pt, uma escala de raios de borda (de 4 px até a pílula) e os componentes usados nas telas.</p>
+              </div>
+              <ul class="swatches" aria-label="Paleta do design system">
+                <li class="swatch"><span class="swatch__chip" style="background:#E8400A"></span><span class="swatch__info"><span class="swatch__name">Brand Primary</span><span class="swatch__hex">#E8400A</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#B52F05"></span><span class="swatch__info"><span class="swatch__name">Brand Dark</span><span class="swatch__hex">#B52F05</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#FF6B35"></span><span class="swatch__info"><span class="swatch__name">Brand Light</span><span class="swatch__hex">#FF6B35</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#0D0D0D"></span><span class="swatch__info"><span class="swatch__name">Surface Dark</span><span class="swatch__hex">#0D0D0D</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#1A1A1A"></span><span class="swatch__info"><span class="swatch__name">Surface Mid</span><span class="swatch__hex">#1A1A1A</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#2A2A2A"></span><span class="swatch__info"><span class="swatch__name">Surface Card</span><span class="swatch__hex">#2A2A2A</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#FFFFFF"></span><span class="swatch__info"><span class="swatch__name">Text Primary</span><span class="swatch__hex">#FFFFFF</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#ABABAB"></span><span class="swatch__info"><span class="swatch__name">Text Secondary</span><span class="swatch__hex">#ABABAB</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#22C55E"></span><span class="swatch__info"><span class="swatch__name">Success</span><span class="swatch__hex">#22C55E</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#EF4444"></span><span class="swatch__info"><span class="swatch__name">Error</span><span class="swatch__hex">#EF4444</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#BA7517"></span><span class="swatch__info"><span class="swatch__name">Warning</span><span class="swatch__hex">#BA7517</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#333333"></span><span class="swatch__info"><span class="swatch__name">Border</span><span class="swatch__hex">#333333</span></span></li>
+              </ul>
+              <dl class="type-scale" aria-label="Escala tipográfica, família Inter">
+                <div><dt>Display, 36 px</dt><dd class="ts-display">Encontre o filme certo</dd></div>
+                <div><dt>Heading, 24 px</dt><dd class="ts-heading">Em Cartaz Agora</dd></div>
+                <div><dt>Title, 16 px</dt><dd class="ts-title">Sessão, Sábado 14:30</dd></div>
+                <div><dt>Body, 14 px</dt><dd class="ts-body">Uma aventura épica começa quando três amigos...</dd></div>
+                <div><dt>Caption, 12 px</dt><dd class="ts-caption">Legendado · 2h14min · Ação · 14 anos</dd></div>
+              </dl>
+              <div class="cards cards--3">
+                <div><h3>Botões</h3><p>Comprar ingresso, Ver sessões, Adicionar e Ver todos.</p></div>
+                <div><h3>Campos</h3><p>Campo de busca nos estados padrão, foco, erro e desabilitado.</p></div>
+                <div><h3>Chips</h3><p>Filtros como Ação, Comédia, Hoje, Dublado e 3D.</p></div>
+                <div><h3>Badges</h3><p>Estreia, Pré-estreia, classificação indicativa e pontos do Club.</p></div>
+                <div><h3>Navegação</h3><p>Barra inferior com quatro itens.</p></div>
+                <div><h3>Estados</h3><p>Telas de estado vazio, carregamento com skeleton, falha de pagamento e sem internet.</p></div>
+              </div>
+            </section>
+
+            <!-- 10. Justificativas -->
+            <section id="justificativas" aria-labelledby="h-just">
+              <h2 class="h2" id="h-just">Justificativas das decisões</h2>
+              <div class="read">
+                <p>Cada decisão de UX e UI aponta para uma evidência do diagnóstico. A última coluna é o efeito que eu espero, e é hipótese: nada aqui foi testado com usuários.</p>
+              </div>
+              <div class="table-wrap table-wrap--stack">
+                <table class="table table--stack">
+                  <caption class="visually-hidden">Decisões de design, evidência que as motivou e efeito esperado</caption>
+                  <thead><tr><th scope="col">Decisão</th><th scope="col">Evidência</th><th scope="col">Efeito esperado (hipótese)</th></tr></thead>
+                  <tbody>
+                    <tr><td>Home de descoberta com hero dinâmico</td><td data-label="Evidência">Home com muitos carrosséis e sem ponto focal; benchmark mostra apps focados em busca.</td><td data-label="Efeito esperado (hipótese)">Menos esforço para decidir o que ver.</td></tr>
+                    <tr><td>Navegação enxuta, com quatro abas de função clara</td><td data-label="Evidência">Oito ou mais destinos sem hierarquia; cinco abas que misturavam função e destino, com o Club fora delas.</td><td data-label="Efeito esperado (hipótese)">Mais clareza sobre onde cada coisa está.</td></tr>
+                    <tr><td>Compra em 4 etapas, com progresso persistente</td><td data-label="Evidência">Sete etapas; sem indicador de localização em fluxos profundos.</td><td data-label="Efeito esperado (hipótese)">Menos abandono no pagamento.</td></tr>
+                    <tr><td>Resumo completo antes de confirmar</td><td data-label="Evidência">Proto-persona Mariana: falta de revisão antes de confirmar.</td><td data-label="Efeito esperado (hipótese)">Mais confiança no momento de pagar.</td></tr>
+                    <tr><td>Club na home e no pagamento</td><td data-label="Evidência">Club enterrado, saldo sem contexto, sem reforço positivo na compra.</td><td data-label="Efeito esperado (hipótese)">Mais pessoas descobrem e usam o programa.</td></tr>
+                    <tr><td>Tema escuro, alvos de toque de 44 px ou mais, hierarquia direta</td><td data-label="Evidência">Premissa de uso em sala escura e com uma mão; auditoria aponta alvos menores que 44 px.</td><td data-label="Efeito esperado (hipótese)">Menos erros de toque e mais legibilidade.</td></tr>
+                    <tr><td>Design system antes das telas finais</td><td data-label="Evidência">Três padrões de card, botões e ícones inconsistentes.</td><td data-label="Efeito esperado (hipótese)">Consistência e facilidade de evoluir o app.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- 11. Limites e próximos passos -->
+            <section id="limites" aria-labelledby="h-limites">
+              <h2 class="h2" id="h-limites">Limites, aprendizados e próximos passos</h2>
+
+              <h3 class="h3">O que este estudo não é</h3>
+              <div class="read">
+                <ul>
+                  <li>O material do projeto não inclui pesquisa com usuários. Personas, jornada e taxonomia vêm de análise, benchmark e simulação.</li>
+                  <li>O material também não registra teste de usabilidade do protótipo.</li>
+                  <li>Wireframes e alternativas exploradas durante o processo não estão documentados neste material, por isso não aparecem aqui.</li>
+                  <li>Não há vínculo com a empresa. As telas do app atual e os pôsteres de filmes pertencem aos seus titulares e aparecem só para análise e comparação.</li>
+                </ul>
+              </div>
+              <div class="callout">
+                <span class="tag tag--soon">Em aberto</span>
+                <p>O arquivo do Figma e a documentação não coincidem em dois pontos, que eu alinharia no próximo ciclo. A taxonomia proposta tem cinco destinos, mas as telas finais usam quatro abas, e o componente da barra chama a segunda aba de Ingressos, enquanto as telas dizem Compras. E o indicador de progresso do pagamento usa Sessão, Assentos, Pagamento e Confirmar, enquanto a prancha do fluxo usa Sessão, Poltronas, Extras e Pagar.</p>
+              </div>
+
+              <h3 class="h3">Resultados esperados <span class="tag tag--hyp">Hipótese</span></h3>
+              <div class="read">
+                <p>Estimei o impacto a partir de benchmarks de projetos semelhantes de redesign de apps. São metas para validar, e não resultados medidos.</p>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <caption class="visually-hidden">Métricas esperadas, todas hipotéticas</caption>
+                  <thead><tr><th scope="col">Métrica</th><th scope="col">Hipótese</th></tr></thead>
+                  <tbody>
+                    <tr><td>Cliques até a compra</td><td>De cerca de 11 para cerca de 7 toques (35% a menos)</td></tr>
+                    <tr><td>Abandono no checkout</td><td>25% a menos</td></tr>
+                    <tr><td>Engajamento no Circuito Club</td><td>40% a mais</td></tr>
+                    <tr><td>Tempo de sessão</td><td>20% a mais</td></tr>
+                    <tr><td>Retenção no 7º dia</td><td>15% a mais</td></tr>
+                    <tr><td>Avaliação na loja de apps</td><td>0,5 estrela a mais</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 class="h3">Como eu validaria</h3>
+              <ol class="steps">
+                <li><span><strong>Testes de usabilidade</strong>Com os quatro fluxos redesenhados, para ver onde as pessoas travam.</span></li>
+                <li><span><strong>SUS como referência</strong>Aplicar a escala de usabilidade (SUS) e comparar com o benchmark.</span></li>
+                <li><span><strong>Teste A/B da nova home</strong>Comparar a home de descoberta com a atual.</span></li>
+                <li><span><strong>Instrumentação com análise de funil</strong>Medir as etapas da compra com uma ferramenta como o Mixpanel.</span></li>
+              </ol>
+
+              <h3 class="h3">O que aprendi</h3>
+              <div class="cards cards--2">
+                <div><h4>Visão sistêmica</h4><p>Problemas isolados são sintomas de fricções maiores. Resolver um sem olhar os vizinhos cria problemas novos.</p></div>
+                <div><h4>Design system primeiro</h4><p>Definir tokens antes das telas faz as decisões visuais terem justificativa estrutural, e não só estética.</p></div>
+                <div><h4>Invisível é inexistente</h4><p>Uma funcionalidade que ninguém descobre não existe para o usuário. O Circuito Club mostra isso.</p></div>
+                <div><h4>Contexto define design</h4><p>Luz variável, uma mão ocupada e emoção alta no cinema. Cada detalhe da interface responde a esse contexto.</p></div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="on-dark next" aria-label="Navegação entre estudos de caso">
+      <div class="container next__grid">
+        <a class="next__link" href="../index.html#projetos">
+          <span>Voltar</span>
+          <strong>Todos os projetos</strong>
+        </a>
+        <a class="next__link" href="study.html">
+          <span>Próximo estudo de caso</span>
+          <strong>Study</strong>
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer on-black">
+    <div class="container site-footer__row">
+      <p>© 2026 Gabriel Rocha. <a href="../index.html#contato">Falar comigo</a></p>
+      <p>Circuito Cinemas é um estudo conceitual, sem vínculo com a empresa. Marcas, pôsteres de filmes e telas do app original pertencem aos seus titulares e aparecem apenas para análise e comparação.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
