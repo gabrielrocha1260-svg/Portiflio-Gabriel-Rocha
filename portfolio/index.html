@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Rocha | Product Design e UX/UI</title>
+  <meta name="description" content="Portfólio de Gabriel Rocha, designer gráfico em transição para Product Design e UX/UI. Inclui o estudo de caso do Circuito Cinemas e o aplicativo de estudos Study.">
+  <meta name="author" content="Gabriel Rocha">
+  <meta name="theme-color" content="#0A1630">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Gabriel Rocha">
+  <meta property="og:title" content="Gabriel Rocha | Product Design e UX/UI">
+  <meta property="og:description" content="Dois projetos de produto digital: o redesign conceitual do app Circuito Cinemas e o Study, um aplicativo de estudos que está no ar.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gabriel Rocha, Product Design e UX/UI, com telas dos projetos Circuito Cinemas e Study.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/inter-display-500.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body data-page-home>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="wordmark" href="#inicio" aria-label="Gabriel Rocha, início">Gabriel Rocha</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__icon" aria-hidden="true"></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#projetos">Projetos</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+        </ul>
+        <a class="btn btn--light btn--sm" href="#contato">Falar comigo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- Início -->
+    <section class="hero on-dark" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__guides" aria-hidden="true">
+        <div class="container">
+          <div class="hero__guides-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__role">Gabriel Rocha, Product Design e UX/UI</p>
+          <h1 class="hero__title" id="hero-title" data-typing>Interfaces simples, decisões claras.</h1>
+          <p class="hero__intro">Sou designer gráfico a caminho de Product Design. Aqui estão dois projetos que mostram como investigo um problema, tomo decisões de interface e explico o porquê de cada uma.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light" href="#projetos">Ver projetos</a>
+            <a class="btn btn--outline" href="#sobre">Sobre mim</a>
+          </div>
+        </div>
+        <div class="hero__stage">
+          <a class="hero__phone" href="projetos/circuito-cinemas.html" aria-label="Circuito Cinemas, redesign conceitual: abrir estudo de caso">
+            <span class="frame-label"><strong>Circuito Cinemas</strong><span>Redesign conceitual</span></span>
+            <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" alt="Home redesenhada do Circuito Cinemas em tema escuro, com filme em destaque, cartão do Circuito Club e carrosséis Em breve e Em cartaz." fetchpriority="high">
+          </a>
+          <a class="hero__phone" href="projetos/study.html" aria-label="Study, aplicativo de estudos: abrir estudo de caso">
+            <span class="frame-label"><strong>Study</strong><span>App de estudos, no ar</span></span>
+            <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" alt="Tela Início do Study em tema escuro, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia." fetchpriority="high">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section on-light" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2" id="projetos-title">Dois projetos, dois tipos de problema</h2>
+          <p class="section__lead">Um redesign conceitual, feito a partir da análise de um app existente, e um aplicativo funcional que desenhei e que está no ar. Em cada case, o que foi decidido, o que foi construído e o que ainda é hipótese aparecem separados.</p>
+        </div>
+
+        <article class="project" aria-labelledby="proj-cc">
+          <div class="project__media">
+            <div class="stage stage--cinema">
+              <figure class="stage__item">
+                <figcaption class="frame-label"><strong>Antes</strong><span>App atual</span></figcaption>
+                <img class="shot" src="assets/img/cc-antes-ingressos.webp" width="570" height="1232" loading="lazy" alt="Tela de escolha de ingressos do app atual do Circuito Cinemas, com indicador de cinco etapas, aviso do Circuito Club e lista de promoções.">
+              </figure>
+              <figure class="stage__item">
+                <figcaption class="frame-label"><strong>Depois</strong><span>Nova home</span></figcaption>
+                <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" loading="lazy" alt="Home redesenhada do Circuito Cinemas, com filme em destaque, cartão do Circuito Club com 9 de 20 pontos e seções Em breve e Em cartaz.">
+              </figure>
+            </div>
+          </div>
+          <div class="project__text">
+            <p class="project__kind">Estudo conceitual de redesign</p>
+            <h3 class="project__title" id="proj-cc"><a href="projetos/circuito-cinemas.html">Circuito Cinemas</a></h3>
+            <p class="project__desc">Auditoria do app de uma rede de cinemas, com 34 pontos de atrito mapeados, e uma proposta que reorganiza a navegação, encurta a compra de 7 para 4 etapas e põe o programa de fidelidade na primeira camada.</p>
+            <dl class="facts">
+              <div class="facts__row"><dt>Função</dt><dd>UX/UI Designer</dd></div>
+              <div class="facts__row"><dt>Ferramentas</dt><dd>Figma e Notion</dd></div>
+              <div class="facts__row"><dt>Ano</dt><dd>2026</dd></div>
+            </dl>
+            <div class="project__links">
+              <a class="btn btn--dark btn--sm" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener">Abrir protótipo<span class="visually-hidden"> no Figma (abre em nova aba)</span></a>
+              <a class="link link--arrow" href="projetos/circuito-cinemas.html">Ler estudo de caso</a>
+            </div>
+            <p class="demo-note">O protótipo abre no Figma, na tela Home.</p>
+          </div>
+        </article>
+
+        <article class="project project--flip" aria-labelledby="proj-study">
+          <div class="project__media">
+            <div class="stage stage--study">
+              <figure class="stage__item">
+                <figcaption class="frame-label"><strong>Início</strong><span>Recomendado agora</span></figcaption>
+                <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia.">
+              </figure>
+              <figure class="stage__item">
+                <figcaption class="frame-label"><strong>Jornada</strong><span>Módulos em ordem</span></figcaption>
+                <img class="shot" src="assets/img/study-jornada-progresso.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 14% concluído, próximo passo e lista de módulos de leitura e videoaula.">
+              </figure>
+              <figure class="stage__item">
+                <figcaption class="frame-label"><strong>Progresso</strong><span>Últimos 7 dias</span></figcaption>
+                <img class="shot" src="assets/img/study-progresso.webp" width="804" height="1748" loading="lazy" alt="Tela Progresso do Study, com progresso médio de 14%, tempo estudado, gráfico dos últimos 7 dias e progresso por matéria.">
+              </figure>
+            </div>
+          </div>
+          <div class="project__text">
+            <p class="project__kind">Produto funcional, no ar</p>
+            <h3 class="project__title" id="proj-study"><a href="projetos/study.html">Study</a></h3>
+            <p class="project__desc">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e registra sessões de foco para mostrar o progresso.</p>
+            <dl class="facts">
+              <div class="facts__row"><dt>Atuação</dt><dd>Design de produto, UI e design system</dd></div>
+              <div class="facts__row"><dt>Tecnologia</dt><dd>React, Node e Express</dd></div>
+              <div class="facts__row"><dt>IA e serviços</dt><dd>Gemini, YouTube e login Google</dd></div>
+            </dl>
+            <div class="project__links">
+              <a class="btn btn--dark btn--sm" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
+              <a class="link link--arrow" href="projetos/study.html">Ler estudo de caso</a>
+            </div>
+            <p class="demo-note">A demo pede login com Google. Na hospedagem gratuita, o primeiro acesso pode demorar para carregar.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section on-white" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about">
+        <div class="about__intro">
+          <h2 class="h2" id="sobre-title">Sobre</h2>
+          <div class="read">
+            <p>Sou formado em Design Gráfico e faço pós-graduação em UX e Produtos Digitais. Do design gráfico trouxe o cuidado com hierarquia, composição e acabamento. Agora aplico esse repertório a produtos digitais.</p>
+            <p>Estou direcionando minha carreira para Product Design e UX/UI. Meu ponto de partida é sempre o problema: quem usa, em que situação, o que atrapalha. Tenho familiaridade com ferramentas de IA no processo de design e, no Study, ela está dentro do produto: gera trilhas, leituras e exercícios a partir de um tema.</p>
+          </div>
+        </div>
+        <div class="about__side">
+          <h3 class="h3">O que os projetos mostram</h3>
+          <ul class="evidence">
+            <li class="evidence__item">
+              <span class="evidence__name">Diagnóstico e pesquisa</span>
+              <p class="evidence__text">Auditoria heurística com 34 pontos de atrito e benchmark de 8 aplicativos.</p>
+              <a class="evidence__where link link--arrow" href="projetos/circuito-cinemas.html#diagnostico">Circuito Cinemas</a>
+            </li>
+            <li class="evidence__item">
+              <span class="evidence__name">Arquitetura e fluxos</span>
+              <p class="evidence__text">Barra de navegação de 5 para 4 abas e compra de ingressos redesenhada de 7 para 4 etapas.</p>
+              <a class="evidence__where link link--arrow" href="projetos/circuito-cinemas.html#decisoes">Circuito Cinemas</a>
+            </li>
+            <li class="evidence__item">
+              <span class="evidence__name">UI e design system</span>
+              <p class="evidence__text">Tokens, temas claro e escuro e componentes documentados nos dois projetos.</p>
+              <a class="evidence__where link link--arrow" href="projetos/study.html#design">Study</a>
+            </li>
+            <li class="evidence__item">
+              <span class="evidence__name">Produto funcional e IA</span>
+              <p class="evidence__text">Aplicativo no ar que usa a API do Gemini para montar trilhas de estudo.</p>
+              <a class="evidence__where link link--arrow" href="projetos/study.html#ia">Study</a>
+            </li>
+          </ul>
+          <dl class="facts profile">
+            <div class="facts__row"><dt>Graduação</dt><dd>Design Gráfico</dd></div>
+            <div class="facts__row"><dt>Pós-graduação</dt><dd>UX e Produtos Digitais (em andamento)</dd></div>
+            <div class="facts__row"><dt>Foco</dt><dd>Product Design e UX/UI</dd></div>
+            <div class="facts__row"><dt>Ferramentas</dt><dd>Figma e Notion</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section on-dark" id="contato" aria-labelledby="contato-title">
+      <div class="container contact">
+        <h2 class="contact__title" id="contato-title">Estou buscando minha primeira vaga como Product Designer.</h2>
+        <p class="contact__body">Se você está contratando para uma posição júnior, ou quer conversar sobre os projetos, escreva por e-mail ou me chame no LinkedIn.</p>
+        <div class="contact__actions">
+          <a class="btn btn--light" href="mailto:gabrielrocha2098@gmail.com">Enviar e-mail</a>
+          <a class="btn btn--outline" href="https://www.linkedin.com/in/gabriel-rocha-ux" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></a>
+          <a class="contact__mail link" href="mailto:gabrielrocha2098@gmail.com">gabrielrocha2098@gmail.com</a>
+          <button class="btn btn--outline btn--sm" type="button" data-copy="gabrielrocha2098@gmail.com" data-copy-status="copy-status">Copiar e-mail</button>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-black">
+    <div class="container site-footer__row">
+      <p>© 2026 Gabriel Rocha. Site estático, sem cookies nem rastreadores.</p>
+      <p>Circuito Cinemas é um estudo conceitual, sem vínculo com a empresa. Marcas, pôsteres de filmes e telas do app original pertencem aos seus titulares e aparecem apenas para análise e comparação. As telas do Study usam dados de demonstração.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

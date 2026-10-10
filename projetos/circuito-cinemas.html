@@ -9,13 +9,15 @@
   <meta name="theme-color" content="#0A1630">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html">
 
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Gabriel Rocha">
   <meta property="og:title" content="Circuito Cinemas, estudo de caso | Gabriel Rocha">
   <meta property="og:description" content="Redesign conceitual do app de uma rede de cinemas: do diagnóstico às telas e ao design system, com o que é hipótese separado do que foi decidido.">
-  <meta property="og:image" content="../assets/img/og.png">
+  <meta property="og:image" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/assets/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Telas do redesign conceitual do app Circuito Cinemas.">
@@ -255,7 +257,7 @@
 
               <h3 class="h3">Auditoria heurística: 34 pontos de atrito</h3>
               <div class="read">
-                <p>Avaliei o app atual com as heurísticas de Nielsen e registrei 34 pontos de atrito: 11 críticos, 14 moderados e 9 menores, em quatro categorias. A prancha detalha 16 deles, quatro por categoria.</p>
+                <p>Avaliei o app atual com as heurísticas de Nielsen e registrei 34 pontos de atrito: 11 críticos, 14 moderados e 9 menores, em quatro categorias. A prancha detalha 16 deles, quatro por categoria. Os outros 18 não estão detalhados no material do projeto, então o total vem da contagem registrada na prancha e não de uma lista que eu possa mostrar. A gravidade (crítico, moderado, menor) é a minha classificação: o material não registra um critério formal de pontuação.</p>
               </div>
               <div class="table-wrap table-wrap--stack">
                 <table class="table table--stack">
@@ -332,6 +334,43 @@
                 </a>
                 <figcaption>Mapa de insights completo, com os seis achados do projeto.</figcaption>
               </div>
+
+              <h3 class="h3">Os três problemas que priorizei</h3>
+              <div class="read">
+                <p>Dos quatro problemas da seção anterior, priorizei três. A ordem é minha leitura do que a auditoria registrou e não foi validada com usuários. O quarto problema, o excesso de opções na home, ficou fora da lista, mas a nova home também o trata. <span class="tag tag--hyp">Minha priorização</span></p>
+              </div>
+              <div class="decisions">
+                <article class="decision">
+                  <h4><span class="decision__rank">1</span>Navegação confusa</h4>
+                  <dl>
+                    <div><dt>Evidência</dt><dd>Na prancha da auditoria, os quatro pontos detalhados da categoria Navegação são críticos, a maior concentração entre as categorias: barra inferior com cinco ou mais itens sem distinção entre função e destino, sem indicador de localização em fluxos profundos, botão voltar inconsistente e links diretos quebrados em notificações push.</dd></div>
+                    <div><dt>Dificuldade possível</dt><dd>Não saber onde se está, como voltar, nem onde encontrar o que fica em menus secundários.</dd></div>
+                    <div><dt>Por que veio primeiro</dt><dd>É a categoria mais grave na prancha e afeta todas as telas, não só um fluxo.</dd></div>
+                    <div><dt>Solução proposta</dt><dd>Barra inferior com quatro abas de função clara (Home, Compras, Clube e Menu) e indicador de progresso nos fluxos.</dd></div>
+                    <div><dt>Limite da análise</dt><dd>A auditoria é minha, feita sobre as telas, e não mostra com que frequência as pessoas esbarram nesses problemas. A taxonomia da prancha (cinco destinos) e as telas do Figma (quatro abas) ainda divergem, como aponto em Em aberto.</dd></div>
+                  </dl>
+                </article>
+                <article class="decision">
+                  <h4><span class="decision__rank">2</span>Compra fragmentada</h4>
+                  <dl>
+                    <div><dt>Evidência</dt><dd>O fluxo atual passa por sete etapas: buscar, filtrar, escolher cinema, horário, poltrona, extras e pagar. A contagem é minha e inclui buscar e filtrar. O indicador do próprio app, na tela Antes, mostra cinco passos.</dd></div>
+                    <div><dt>Dificuldade possível</dt><dd>Mais telas e decisões até pagar, e pouca revisão antes de confirmar. A proto-persona Mariana, que é hipótese, sofre com isso.</dd></div>
+                    <div><dt>Por que veio em segundo</dt><dd>Comprar o ingresso é a tarefa principal do app. A auditoria não tem uma categoria só para a compra, então o peso dela vem da minha leitura do fluxo, e não de uma contagem.</dd></div>
+                    <div><dt>Solução proposta</dt><dd>Fluxo de quatro etapas (Sessão, Poltronas, Extras e Pagar), com progresso visível e resumo completo antes de confirmar.</dd></div>
+                    <div><dt>Limite da análise</dt><dd>Menos etapas não provam uma compra mais fácil: nenhuma tarefa foi testada com pessoas. A verificação no protótipo está em Compra: de 7 para 4 etapas.</dd></div>
+                  </dl>
+                </article>
+                <article class="decision">
+                  <h4><span class="decision__rank">3</span>Club invisível</h4>
+                  <dl>
+                    <div><dt>Evidência</dt><dd>O Circuito Club ficava em menus secundários, fora da barra inferior. Na tela de compra, aparece como um aviso para fazer login e recarregar a página.</dd></div>
+                    <div><dt>Dificuldade possível</dt><dd>Quem já participa do programa pode não achar o saldo nem saber quantos pontos faltam para um ingresso grátis.</dd></div>
+                    <div><dt>Por que veio em terceiro</dt><dd>Não impede a compra, mas é, na minha análise, o principal diferencial da rede, e por isso entra cedo na solução.</dd></div>
+                    <div><dt>Solução proposta</dt><dd>Clube como aba da barra inferior, cartão com nível e pontos na home e aviso de pontos no pagamento.</dd></div>
+                    <div><dt>Limite da análise</dt><dd>Não tenho dados de uso do programa. A hipótese de que ele é pouco descoberto vem só das telas.</dd></div>
+                  </dl>
+                </article>
+              </div>
             </section>
 
             <!-- 7. Decisões e fluxos -->
@@ -368,6 +407,11 @@
                   <li><strong>Pagar:</strong> resumo completo antes de confirmar.</li>
                 </ul>
                 <p>Um indicador de progresso fica visível durante todo o fluxo, para que a pessoa saiba sempre onde está. A redução é de 43% no número de etapas (de 7 para 4). Isso é uma contagem do desenho, não um resultado medido.</p>
+              </div>
+              <div class="callout">
+                <span class="tag tag--doc">Verificação no protótipo</span>
+                <p><strong>As quatro etapas aparecem no arquivo do Figma.</strong> O indicador de progresso do pagamento mostra quatro etapas, com os nomes Sessão, Assentos, Pagamento e Confirmar. O arquivo traz as telas Escolha de Cinema, Escolha de Assentos, Adicionar Produtos, Checkout e Compra Confirmada. Por isso o número quatro vem do indicador, e não da quantidade de telas, e os nomes diferem dos usados na lista acima.</p>
+                <p>O sete do fluxo atual é a minha contagem e inclui buscar e filtrar. O indicador do app atual, na tela Antes, mostra cinco passos. Nenhuma das duas contagens foi testada com pessoas.</p>
               </div>
 
               <h3 class="h3">Home: de catálogo a descoberta</h3>
@@ -520,7 +564,7 @@
 
               <h3 class="h3">Resultados esperados <span class="tag tag--hyp">Hipótese</span></h3>
               <div class="read">
-                <p>Estimei o impacto a partir de benchmarks de projetos semelhantes de redesign de apps. São metas para validar, e não resultados medidos.</p>
+                <p>A prancha original do projeto descreve estes números como estimativas baseadas em benchmarks de projetos similares, sem citar quais. Como não há fonte, trato todos como metas hipotéticas para validar, e não como previsão nem como resultado medido.</p>
               </div>
               <div class="table-wrap">
                 <table class="table">
@@ -544,6 +588,41 @@
                 <li><span><strong>Teste A/B da nova home</strong>Comparar a home de descoberta com a atual.</span></li>
                 <li><span><strong>Instrumentação com análise de funil</strong>Medir as etapas da compra com uma ferramenta como o Mixpanel.</span></li>
               </ol>
+
+              <h3 class="h3">Plano de teste de usabilidade <span class="tag tag--hyp">Proposta</span></h3>
+              <div class="read">
+                <p>Um teste moderado no protótipo do Figma, com cerca de cinco pessoas que vão ao cinema com alguma frequência. Ainda não aconteceu.</p>
+              </div>
+              <div class="cards cards--3">
+                <div>
+                  <h4>Tarefas</h4>
+                  <ol>
+                    <li>Comprar dois ingressos para uma sessão de sábado à noite, com poltronas lado a lado, e pagar com Pix.</li>
+                    <li>Descobrir quantos pontos faltam para um ingresso grátis no Circuito Club.</li>
+                    <li>Escolher um filme para ver hoje, sem saber qual.</li>
+                    <li>Voltar da escolha de poltronas para a escolha de sessão.</li>
+                  </ol>
+                </div>
+                <div>
+                  <h4>O que observar</h4>
+                  <ul>
+                    <li>Erros e toques fora do alvo.</li>
+                    <li>Hesitações e onde a pessoa para ou volta.</li>
+                    <li>Se entende os nomes: Compras ou Ingressos, e as quatro etapas.</li>
+                    <li>Se conclui sem ajuda e em quanto tempo.</li>
+                    <li>O que diz em voz alta enquanto navega.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>O que eu poderia mudar</h4>
+                  <ul>
+                    <li>Se poucos acharem o Club na barra, reposiciono ou renomeio a aba.</li>
+                    <li>Se Compras e Ingressos confundirem, escolho um nome e padronizo nas telas.</li>
+                    <li>Se o indicador de quatro etapas não for entendido, revejo os rótulos.</li>
+                    <li>Se a escolha de poltronas concentrar os erros, simplifico o mapa.</li>
+                  </ul>
+                </div>
+              </div>
 
               <h3 class="h3">O que aprendi</h3>
               <div class="cards cards--2">

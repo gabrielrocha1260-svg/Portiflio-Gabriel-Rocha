@@ -125,31 +125,6 @@
     }
   }
 
-  /* ---------- Copiar e-mail ---------- */
-  var copyBtn = doc.querySelector("[data-copy]");
-  if (copyBtn) {
-    var status = doc.getElementById(copyBtn.getAttribute("data-copy-status"));
-    var timer;
-    copyBtn.addEventListener("click", function () {
-      var text = copyBtn.getAttribute("data-copy");
-      var done = function (msg) {
-        if (status) status.textContent = msg;
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          if (status) status.textContent = "";
-        }, 3500);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(
-          function () { done("E-mail copiado."); },
-          function () { done("Não consegui copiar. Selecione o endereço e copie manualmente."); }
-        );
-      } else {
-        done("Seu navegador não permite copiar daqui. Selecione o endereço e copie manualmente.");
-      }
-    });
-  }
-
   /* ---------- Ampliar imagens ---------- */
   var zoomLinks = [].slice.call(doc.querySelectorAll("a[data-lightbox]"));
   if (zoomLinks.length && typeof HTMLDialogElement === "function") {

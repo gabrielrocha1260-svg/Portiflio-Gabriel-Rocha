@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/sitemap.xml
