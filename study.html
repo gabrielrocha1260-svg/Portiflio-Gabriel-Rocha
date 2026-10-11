@@ -9,13 +9,15 @@
   <meta name="theme-color" content="#0A1630">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
 
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Gabriel Rocha">
   <meta property="og:title" content="Study, estudo de caso | Gabriel Rocha">
   <meta property="og:description" content="Um aplicativo de estudos que está no ar: trilhas com videoaula, leitura, prática e avaliação, sessões de foco e acompanhamento de progresso.">
-  <meta property="og:image" content="../assets/img/og.png">
+  <meta property="og:image" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/assets/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Telas do aplicativo Study.">
@@ -343,21 +345,25 @@
                 <div>
                   <h4>Tema do sistema, claro ou escuro</h4>
                   <p>Por padrão o app segue o tema do aparelho, e o escuro é o ponto de partida quando o sistema não informa. A escolha fica salva no navegador. No tema claro, as cores dos módulos escurecem para manter o contraste.</p>
+                  <p class="to-validate"><strong>A validar.</strong> Não testei com pessoas se o tema claro funciona bem em uso real, por exemplo ao ar livre.</p>
                   <span class="tag tag--done">Implementado</span>
                 </div>
                 <div>
                   <h4>Uma cor por tipo de módulo</h4>
                   <p>Videoaula, leitura, prática e avaliação têm cor, ícone e rótulo próprios, então a informação nunca depende só da cor.</p>
+                  <p class="to-validate"><strong>A validar.</strong> Não sei se as pessoas distinguem os quatro tipos de relance. Não testei.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
                 <div>
                   <h4>Cores de feedback não identificam matérias</h4>
                   <p>Verde, âmbar e vermelho ficam reservados a sucesso, alerta e erro, para que ninguém confunda uma matéria com um estado.</p>
+                  <p class="to-validate"><strong>A validar.</strong> É uma regra de projeto. Não observei ninguém confundindo ou deixando de confundir.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
                 <div>
                   <h4>Metas de acessibilidade nos tokens</h4>
                   <p>Texto com contraste mínimo de 4,5:1 sobre as superfícies, contorno de campos com pelo menos 3:1, controles de toque de 44 px, rótulos para tecnologias assistivas e respeito à preferência por movimento reduzido.</p>
+                  <p class="to-validate"><strong>A validar.</strong> São metas dos tokens. Não testei com leitor de tela nem com pessoas que usam tecnologias assistivas.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
               </div>
@@ -384,6 +390,7 @@
                   <li>A barra de abas ganhou rótulos de texto, além dos ícones.</li>
                   <li>“Streak” virou “Ofensiva”, com uma frase que explica o termo.</li>
                 </ul>
+                <p>O material do projeto registra o que mudou, mas não o motivo. Nenhuma dessas mudanças foi validada com pessoas. <span class="tag tag--soon">Em aberto</span></p>
               </div>
               <div class="panel">
                 <div class="compare compare--narrow">
@@ -454,6 +461,25 @@
                 <div class="spec__row"><dt>Hospedagem</dt><dd>Render, plano gratuito.</dd></div>
               </dl>
 
+              <h3 class="h3">Quem fez o quê</h3>
+              <div class="cards cards--3">
+                <div>
+                  <h4>Decisões de design</h4>
+                  <p>Design de produto, telas no Figma, design system e as decisões de interface descritas neste case. É a parte que assino. O app traz o crédito “Design System by Gabriel Rocha”.</p>
+                  <span class="tag tag--doc">Design</span>
+                </div>
+                <div>
+                  <h4>Conteúdo gerado dentro do produto</h4>
+                  <p>Quem gera a jornada, a leitura, o quiz e os flashcards, quando alguém usa o app, é a API do Gemini. Essa é a IA que está no produto.</p>
+                  <span class="tag tag--done">Implementado</span>
+                </div>
+                <div>
+                  <h4>Escrita do código</h4>
+                  <p>Este case ainda não registra como o código foi escrito, nem com quais ferramentas. Até isso estar documentado, a seção acima descreve o que existe no código, sem atribuí-lo a mim.</p>
+                  <span class="tag tag--soon">Em aberto</span>
+                </div>
+              </div>
+
               <h3 class="h3">Desafios técnicos</h3>
               <div class="read">
                 <p><strong>Respostas de IA nem sempre vêm no formato esperado.</strong> O servidor valida cada resposta antes de entregá-la: o quiz precisa de 10 questões com uma alternativa correta, os flashcards ficam entre 4 e 12, a jornada exige ao menos dois módulos de estudo mais uma revisão e uma avaliação finais, e a leitura precisa ter pelo menos 60 palavras. Quando a resposta não passa, o servidor tenta de novo e passa por uma cadeia de modelos alternativos.</p>
@@ -515,6 +541,42 @@
                 <div><h4>Separar o que existe do que se assume</h4><p>Escrever este case me obrigou a dizer o que o produto faz e o que ele só supõe sobre quem estuda.</p></div>
               </div>
 
+              <h3 class="h3">Teste de usabilidade <span class="tag tag--hyp">Em andamento</span></h3>
+              <div class="read">
+                <p>Um teste moderado na demo pública, com cerca de cinco pessoas que estudam por conta própria. As sessões começaram em outubro de 2026, e os resultados entram neste case quando o teste terminar.</p>
+              </div>
+              <div class="cards cards--3">
+                <div>
+                  <h4>Tarefas</h4>
+                  <ol>
+                    <li>Entrar, encontrar um conteúdo em Explorar e adicioná-lo à coleção.</li>
+                    <li>Abrir a jornada e concluir o primeiro módulo.</li>
+                    <li>Fazer uma sessão de foco de 10 minutos e ler o resumo.</li>
+                    <li>Descobrir quanto tempo estudou na semana, em Progresso.</li>
+                    <li>Trocar o tema e a duração padrão do foco nas Configurações.</li>
+                  </ol>
+                </div>
+                <div>
+                  <h4>O que observar</h4>
+                  <ul>
+                    <li>Erros e hesitações em cada tarefa.</li>
+                    <li>Se entende “Ofensiva” sem ajuda.</li>
+                    <li>Se percebe por que os módulos seguintes estão bloqueados.</li>
+                    <li>Se começa por Explorar ou pela jornada.</li>
+                    <li>Se acha a sessão de foco sem o cronômetro na Home.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>O que eu poderia mudar</h4>
+                  <ul>
+                    <li>Se poucos acharem a sessão de foco, devolvo o cronômetro à Home.</li>
+                    <li>Se “Ofensiva” não for entendida, troco o nome ou reforço a legenda.</li>
+                    <li>Se o bloqueio dos módulos frustrar, libero a ordem.</li>
+                    <li>Se as cores dos módulos se confundirem, revejo a paleta.</li>
+                  </ul>
+                </div>
+              </div>
+
               <h3 class="h3">Próximos passos</h3>
               <div class="read">
                 <p><strong>Já listados no app como Em breve</strong> <span class="tag tag--soon">Em breve</span></p>
@@ -525,7 +587,7 @@
                 </ul>
                 <p class="list-title"><strong>Passos que eu daria em seguida</strong></p>
                 <ul>
-                  <li>Validar a hipótese do problema com entrevistas e testes de usabilidade com estudantes.</li>
+                  <li>Concluir os testes de usabilidade e validar a hipótese do problema com entrevistas com estudantes.</li>
                   <li>Validar o login no servidor e criar contas, para sincronizar os dados entre aparelhos.</li>
                   <li>Separar o front-end em módulos e gerar um build, sem compilar no navegador.</li>
                   <li>Permitir que a pessoa sinalize erros no conteúdo gerado por IA.</li>
