@@ -168,6 +168,25 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .menu-toggle[aria-expanded="true"] .menu-toggle__icon::before{top:50%;transform:rotate(45deg)}
 .menu-toggle[aria-expanded="true"] .menu-toggle__icon::after{top:50%;transform:rotate(-45deg)}
 
+/* Seletor de idioma PT | EN. Só aparece com JavaScript, que é quem faz a troca.
+   No desktop fica depois da navegação; no celular, ao lado do botão Menu. */
+.site-header__bar>.wordmark{margin-right:auto}
+.lang-switch{display:none;order:1;align-items:center;flex:none;font-size:var(--fs-small);font-weight:500;letter-spacing:.02em;color:var(--on-dark-3)}
+.js .lang-switch{display:inline-flex}
+.lang-switch__btn{display:inline-flex;align-items:center;justify-content:center;min-width:2.25rem;min-height:2.75rem;padding:0 .3rem;border-radius:999px;color:var(--on-dark-3);text-decoration:none;transition:color .2s}
+.lang-switch__btn:hover{color:var(--on-dark)}
+.lang-switch__btn[aria-pressed="true"]{color:var(--on-dark);font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.4em}
+.lang-switch__sep{opacity:.6}
+/* Telas muito estreitas: nome, idioma e Menu continuam numa linha só. */
+@media (max-width:360px){
+  .js .site-header__bar{gap:.5rem}
+  .js .wordmark{white-space:nowrap}
+  .js .lang-switch__btn{min-width:1.875rem;padding:0 .15rem}
+  .js .menu-toggle{padding:0 .8rem}
+}
+/* Enquanto o inglês é aplicado na primeira carga, a página não pisca em português. */
+.i18n-pending body{visibility:hidden}
+
 /* ---------- Botões e links ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:0 1.5rem;border-radius:999px;border:1px solid transparent;font-weight:600;font-size:var(--fs-ui);text-decoration:none;white-space:nowrap;transition:background-color .2s,color .2s,border-color .2s,transform .2s var(--ease)}
 .btn--sm{min-height:2.5rem;padding:0 1.1rem;font-size:.875rem}
@@ -533,6 +552,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .nav .btn{display:none}
   .js .site-header__bar{flex-wrap:nowrap;padding-block:0}
   .js .menu-toggle{display:inline-flex}
+  .js .lang-switch{order:0;margin-right:-.25rem}
   .js .nav{position:fixed;inset:4.25rem 0 0 0;z-index:40;display:none;width:auto;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:1.5rem var(--gutter) 2rem;background:var(--navy-900);overflow:auto}
   .js .nav.is-open{display:flex}
   .js .nav .btn{display:inline-flex}
@@ -588,7 +608,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   :root{--max:88rem;--fs-hero:7.5rem}
 }
 @media print{
-  .site-header,.toc,.toc-mobile,.next,.menu-toggle{display:none}
+  .site-header,.toc,.toc-mobile,.next,.menu-toggle,.lang-switch{display:none}
   body{background:#fff;color:#000}
 }
 

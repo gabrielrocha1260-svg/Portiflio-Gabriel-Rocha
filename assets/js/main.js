@@ -6,6 +6,11 @@
   var doc = document;
   var root = doc.documentElement;
 
+  /* Textos criados aqui seguem o idioma escolhido (ver i18n.js). */
+  function t(key, pt) {
+    return window.SiteI18n ? window.SiteI18n.t(key, pt) : pt;
+  }
+
   /* ---------- Menu móvel ---------- */
   var toggle = doc.querySelector(".menu-toggle");
   var nav = doc.getElementById("site-nav");
@@ -14,10 +19,14 @@
   function setMenu(open) {
     if (!toggle || !nav) return;
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.querySelector(".menu-toggle__label").textContent = open ? "Fechar" : "Menu";
+    toggle.querySelector(".menu-toggle__label").textContent = open ? t("ui.close", "Fechar") : t("ui.menu", "Menu");
     nav.classList.toggle("is-open", open);
     root.classList.toggle("menu-open", open);
   }
+
+  doc.addEventListener("langchange", function () {
+    if (toggle && nav) setMenu(toggle.getAttribute("aria-expanded") === "true");
+  });
 
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
@@ -121,6 +130,7 @@
           if (cur) label.textContent = cur.textContent;
         };
         new MutationObserver(update).observe(tocMobile, { subtree: true, attributes: true, attributeFilter: ["aria-current"] });
+        doc.addEventListener("langchange", update);
       }
     }
   }
@@ -134,12 +144,18 @@
     dlg.innerHTML =
       '<div class="lightbox__body">' +
       '<div class="lightbox__bar"><span id="lightbox-title"></span>' +
-      '<button type="button" class="lightbox__close">Fechar</button></div>' +
+      '<button type="button" class="lightbox__close"></button></div>' +
       '<div class="lightbox__img"><img alt="" decoding="async"></div>' +
       "</div>";
     doc.body.appendChild(dlg);
     var dImg = dlg.querySelector("img");
     var dTitle = dlg.querySelector("#lightbox-title");
+    var dClose = dlg.querySelector(".lightbox__close");
+    var closeLabel = function () {
+      dClose.textContent = t("ui.close", "Fechar");
+    };
+    closeLabel();
+    doc.addEventListener("langchange", closeLabel);
 
     zoomLinks.forEach(function (a) {
       a.addEventListener("click", function (e) {
@@ -183,11 +199,22 @@
     if (reduce || seen || !full) {
       title.classList.add("is-static");
     } else {
-      typeTitle(title, full);
+      typeTitle(title);
     }
   }
 
-  function typeTitle(el, text) {
+  function typeTitle(el) {
+    var fontsReady = doc.fonts && doc.fonts.ready ? doc.fonts.ready : Promise.resolve();
+    var cap = new Promise(function (resolve) { setTimeout(resolve, 600); });
+    Promise.race([fontsReady, cap]).then(function () {
+      /* Lê o texto só agora: o idioma pode ter mudado durante a espera. */
+      if (el.classList.contains("is-static")) return;
+      var text = el.textContent.replace(/\s+/g, " ").trim();
+      if (text) build(el, text);
+    });
+  }
+
+  function build(el, text) {
     var chars = Array.from(text);
     var sr = doc.createElement("span");
     var vis = doc.createElement("span");
@@ -211,6 +238,8 @@
 
     var n = 0;
     function step() {
+      /* A troca de idioma no meio da digitação mostra o título inteiro. */
+      if (!el.classList.contains("is-typing")) return;
       n += 1;
       done.textContent = chars.slice(0, n).join("");
       rest.textContent = chars.slice(n).join("");
@@ -224,10 +253,6 @@
       setTimeout(step, wait);
     }
 
-    var fontsReady = doc.fonts && doc.fonts.ready ? doc.fonts.ready : Promise.resolve();
-    var cap = new Promise(function (resolve) { setTimeout(resolve, 600); });
-    Promise.race([fontsReady, cap]).then(function () {
-      setTimeout(step, 350);
-    });
+    setTimeout(step, 350);
   }
 })();

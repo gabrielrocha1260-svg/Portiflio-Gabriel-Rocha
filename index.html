@@ -3,49 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gabriel Rocha | Product Design e UX/UI</title>
-  <meta name="description" content="Portfólio de Gabriel Rocha, designer gráfico em transição para Product Design e UX/UI. Inclui o estudo de caso do Circuito Cinemas e o aplicativo de estudos Study.">
+  <title data-i18n="home.meta.title">Gabriel Rocha | Product Design e UX/UI</title>
+  <meta name="description" content="Portfólio de Gabriel Rocha, designer gráfico em transição para Product Design e UX/UI. Inclui o estudo de caso do Circuito Cinemas e o aplicativo de estudos Study." data-i18n-content="home.meta.description">
   <meta name="author" content="Gabriel Rocha">
   <meta name="theme-color" content="#0A1630">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/">
+  <link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/">
+  <link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Gabriel Rocha">
-  <meta property="og:title" content="Gabriel Rocha | Product Design e UX/UI">
-  <meta property="og:description" content="Dois projetos de produto digital: o redesign conceitual do app Circuito Cinemas e o Study, um aplicativo de estudos que está no ar.">
+  <meta property="og:title" content="Gabriel Rocha | Product Design e UX/UI" data-i18n-content="home.meta.og-title">
+  <meta property="og:description" content="Dois projetos de produto digital: o redesign conceitual do app Circuito Cinemas e o Study, um aplicativo de estudos que está no ar." data-i18n-content="home.meta.og-description">
   <meta property="og:image" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/assets/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Gabriel Rocha, Product Design e UX/UI, com telas dos projetos Circuito Cinemas e Study.">
+  <meta property="og:image:alt" content="Gabriel Rocha, Product Design e UX/UI, com telas dos projetos Circuito Cinemas e Study." data-i18n-content="home.meta.og-image-alt">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preload" href="assets/fonts/inter-display-500.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script>document.documentElement.className += " js";</script>
+  <script>(function(d){d.className+=" js";var l=null;try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("site-lang")}catch(e){}if(l==="en"){d.lang="en";d.className+=" i18n-pending";setTimeout(function(){d.classList.remove("i18n-pending")},2500)}})(document.documentElement);</script>
 </head>
 <body data-page-home>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo" data-i18n="common.pular-para-o-conteudo">Pular para o conteúdo</a>
 
   <header class="site-header">
     <div class="container site-header__bar">
-      <a class="wordmark" href="#inicio" aria-label="Gabriel Rocha, início">Gabriel Rocha</a>
+      <a class="wordmark" href="#inicio" aria-label="Gabriel Rocha, início" data-i18n-aria-label="home.header.gabriel-rocha-inicio">Gabriel Rocha</a>
+      <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="ui.lang-group">
+        <button class="lang-switch__btn" type="button" data-set-lang="pt" lang="pt-BR" aria-pressed="true">PT<span class="visually-hidden"> – Português</span></button>
+        <span class="lang-switch__sep" aria-hidden="true">|</span>
+        <button class="lang-switch__btn" type="button" data-set-lang="en" lang="en" aria-pressed="false">EN<span class="visually-hidden"> – English</span></button>
+      </div>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="menu-toggle__icon" aria-hidden="true"></span>
         <span class="menu-toggle__label">Menu</span>
       </button>
-      <nav class="nav" id="site-nav" aria-label="Principal">
+      <nav class="nav" id="site-nav" aria-label="Principal" data-i18n-aria-label="common.principal">
         <ul class="nav__list">
-          <li><a class="nav__link" href="#inicio">Início</a></li>
-          <li><a class="nav__link" href="#projetos">Projetos</a></li>
-          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#inicio" data-i18n="common.inicio">Início</a></li>
+          <li><a class="nav__link" href="#projetos" data-i18n="common.projetos">Projetos</a></li>
+          <li><a class="nav__link" href="#sobre" data-i18n="common.sobre">Sobre</a></li>
         </ul>
-        <a class="btn btn--light btn--sm" href="#contato">Falar comigo</a>
+        <a class="btn btn--light btn--sm" href="#contato" data-i18n="common.falar-comigo">Falar comigo</a>
       </nav>
     </div>
   </header>
@@ -61,23 +70,23 @@
       </div>
       <div class="container hero__inner">
         <div class="hero__text">
-          <p class="hero__role">Gabriel Rocha, Product Design e UX/UI</p>
-          <h1 class="hero__title" id="hero-title" data-typing>Interfaces simples, decisões claras.</h1>
-          <p class="hero__intro">Sou designer gráfico a caminho de Product Design. Aqui estão dois projetos que mostram como investigo um problema, tomo decisões de interface e explico o porquê de cada uma.</p>
+          <p class="hero__role" data-i18n="home.inicio.gabriel-rocha-product-design">Gabriel Rocha, Product Design e UX/UI</p>
+          <h1 class="hero__title" id="hero-title" data-typing data-i18n="home.inicio.interfaces-simples-decisoes-claras">Interfaces simples, decisões claras.</h1>
+          <p class="hero__intro" data-i18n="home.inicio.sou-designer-grafico-a">Sou designer gráfico a caminho de Product Design. Aqui estão dois projetos que mostram como investigo um problema, tomo decisões de interface e explico o porquê de cada uma.</p>
           <div class="hero__actions">
-            <a class="btn btn--light" href="#projetos">Ver projetos</a>
-            <a class="btn btn--outline" href="#sobre">Conhecer meu perfil</a>
-            <a class="link link--arrow hero__contact" href="#contato">Entrar em contato</a>
+            <a class="btn btn--light" href="#projetos" data-i18n="home.inicio.ver-projetos">Ver projetos</a>
+            <a class="btn btn--outline" href="#sobre" data-i18n="home.inicio.conhecer-meu-perfil">Conhecer meu perfil</a>
+            <a class="link link--arrow hero__contact" href="#contato" data-i18n="home.inicio.entrar-em-contato">Entrar em contato</a>
           </div>
         </div>
         <div class="hero__stage">
-          <a class="hero__phone" href="projetos/circuito-cinemas.html" aria-label="Circuito Cinemas, redesign conceitual: abrir estudo de caso">
-            <span class="frame-label"><strong>Circuito Cinemas</strong><span>Redesign conceitual</span></span>
-            <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" alt="Home redesenhada do Circuito Cinemas em tema escuro, com filme em destaque, cartão do Circuito Club e carrosséis Em breve e Em cartaz." fetchpriority="high">
+          <a class="hero__phone" href="projetos/circuito-cinemas.html" aria-label="Circuito Cinemas, redesign conceitual: abrir estudo de caso" data-i18n-aria-label="home.inicio.circuito-cinemas-redesign-conceitual">
+            <span class="frame-label"><strong>Circuito Cinemas</strong><span data-i18n="home.inicio.redesign-conceitual">Redesign conceitual</span></span>
+            <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" alt="Home redesenhada do Circuito Cinemas em tema escuro, com filme em destaque, cartão do Circuito Club e carrosséis Em breve e Em cartaz." fetchpriority="high" data-i18n-alt="home.inicio.home-redesenhada-do-circuito">
           </a>
-          <a class="hero__phone" href="projetos/study.html" aria-label="Study, aplicativo de estudos: abrir estudo de caso">
-            <span class="frame-label"><strong>Study</strong><span>App de estudos, no ar</span></span>
-            <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" alt="Tela Início do Study em tema escuro, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia." fetchpriority="high">
+          <a class="hero__phone" href="projetos/study.html" aria-label="Study, aplicativo de estudos: abrir estudo de caso" data-i18n-aria-label="home.inicio.study-aplicativo-de-estudos">
+            <span class="frame-label"><strong>Study</strong><span data-i18n="home.inicio.app-de-estudos-no">App de estudos, no ar</span></span>
+            <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" alt="Tela Início do Study em tema escuro, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia." fetchpriority="high" data-i18n-alt="home.inicio.tela-inicio-do-study">
           </a>
         </div>
       </div>
@@ -87,38 +96,38 @@
     <section class="section on-light" id="projetos" aria-labelledby="projetos-title">
       <div class="container">
         <div class="section__head">
-          <h2 class="h2" id="projetos-title">Dois projetos, dois tipos de problema</h2>
-          <p class="section__lead">Um redesign conceitual, feito a partir da análise de um app existente, e um aplicativo funcional que desenhei e que está no ar. Em cada case, o que foi decidido, o que foi construído e o que ainda é hipótese aparecem separados.</p>
+          <h2 class="h2" id="projetos-title" data-i18n="home.projetos.dois-projetos-dois-tipos">Dois projetos, dois tipos de problema</h2>
+          <p class="section__lead" data-i18n="home.projetos.um-redesign-conceitual-feito">Um redesign conceitual, feito a partir da análise de um app existente, e um aplicativo funcional que desenhei e que está no ar. Em cada case, o que foi decidido, o que foi construído e o que ainda é hipótese aparecem separados.</p>
         </div>
 
         <article class="project" aria-labelledby="proj-cc">
           <div class="project__media">
             <div class="stage stage--cinema">
               <figure class="stage__item">
-                <figcaption class="frame-label"><strong>Antes</strong><span>App atual</span></figcaption>
-                <img class="shot" src="assets/img/cc-antes-ingressos.webp" width="570" height="1232" loading="lazy" alt="Tela de escolha de ingressos do app atual do Circuito Cinemas, com indicador de cinco etapas, aviso do Circuito Club e lista de promoções.">
+                <figcaption class="frame-label"><strong data-i18n="common.antes">Antes</strong><span data-i18n="home.projetos.app-atual">App atual</span></figcaption>
+                <img class="shot" src="assets/img/cc-antes-ingressos.webp" width="570" height="1232" loading="lazy" alt="Tela de escolha de ingressos do app atual do Circuito Cinemas, com indicador de cinco etapas, aviso do Circuito Club e lista de promoções." data-i18n-alt="common.tela-de-escolha-de">
               </figure>
               <figure class="stage__item">
-                <figcaption class="frame-label"><strong>Depois</strong><span>Nova home</span></figcaption>
-                <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" loading="lazy" alt="Home redesenhada do Circuito Cinemas, com filme em destaque, cartão do Circuito Club com 9 de 20 pontos e seções Em breve e Em cartaz.">
+                <figcaption class="frame-label"><strong data-i18n="common.depois">Depois</strong><span data-i18n="common.nova-home">Nova home</span></figcaption>
+                <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" loading="lazy" alt="Home redesenhada do Circuito Cinemas, com filme em destaque, cartão do Circuito Club com 9 de 20 pontos e seções Em breve e Em cartaz." data-i18n-alt="common.home-redesenhada-do-circuito">
               </figure>
             </div>
           </div>
           <div class="project__text">
-            <p class="project__kind">Estudo conceitual de redesign</p>
+            <p class="project__kind" data-i18n="common.estudo-conceitual-de-redesign">Estudo conceitual de redesign</p>
             <h3 class="project__title" id="proj-cc"><a href="projetos/circuito-cinemas.html">Circuito Cinemas</a></h3>
-            <p class="project__desc">Auditoria do app de uma rede de cinemas, com 34 pontos de atrito mapeados, e uma proposta que reorganiza a navegação, encurta a compra de 7 para 4 etapas e põe o programa de fidelidade na primeira camada.</p>
+            <p class="project__desc" data-i18n="home.projetos.auditoria-do-app-de">Auditoria do app de uma rede de cinemas, com 34 pontos de atrito mapeados, e uma proposta que reorganiza a navegação, encurta a compra de 7 para 4 etapas e põe o programa de fidelidade na primeira camada.</p>
             <dl class="facts">
-              <div class="facts__row"><dt>Problema</dt><dd>Compra em 7 etapas, navegação confusa e programa de fidelidade escondido, segundo a auditoria do app.</dd></div>
-              <div class="facts__row"><dt>Minha contribuição</dt><dd>UX/UI Designer: auditoria, benchmark, arquitetura, fluxos, telas e design system.</dd></div>
-              <div class="facts__row"><dt>Evidências</dt><dd>Auditoria e benchmark feitos por mim. Sem pesquisa com usuários e sem testes.</dd></div>
-              <div class="facts__row"><dt>Ferramentas</dt><dd>Figma e Notion, 2026</dd></div>
+              <div class="facts__row"><dt data-i18n="common.problema">Problema</dt><dd data-i18n="home.projetos.compra-em-7-etapas">Compra em 7 etapas, navegação confusa e programa de fidelidade escondido, segundo a auditoria do app.</dd></div>
+              <div class="facts__row"><dt data-i18n="home.projetos.minha-contribuicao">Minha contribuição</dt><dd data-i18n="home.projetos.ux-ui-designer-auditoria">UX/UI Designer: auditoria, benchmark, arquitetura, fluxos, telas e design system.</dd></div>
+              <div class="facts__row"><dt data-i18n="home.projetos.evidencias">Evidências</dt><dd data-i18n="home.projetos.auditoria-e-benchmark-feitos">Auditoria e benchmark feitos por mim. Sem pesquisa com usuários e sem testes.</dd></div>
+              <div class="facts__row"><dt data-i18n="common.ferramentas">Ferramentas</dt><dd data-i18n="home.projetos.figma-e-notion-2026">Figma e Notion, 2026</dd></div>
             </dl>
             <div class="project__links">
-              <a class="btn btn--dark btn--sm" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener">Abrir protótipo<span class="visually-hidden"> no Figma (abre em nova aba)</span></a>
-              <a class="link link--arrow" href="projetos/circuito-cinemas.html">Ler estudo de caso</a>
+              <a class="btn btn--dark btn--sm" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener" data-i18n="home.projetos.abrir-prototipo-no-figma">Abrir protótipo<span class="visually-hidden"> no Figma (abre em nova aba)</span></a>
+              <a class="link link--arrow" href="projetos/circuito-cinemas.html" data-i18n="home.projetos.ler-estudo-de-caso">Ler estudo de caso</a>
             </div>
-            <p class="demo-note">O protótipo abre no Figma, na tela Home.</p>
+            <p class="demo-note" data-i18n="home.projetos.o-prototipo-abre-no">O protótipo abre no Figma, na tela Home.</p>
           </div>
         </article>
 
@@ -126,34 +135,34 @@
           <div class="project__media">
             <div class="stage stage--study">
               <figure class="stage__item">
-                <figcaption class="frame-label"><strong>Início</strong><span>Recomendado agora</span></figcaption>
-                <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia.">
+                <figcaption class="frame-label"><strong data-i18n="common.inicio">Início</strong><span data-i18n="common.recomendado-agora">Recomendado agora</span></figcaption>
+                <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia." data-i18n-alt="home.projetos.tela-inicio-do-study">
               </figure>
               <figure class="stage__item">
-                <figcaption class="frame-label"><strong>Jornada</strong><span>Módulos em ordem</span></figcaption>
-                <img class="shot" src="assets/img/study-jornada-progresso.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 14% concluído, próximo passo e lista de módulos de leitura e videoaula.">
+                <figcaption class="frame-label"><strong data-i18n="home.projetos.jornada">Jornada</strong><span data-i18n="home.projetos.modulos-em-ordem">Módulos em ordem</span></figcaption>
+                <img class="shot" src="assets/img/study-jornada-progresso.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 14% concluído, próximo passo e lista de módulos de leitura e videoaula." data-i18n-alt="home.projetos.jornada-phrasal-verbs-com">
               </figure>
               <figure class="stage__item">
-                <figcaption class="frame-label"><strong>Progresso</strong><span>Últimos 7 dias</span></figcaption>
-                <img class="shot" src="assets/img/study-progresso.webp" width="804" height="1748" loading="lazy" alt="Tela Progresso do Study, com progresso médio de 14%, tempo estudado, gráfico dos últimos 7 dias e progresso por matéria.">
+                <figcaption class="frame-label"><strong data-i18n="common.progresso">Progresso</strong><span data-i18n="common.ultimos-7-dias">Últimos 7 dias</span></figcaption>
+                <img class="shot" src="assets/img/study-progresso.webp" width="804" height="1748" loading="lazy" alt="Tela Progresso do Study, com progresso médio de 14%, tempo estudado, gráfico dos últimos 7 dias e progresso por matéria." data-i18n-alt="home.projetos.tela-progresso-do-study">
               </figure>
             </div>
           </div>
           <div class="project__text">
-            <p class="project__kind">Produto funcional, no ar</p>
+            <p class="project__kind" data-i18n="home.projetos.produto-funcional-no-ar">Produto funcional, no ar</p>
             <h3 class="project__title" id="proj-study"><a href="projetos/study.html">Study</a></h3>
-            <p class="project__desc">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e registra sessões de foco para mostrar o progresso.</p>
+            <p class="project__desc" data-i18n="home.projetos.aplicativo-web-que-transforma">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e registra sessões de foco para mostrar o progresso.</p>
             <dl class="facts">
-              <div class="facts__row"><dt>Problema</dt><dd>Muito conteúdo e pouca estrutura para quem estuda por conta própria. É hipótese: não fiz pesquisa com estudantes.</dd></div>
-              <div class="facts__row"><dt>Minha contribuição</dt><dd>Design de produto, interface e design system.</dd></div>
-              <div class="facts__row"><dt>Evidências</dt><dd>Produto no ar para teste. Testes de usabilidade em andamento.</dd></div>
-              <div class="facts__row"><dt>Tecnologia</dt><dd>React, Node e Express, com Gemini, YouTube e login Google.</dd></div>
+              <div class="facts__row"><dt data-i18n="common.problema">Problema</dt><dd data-i18n="home.projetos.muito-conteudo-e-pouca">Muito conteúdo e pouca estrutura para quem estuda por conta própria. É hipótese: não fiz pesquisa com estudantes.</dd></div>
+              <div class="facts__row"><dt data-i18n="home.projetos.minha-contribuicao">Minha contribuição</dt><dd data-i18n="home.projetos.design-de-produto-interface">Design de produto, interface e design system.</dd></div>
+              <div class="facts__row"><dt data-i18n="home.projetos.evidencias">Evidências</dt><dd data-i18n="home.projetos.produto-no-ar-para">Produto no ar para teste. Testes de usabilidade em andamento.</dd></div>
+              <div class="facts__row"><dt data-i18n="home.projetos.tecnologia">Tecnologia</dt><dd data-i18n="home.projetos.react-node-e-express">React, Node e Express, com Gemini, YouTube e login Google.</dd></div>
             </dl>
             <div class="project__links">
-              <a class="btn btn--dark btn--sm" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
-              <a class="link link--arrow" href="projetos/study.html">Ler estudo de caso</a>
+              <a class="btn btn--dark btn--sm" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
+              <a class="link link--arrow" href="projetos/study.html" data-i18n="home.projetos.ler-estudo-de-caso">Ler estudo de caso</a>
             </div>
-            <p class="demo-note">A demo pede login com Google. Na hospedagem gratuita, o primeiro acesso pode demorar para carregar.</p>
+            <p class="demo-note" data-i18n="home.projetos.a-demo-pede-login">A demo pede login com Google. Na hospedagem gratuita, o primeiro acesso pode demorar para carregar.</p>
           </div>
         </article>
       </div>
@@ -163,41 +172,41 @@
     <section class="section on-white" id="sobre" aria-labelledby="sobre-title">
       <div class="container about">
         <div class="about__intro">
-          <h2 class="h2" id="sobre-title">Sobre</h2>
+          <h2 class="h2" id="sobre-title" data-i18n="common.sobre">Sobre</h2>
           <div class="read">
-            <p>Sou formado em Design Gráfico e pós-graduado em UX Design e Produtos Digitais pela Universidade Presbiteriana Mackenzie. Do design gráfico trouxe o cuidado com hierarquia, composição e acabamento. Agora aplico esse repertório a produtos digitais.</p>
-            <p>Estou direcionando minha carreira para Product Design e UX/UI. Meu ponto de partida é sempre o problema: quem usa, em que situação, o que atrapalha. Tenho familiaridade com ferramentas de IA no processo de design e, no Study, ela está dentro do produto: gera trilhas, leituras e exercícios a partir de um tema.</p>
+            <p data-i18n="home.sobre.sou-formado-em-design">Sou formado em Design Gráfico e pós-graduado em UX Design e Produtos Digitais pela Universidade Presbiteriana Mackenzie. Do design gráfico trouxe o cuidado com hierarquia, composição e acabamento. Agora aplico esse repertório a produtos digitais.</p>
+            <p data-i18n="home.sobre.estou-direcionando-minha-carreira">Estou direcionando minha carreira para Product Design e UX/UI. Meu ponto de partida é sempre o problema: quem usa, em que situação, o que atrapalha. Tenho familiaridade com ferramentas de IA no processo de design e, no Study, ela está dentro do produto: gera trilhas, leituras e exercícios a partir de um tema.</p>
           </div>
         </div>
         <div class="about__side">
-          <h3 class="h3">O que os projetos mostram</h3>
+          <h3 class="h3" data-i18n="home.sobre.o-que-os-projetos">O que os projetos mostram</h3>
           <ul class="evidence">
             <li class="evidence__item">
-              <span class="evidence__name">Diagnóstico e benchmark</span>
-              <p class="evidence__text">Auditoria heurística com 34 pontos de atrito e benchmark de 8 aplicativos.</p>
+              <span class="evidence__name" data-i18n="home.sobre.diagnostico-e-benchmark">Diagnóstico e benchmark</span>
+              <p class="evidence__text" data-i18n="home.sobre.auditoria-heuristica-com-34">Auditoria heurística com 34 pontos de atrito e benchmark de 8 aplicativos.</p>
               <a class="evidence__where link link--arrow" href="projetos/circuito-cinemas.html#diagnostico">Circuito Cinemas</a>
             </li>
             <li class="evidence__item">
-              <span class="evidence__name">Arquitetura e fluxos</span>
-              <p class="evidence__text">Barra de navegação de 5 para 4 abas e compra de ingressos redesenhada de 7 para 4 etapas.</p>
+              <span class="evidence__name" data-i18n="home.sobre.arquitetura-e-fluxos">Arquitetura e fluxos</span>
+              <p class="evidence__text" data-i18n="home.sobre.barra-de-navegacao-de">Barra de navegação de 5 para 4 abas e compra de ingressos redesenhada de 7 para 4 etapas.</p>
               <a class="evidence__where link link--arrow" href="projetos/circuito-cinemas.html#decisoes">Circuito Cinemas</a>
             </li>
             <li class="evidence__item">
-              <span class="evidence__name">UI e design system</span>
-              <p class="evidence__text">Tokens, temas claro e escuro e componentes documentados nos dois projetos.</p>
+              <span class="evidence__name" data-i18n="home.sobre.ui-e-design-system">UI e design system</span>
+              <p class="evidence__text" data-i18n="home.sobre.tokens-temas-claro-e">Tokens, temas claro e escuro e componentes documentados nos dois projetos.</p>
               <a class="evidence__where link link--arrow" href="projetos/study.html#design">Study</a>
             </li>
             <li class="evidence__item">
-              <span class="evidence__name">Produto funcional e IA</span>
-              <p class="evidence__text">Aplicativo no ar que usa a API do Gemini para montar trilhas de estudo.</p>
+              <span class="evidence__name" data-i18n="home.sobre.produto-funcional-e-ia">Produto funcional e IA</span>
+              <p class="evidence__text" data-i18n="home.sobre.aplicativo-no-ar-que">Aplicativo no ar que usa a API do Gemini para montar trilhas de estudo.</p>
               <a class="evidence__where link link--arrow" href="projetos/study.html#ia">Study</a>
             </li>
           </ul>
           <dl class="facts profile">
-            <div class="facts__row"><dt>Graduação</dt><dd>Design Gráfico</dd></div>
-            <div class="facts__row"><dt>Pós-graduação</dt><dd>UX Design e Produtos Digitais, Mackenzie (concluída em 2026)</dd></div>
-            <div class="facts__row"><dt>Foco</dt><dd>Product Design e UX/UI</dd></div>
-            <div class="facts__row"><dt>Ferramentas</dt><dd>Figma e Notion</dd></div>
+            <div class="facts__row"><dt data-i18n="home.sobre.graduacao">Graduação</dt><dd data-i18n="home.sobre.design-grafico">Design Gráfico</dd></div>
+            <div class="facts__row"><dt data-i18n="home.sobre.pos-graduacao">Pós-graduação</dt><dd data-i18n="home.sobre.ux-design-e-produtos">UX Design e Produtos Digitais, Mackenzie (concluída em 2026)</dd></div>
+            <div class="facts__row"><dt data-i18n="common.foco">Foco</dt><dd data-i18n="home.sobre.product-design-e-ux">Product Design e UX/UI</dd></div>
+            <div class="facts__row"><dt data-i18n="common.ferramentas">Ferramentas</dt><dd data-i18n="common.figma-e-notion">Figma e Notion</dd></div>
           </dl>
         </div>
       </div>
@@ -207,42 +216,42 @@
     <section class="section on-light" id="competencias" aria-labelledby="competencias-title">
       <div class="container">
         <div class="section__head">
-          <h2 class="h2" id="competencias-title">Competências e ferramentas</h2>
-          <p class="section__lead">Listo só o que aparece nos dois projetos. Nos métodos de UX, cada item diz se eu fiz, se é hipótese ou se ainda não fiz.</p>
+          <h2 class="h2" id="competencias-title" data-i18n="home.competencias.competencias-e-ferramentas">Competências e ferramentas</h2>
+          <p class="section__lead" data-i18n="home.competencias.listo-so-o-que">Listo só o que aparece nos dois projetos. Nos métodos de UX, cada item diz se eu fiz, se é hipótese ou se ainda não fiz.</p>
         </div>
         <div class="skills">
           <div class="skills__group">
-            <h3 class="h3">Design de produto</h3>
+            <h3 class="h3" data-i18n="home.competencias.design-de-produto">Design de produto</h3>
             <ul class="skills__list">
-              <li><span class="skills__name">Arquitetura da informação</span><span class="skills__text">Nova taxonomia e barra de quatro abas no Circuito Cinemas. Abas e jornada do Study.</span></li>
-              <li><span class="skills__name">Fluxos</span><span class="skills__text">Compra de ingressos de 7 para 4 etapas. Caminho de quem estuda no Study.</span></li>
-              <li><span class="skills__name">Prototipação</span><span class="skills__text">Protótipo do Circuito Cinemas no Figma, com 21 telas e estados no arquivo.</span></li>
-              <li><span class="skills__name">UI e design system</span><span class="skills__text">Tokens, componentes e estados nos dois projetos, com temas claro e escuro no Study.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.arquitetura-da-informacao">Arquitetura da informação</span><span class="skills__text" data-i18n="home.competencias.nova-taxonomia-e-barra">Nova taxonomia e barra de quatro abas no Circuito Cinemas. Abas e jornada do Study.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.fluxos">Fluxos</span><span class="skills__text" data-i18n="home.competencias.compra-de-ingressos-de">Compra de ingressos de 7 para 4 etapas. Caminho de quem estuda no Study.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.prototipacao">Prototipação</span><span class="skills__text" data-i18n="home.competencias.prototipo-do-circuito-cinemas">Protótipo do Circuito Cinemas no Figma, com 21 telas e estados no arquivo.</span></li>
+              <li><span class="skills__name" data-i18n="home.sobre.ui-e-design-system">UI e design system</span><span class="skills__text" data-i18n="home.competencias.tokens-componentes-e-estados">Tokens, componentes e estados nos dois projetos, com temas claro e escuro no Study.</span></li>
             </ul>
           </div>
           <div class="skills__group">
-            <h3 class="h3">Métodos de UX</h3>
+            <h3 class="h3" data-i18n="home.competencias.metodos-de-ux">Métodos de UX</h3>
             <ul class="skills__list">
-              <li><span class="skills__name">Auditoria heurística</span><span class="tag tag--done">Feito</span><span class="skills__text">34 pontos de atrito no app do Circuito Cinemas, com as heurísticas de Nielsen.</span></li>
-              <li><span class="skills__name">Benchmark competitivo</span><span class="tag tag--done">Feito</span><span class="skills__text">Três concorrentes diretos e cinco referências de outros setores.</span></li>
-              <li><span class="skills__name">Proto-personas e jornada</span><span class="tag tag--hyp">Hipótese</span><span class="skills__text">Montadas a partir da análise, sem entrevistas.</span></li>
-              <li><span class="skills__name">Card sorting</span><span class="tag tag--hyp">Simulado</span><span class="skills__text">Feito com as proto-personas, não com pessoas.</span></li>
-              <li><span class="skills__name">Entrevistas e testes de usabilidade</span><span class="tag tag--hyp">Em andamento</span><span class="skills__text">Testes moderados do Study com estudantes, em andamento. O Circuito Cinemas traz um plano de teste.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.auditoria-heuristica">Auditoria heurística</span><span class="tag tag--done" data-i18n="home.competencias.feito">Feito</span><span class="skills__text" data-i18n="home.competencias.34-pontos-de-atrito">34 pontos de atrito no app do Circuito Cinemas, com as heurísticas de Nielsen.</span></li>
+              <li><span class="skills__name" data-i18n="common.benchmark-competitivo">Benchmark competitivo</span><span class="tag tag--done" data-i18n="home.competencias.feito">Feito</span><span class="skills__text" data-i18n="home.competencias.tres-concorrentes-diretos-e">Três concorrentes diretos e cinco referências de outros setores.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.proto-personas-e-jornada">Proto-personas e jornada</span><span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span><span class="skills__text" data-i18n="home.competencias.montadas-a-partir-da">Montadas a partir da análise, sem entrevistas.</span></li>
+              <li><span class="skills__name">Card sorting</span><span class="tag tag--hyp" data-i18n="home.competencias.simulado">Simulado</span><span class="skills__text" data-i18n="home.competencias.feito-com-as-proto">Feito com as proto-personas, não com pessoas.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.entrevistas-e-testes-de">Entrevistas e testes de usabilidade</span><span class="tag tag--hyp" data-i18n="home.competencias.em-andamento">Em andamento</span><span class="skills__text" data-i18n="home.competencias.testes-moderados-do-study">Testes moderados do Study com estudantes, em andamento. O Circuito Cinemas traz um plano de teste.</span></li>
             </ul>
           </div>
           <div class="skills__group">
-            <h3 class="h3">Ferramentas</h3>
+            <h3 class="h3" data-i18n="common.ferramentas">Ferramentas</h3>
             <ul class="skills__list">
-              <li><span class="skills__name">Figma</span><span class="skills__text">Telas, protótipo e design system do Circuito Cinemas. Mockups do Study.</span></li>
-              <li><span class="skills__name">Notion</span><span class="skills__text">Usado no Circuito Cinemas.</span></li>
+              <li><span class="skills__name">Figma</span><span class="skills__text" data-i18n="home.competencias.telas-prototipo-e-design">Telas, protótipo e design system do Circuito Cinemas. Mockups do Study.</span></li>
+              <li><span class="skills__name">Notion</span><span class="skills__text" data-i18n="home.competencias.usado-no-circuito-cinemas">Usado no Circuito Cinemas.</span></li>
             </ul>
           </div>
           <div class="skills__group">
-            <h3 class="h3">IA e tecnologia</h3>
+            <h3 class="h3" data-i18n="home.competencias.ia-e-tecnologia">IA e tecnologia</h3>
             <ul class="skills__list">
-              <li><span class="skills__name">Gemini, YouTube e login Google</span><span class="skills__text">Serviços que fazem parte do Study. O Gemini gera a jornada, a leitura, o quiz e os flashcards.</span></li>
-              <li><span class="skills__name">React, Node e Express</span><span class="skills__text">Com o que o Study é feito. Descrevo a arquitetura para mostrar como o design chega ao produto. Não me apresento como desenvolvedor.</span></li>
-              <li><span class="skills__name">IA no processo de design</span><span class="skills__text">Tenho familiaridade, mas os projetos não documentam quais ferramentas usei, então não as listo.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.gemini-youtube-e-login">Gemini, YouTube e login Google</span><span class="skills__text" data-i18n="home.competencias.servicos-que-fazem-parte">Serviços que fazem parte do Study. O Gemini gera a jornada, a leitura, o quiz e os flashcards.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.react-node-e-express">React, Node e Express</span><span class="skills__text" data-i18n="home.competencias.com-o-que-o">Com o que o Study é feito. Descrevo a arquitetura para mostrar como o design chega ao produto. Não me apresento como desenvolvedor.</span></li>
+              <li><span class="skills__name" data-i18n="home.competencias.ia-no-processo-de">IA no processo de design</span><span class="skills__text" data-i18n="home.competencias.tenho-familiaridade-mas-os">Tenho familiaridade, mas os projetos não documentam quais ferramentas usei, então não as listo.</span></li>
             </ul>
           </div>
         </div>
@@ -252,20 +261,20 @@
     <!-- Contato -->
     <section class="section on-dark" id="contato" aria-labelledby="contato-title">
       <div class="container contact">
-        <h2 class="contact__title" id="contato-title">Estou buscando minha primeira vaga como Product Designer.</h2>
-        <p class="contact__body">Se você está contratando para uma posição júnior, ou quer conversar sobre os projetos, escreva por e-mail, ligue ou me chame no LinkedIn.</p>
+        <h2 class="contact__title" id="contato-title" data-i18n="home.contato.estou-buscando-minha-primeira">Estou buscando minha primeira vaga como Product Designer.</h2>
+        <p class="contact__body" data-i18n="home.contato.se-voce-esta-contratando">Se você está contratando para uma posição júnior, ou quer conversar sobre os projetos, escreva por e-mail, ligue ou me chame no LinkedIn.</p>
         <div class="contact__actions">
           <a class="btn btn--light btn--contact" href="mailto:gabrielrocha2098@gmail.com">
             <svg class="btn__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg>
-            <span class="btn__text"><span class="btn__label">E-mail</span><span class="btn__value">gabrielrocha2098@gmail.com</span></span>
+            <span class="btn__text"><span class="btn__label" data-i18n="home.contato.e-mail">E-mail</span><span class="btn__value">gabrielrocha2098@gmail.com</span></span>
           </a>
           <a class="btn btn--outline btn--contact" href="https://www.linkedin.com/in/gabriel-rocha-ux" target="_blank" rel="noopener noreferrer">
             <svg class="btn__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <span class="btn__text"><span class="btn__label">LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></span><span class="btn__value">in/gabriel-rocha-ux</span></span>
+            <span class="btn__text"><span class="btn__label" data-i18n="home.contato.linkedin-abre-em-nova">LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></span><span class="btn__value">in/gabriel-rocha-ux</span></span>
           </a>
           <a class="btn btn--outline btn--contact" href="tel:+5511979938429">
             <svg class="btn__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-            <span class="btn__text"><span class="btn__label">Telefone</span><span class="btn__value">+55 11 97993-8429</span></span>
+            <span class="btn__text"><span class="btn__label" data-i18n="home.contato.telefone">Telefone</span><span class="btn__value">+55 11 97993-8429</span></span>
           </a>
         </div>
       </div>
@@ -274,11 +283,13 @@
 
   <footer class="site-footer on-black">
     <div class="container site-footer__row">
-      <p>© 2026 Gabriel Rocha. Site estático, sem cookies nem rastreadores.</p>
-      <p>Circuito Cinemas é um estudo conceitual, sem vínculo com a empresa. Marcas, pôsteres de filmes e telas do app original pertencem aos seus titulares e aparecem apenas para análise e comparação. As telas do Study usam dados de demonstração.</p>
+      <p data-i18n="home.footer.2026-gabriel-rocha-site">© 2026 Gabriel Rocha. Site estático, sem cookies nem rastreadores.</p>
+      <p data-i18n="home.footer.circuito-cinemas-e-um">Circuito Cinemas é um estudo conceitual, sem vínculo com a empresa. Marcas, pôsteres de filmes e telas do app original pertencem aos seus titulares e aparecem apenas para análise e comparação. As telas do Study usam dados de demonstração.</p>
     </div>
   </footer>
 
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

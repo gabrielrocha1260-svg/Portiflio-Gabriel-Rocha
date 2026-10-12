@@ -3,49 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Study, estudo de caso | Gabriel Rocha</title>
-  <meta name="description" content="Study: aplicativo web que transforma um tema em trilha de estudo, com sessões de foco, planner e progresso. Estudo de caso com o que foi decidido, construído e o que ainda é hipótese.">
+  <title data-i18n="study.meta.title">Study, estudo de caso | Gabriel Rocha</title>
+  <meta name="description" content="Study: aplicativo web que transforma um tema em trilha de estudo, com sessões de foco, planner e progresso. Estudo de caso com o que foi decidido, construído e o que ainda é hipótese." data-i18n-content="study.meta.description">
   <meta name="author" content="Gabriel Rocha">
   <meta name="theme-color" content="#0A1630">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
+  <link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
 
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Gabriel Rocha">
-  <meta property="og:title" content="Study, estudo de caso | Gabriel Rocha">
-  <meta property="og:description" content="Um aplicativo de estudos que está no ar: trilhas com videoaula, leitura, prática e avaliação, sessões de foco e acompanhamento de progresso.">
+  <meta property="og:title" content="Study, estudo de caso | Gabriel Rocha" data-i18n-content="study.meta.og-title">
+  <meta property="og:description" content="Um aplicativo de estudos que está no ar: trilhas com videoaula, leitura, prática e avaliação, sessões de foco e acompanhamento de progresso." data-i18n-content="study.meta.og-description">
   <meta property="og:image" content="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/assets/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Telas do aplicativo Study.">
+  <meta property="og:image:alt" content="Telas do aplicativo Study." data-i18n-content="study.meta.og-image-alt">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preload" href="../assets/fonts/inter-display-500.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="../assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="../assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="../assets/css/styles.css">
-  <script>document.documentElement.className += " js";</script>
+  <script>(function(d){d.className+=" js";var l=null;try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("site-lang")}catch(e){}if(l==="en"){d.lang="en";d.className+=" i18n-pending";setTimeout(function(){d.classList.remove("i18n-pending")},2500)}})(document.documentElement);</script>
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo" data-i18n="common.pular-para-o-conteudo">Pular para o conteúdo</a>
 
   <header class="site-header">
     <div class="container site-header__bar">
-      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial">Gabriel Rocha</a>
+      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha</a>
+      <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="ui.lang-group">
+        <button class="lang-switch__btn" type="button" data-set-lang="pt" lang="pt-BR" aria-pressed="true">PT<span class="visually-hidden"> – Português</span></button>
+        <span class="lang-switch__sep" aria-hidden="true">|</span>
+        <button class="lang-switch__btn" type="button" data-set-lang="en" lang="en" aria-pressed="false">EN<span class="visually-hidden"> – English</span></button>
+      </div>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="menu-toggle__icon" aria-hidden="true"></span>
         <span class="menu-toggle__label">Menu</span>
       </button>
-      <nav class="nav" id="site-nav" aria-label="Principal">
+      <nav class="nav" id="site-nav" aria-label="Principal" data-i18n-aria-label="common.principal">
         <ul class="nav__list">
-          <li><a class="nav__link" href="../index.html">Início</a></li>
-          <li><a class="nav__link" href="../index.html#projetos" aria-current="true">Projetos</a></li>
-          <li><a class="nav__link" href="../index.html#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="../index.html" data-i18n="common.inicio">Início</a></li>
+          <li><a class="nav__link" href="../index.html#projetos" aria-current="true" data-i18n="common.projetos">Projetos</a></li>
+          <li><a class="nav__link" href="../index.html#sobre" data-i18n="common.sobre">Sobre</a></li>
         </ul>
-        <a class="btn btn--light btn--sm" href="../index.html#contato">Falar comigo</a>
+        <a class="btn btn--light btn--sm" href="../index.html#contato" data-i18n="common.falar-comigo">Falar comigo</a>
       </nav>
     </div>
   </header>
@@ -53,10 +62,10 @@
   <main id="conteudo" tabindex="-1">
     <div class="on-dark">
       <div class="container">
-        <nav class="crumbs" aria-label="Você está em">
+        <nav class="crumbs" aria-label="Você está em" data-i18n-aria-label="common.voce-esta-em">
           <ol>
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="../index.html#projetos">Projetos</a></li>
+            <li><a href="../index.html" data-i18n="common.inicio">Início</a></li>
+            <li><a href="../index.html#projetos" data-i18n="common.projetos">Projetos</a></li>
             <li aria-current="page">Study</li>
           </ol>
         </nav>
@@ -65,39 +74,39 @@
       <section class="case-hero" aria-labelledby="case-title">
         <div class="container">
           <h1 class="case-hero__title" id="case-title">Study</h1>
-          <p class="case-hero__summary">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e usa sessões de foco para mostrar o progresso. Está no ar e pode ser testado.</p>
+          <p class="case-hero__summary" data-i18n="study.hero.aplicativo-web-que-transforma">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e usa sessões de foco para mostrar o progresso. Está no ar e pode ser testado.</p>
           <dl class="meta">
-            <div><dt>Tipo</dt><dd>Produto digital funcional</dd></div>
-            <div><dt>Minha atuação</dt><dd>Design de produto, UI e design system</dd></div>
-            <div><dt>Plataforma</dt><dd>Web, desenhada para celular</dd></div>
-            <div><dt>Estado</dt><dd>No ar, versão 1.0.0</dd></div>
+            <div><dt data-i18n="common.tipo">Tipo</dt><dd data-i18n="study.hero.produto-digital-funcional">Produto digital funcional</dd></div>
+            <div><dt data-i18n="common.minha-atuacao">Minha atuação</dt><dd data-i18n="study.hero.design-de-produto-ui">Design de produto, UI e design system</dd></div>
+            <div><dt data-i18n="common.plataforma">Plataforma</dt><dd data-i18n="study.hero.web-desenhada-para-celular">Web, desenhada para celular</dd></div>
+            <div><dt data-i18n="study.hero.estado">Estado</dt><dd data-i18n="study.hero.no-ar-versao-1">No ar, versão 1.0.0</dd></div>
           </dl>
           <div class="status status--legend" role="note">
-            <p><strong>Como ler este case.</strong> Cada afirmação importante traz uma etiqueta que diz de que tipo ela é:</p>
+            <p data-i18n="study.hero.como-ler-este-case"><strong>Como ler este case.</strong> Cada afirmação importante traz uma etiqueta que diz de que tipo ela é:</p>
             <ul class="legend">
-              <li><span class="tag tag--done">Implementado</span><span>existe no produto que está no ar.</span></li>
-              <li><span class="tag tag--doc">Design</span><span>decisão de produto ou de interface.</span></li>
-              <li><span class="tag tag--hyp">Hipótese</span><span>premissa que ainda não foi validada com usuários.</span></li>
-              <li><span class="tag tag--soon">Em breve</span><span>ainda não existe.</span></li>
+              <li><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span><span data-i18n="study.hero.existe-no-produto-que">existe no produto que está no ar.</span></li>
+              <li><span class="tag tag--doc">Design</span><span data-i18n="study.hero.decisao-de-produto-ou">decisão de produto ou de interface.</span></li>
+              <li><span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span><span data-i18n="study.hero.premissa-que-ainda-nao">premissa que ainda não foi validada com usuários.</span></li>
+              <li><span class="tag tag--soon" data-i18n="study.hero.em-breve">Em breve</span><span data-i18n="study.hero.ainda-nao-existe">ainda não existe.</span></li>
             </ul>
           </div>
           <div class="cta-row cta-row--hero">
-            <a class="btn btn--light" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
-            <a class="link link--arrow" href="#demo">Como testar</a>
+            <a class="btn btn--light" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
+            <a class="link link--arrow" href="#demo" data-i18n="study.hero.como-testar">Como testar</a>
           </div>
         </div>
         <div class="case-hero__media">
           <figure class="case-hero__item">
-            <figcaption class="frame-label"><strong>Explorar</strong><span>Buscar e coleção</span></figcaption>
-            <img class="shot" src="../assets/img/study-explorar.webp" width="804" height="1748" alt="Tela Explorar do Study, com busca, categorias Idiomas, Matemática, Ciências e Humanas, atalho para a Jornada de Aprendizado e a coleção do usuário.">
+            <figcaption class="frame-label"><strong data-i18n="study.hero.explorar">Explorar</strong><span data-i18n="study.hero.buscar-e-colecao">Buscar e coleção</span></figcaption>
+            <img class="shot" src="../assets/img/study-explorar.webp" width="804" height="1748" alt="Tela Explorar do Study, com busca, categorias Idiomas, Matemática, Ciências e Humanas, atalho para a Jornada de Aprendizado e a coleção do usuário." data-i18n-alt="study.hero.tela-explorar-do-study">
           </figure>
           <figure class="case-hero__item">
-            <figcaption class="frame-label"><strong>Início</strong><span>Pronto para focar?</span></figcaption>
-            <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" alt="Tela Início do Study, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs com o botão Estudar agora e o progresso do dia.">
+            <figcaption class="frame-label"><strong data-i18n="common.inicio">Início</strong><span data-i18n="study.hero.pronto-para-focar">Pronto para focar?</span></figcaption>
+            <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" alt="Tela Início do Study, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs com o botão Estudar agora e o progresso do dia." data-i18n-alt="study.hero.tela-inicio-do-study">
           </figure>
           <figure class="case-hero__item">
-            <figcaption class="frame-label"><strong>Foco</strong><span>Sessão em andamento</span></figcaption>
-            <img class="shot" src="../assets/img/study-foco.webp" width="804" height="1748" alt="Sessão de foco com cronômetro circular em 12:16, meta de 25 minutos e os botões Pausar sessão e Encerrar sessão.">
+            <figcaption class="frame-label"><strong data-i18n="common.foco">Foco</strong><span data-i18n="study.hero.sessao-em-andamento">Sessão em andamento</span></figcaption>
+            <img class="shot" src="../assets/img/study-foco.webp" width="804" height="1748" alt="Sessão de foco com cronômetro circular em 12:16, meta de 25 minutos e os botões Pausar sessão e Encerrar sessão." data-i18n-alt="study.hero.sessao-de-foco-com">
           </figure>
         </div>
       </section>
@@ -108,38 +117,38 @@
         <div class="case">
 
           <details class="toc-mobile">
-            <summary><span class="toc-mobile__title">Nesta página</span><span class="toc-mobile__current">Visão do produto</span></summary>
+            <summary><span class="toc-mobile__title" data-i18n="common.nesta-pagina">Nesta página</span><span class="toc-mobile__current" data-i18n="study.toc.visao-do-produto">Visão do produto</span></summary>
             <ol>
-              <li><a href="#visao">Visão do produto</a></li>
-              <li><a href="#problema">Problema</a></li>
-              <li><a href="#objetivos">Objetivos e proposta de valor</a></li>
-              <li><a href="#publico">Público e necessidades</a></li>
-              <li><a href="#mvp">Escopo e MVP</a></li>
-              <li><a href="#jornada">Arquitetura e jornada</a></li>
-              <li><a href="#design">Design e interface</a></li>
-              <li><a href="#funcionalidades">Funcionalidades</a></li>
-              <li><a href="#implementacao">Como foi construído</a></li>
-              <li><a href="#ia">IA e serviços externos</a></li>
-              <li><a href="#demo">Estado atual e demo</a></li>
-              <li><a href="#proximos">Aprendizados e próximos passos</a></li>
+              <li><a href="#visao" data-i18n="study.toc.visao-do-produto">Visão do produto</a></li>
+              <li><a href="#problema" data-i18n="common.problema">Problema</a></li>
+              <li><a href="#objetivos" data-i18n="study.toc.objetivos-e-proposta-de">Objetivos e proposta de valor</a></li>
+              <li><a href="#publico" data-i18n="common.publico-e-necessidades">Público e necessidades</a></li>
+              <li><a href="#mvp" data-i18n="study.toc.escopo-e-mvp">Escopo e MVP</a></li>
+              <li><a href="#jornada" data-i18n="study.toc.arquitetura-e-jornada">Arquitetura e jornada</a></li>
+              <li><a href="#design" data-i18n="study.toc.design-e-interface">Design e interface</a></li>
+              <li><a href="#funcionalidades" data-i18n="study.toc.funcionalidades">Funcionalidades</a></li>
+              <li><a href="#implementacao" data-i18n="study.toc.como-foi-construido">Como foi construído</a></li>
+              <li><a href="#ia" data-i18n="study.toc.ia-e-servicos-externos">IA e serviços externos</a></li>
+              <li><a href="#demo" data-i18n="study.toc.estado-atual-e-demo">Estado atual e demo</a></li>
+              <li><a href="#proximos" data-i18n="study.toc.aprendizados-e-proximos-passos">Aprendizados e próximos passos</a></li>
             </ol>
           </details>
 
-          <nav class="toc" aria-label="Nesta página">
-            <p class="toc__title">Nesta página</p>
+          <nav class="toc" aria-label="Nesta página" data-i18n-aria-label="common.nesta-pagina">
+            <p class="toc__title" data-i18n="common.nesta-pagina">Nesta página</p>
             <ol>
-              <li><a href="#visao">Visão do produto</a></li>
-              <li><a href="#problema">Problema</a></li>
-              <li><a href="#objetivos">Objetivos e proposta de valor</a></li>
-              <li><a href="#publico">Público e necessidades</a></li>
-              <li><a href="#mvp">Escopo e MVP</a></li>
-              <li><a href="#jornada">Arquitetura e jornada</a></li>
-              <li><a href="#design">Design e interface</a></li>
-              <li><a href="#funcionalidades">Funcionalidades</a></li>
-              <li><a href="#implementacao">Como foi construído</a></li>
-              <li><a href="#ia">IA e serviços externos</a></li>
-              <li><a href="#demo">Estado atual e demo</a></li>
-              <li><a href="#proximos">Aprendizados e próximos passos</a></li>
+              <li><a href="#visao" data-i18n="study.toc.visao-do-produto">Visão do produto</a></li>
+              <li><a href="#problema" data-i18n="common.problema">Problema</a></li>
+              <li><a href="#objetivos" data-i18n="study.toc.objetivos-e-proposta-de">Objetivos e proposta de valor</a></li>
+              <li><a href="#publico" data-i18n="common.publico-e-necessidades">Público e necessidades</a></li>
+              <li><a href="#mvp" data-i18n="study.toc.escopo-e-mvp">Escopo e MVP</a></li>
+              <li><a href="#jornada" data-i18n="study.toc.arquitetura-e-jornada">Arquitetura e jornada</a></li>
+              <li><a href="#design" data-i18n="study.toc.design-e-interface">Design e interface</a></li>
+              <li><a href="#funcionalidades" data-i18n="study.toc.funcionalidades">Funcionalidades</a></li>
+              <li><a href="#implementacao" data-i18n="study.toc.como-foi-construido">Como foi construído</a></li>
+              <li><a href="#ia" data-i18n="study.toc.ia-e-servicos-externos">IA e serviços externos</a></li>
+              <li><a href="#demo" data-i18n="study.toc.estado-atual-e-demo">Estado atual e demo</a></li>
+              <li><a href="#proximos" data-i18n="study.toc.aprendizados-e-proximos-passos">Aprendizados e próximos passos</a></li>
             </ol>
           </nav>
 
@@ -147,94 +156,94 @@
 
             <!-- 1. Visão do produto -->
             <section id="visao" aria-labelledby="h-visao">
-              <h2 class="h2" id="h-visao">Visão do produto</h2>
-              <p class="lead">O Study organiza o estudo em torno de um tema: a pessoa escolhe o que quer aprender, segue uma trilha em ordem e registra o tempo que realmente dedicou.</p>
+              <h2 class="h2" id="h-visao" data-i18n="study.toc.visao-do-produto">Visão do produto</h2>
+              <p class="lead" data-i18n="study.visao.o-study-organiza-o">O Study organiza o estudo em torno de um tema: a pessoa escolhe o que quer aprender, segue uma trilha em ordem e registra o tempo que realmente dedicou.</p>
               <div class="read">
-                <p>Em Explorar, a pessoa busca um assunto e o adiciona à sua coleção. O Study monta uma jornada de módulos ordenados: videoaula, leitura, prática com flashcards e avaliação. Sessões de foco, planner e progresso mostram o que foi feito. <span class="tag tag--done">Implementado</span></p>
+                <p data-i18n="study.visao.em-explorar-a-pessoa">Em Explorar, a pessoa busca um assunto e o adiciona à sua coleção. O Study monta uma jornada de módulos ordenados: videoaula, leitura, prática com flashcards e avaliação. Sessões de foco, planner e progresso mostram o que foi feito. <span class="tag tag--done">Implementado</span></p>
               </div>
               <dl class="spec">
-                <div class="spec__row"><dt>Estado</dt><dd>No ar, na demo pública. A versão exibida nas Configurações do app é a 1.0.0.</dd></div>
-                <div class="spec__row"><dt>Plataforma</dt><dd>Web, em uma coluna pensada para celular. Em telas largas, a coluna fica centralizada.</dd></div>
-                <div class="spec__row"><dt>Idioma</dt><dd>Português.</dd></div>
-                <div class="spec__row"><dt>Minha atuação</dt><dd>Design de produto, interface e design system. O app traz o crédito “Design System by Gabriel Rocha” nas Configurações.</dd></div>
-                <div class="spec__row"><dt>Implementação</dt><dd>Descrita na seção <a class="link" href="#implementacao">Como foi construído</a>.</dd></div>
-                <div class="spec__row"><dt>Dados do usuário</dt><dd>Ficam salvos no navegador do aparelho.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.hero.estado">Estado</dt><dd data-i18n="study.visao.no-ar-na-demo">No ar, na demo pública. A versão exibida nas Configurações do app é a 1.0.0.</dd></div>
+                <div class="spec__row"><dt data-i18n="common.plataforma">Plataforma</dt><dd data-i18n="study.visao.web-em-uma-coluna">Web, em uma coluna pensada para celular. Em telas largas, a coluna fica centralizada.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.visao.idioma">Idioma</dt><dd data-i18n="study.visao.portugues">Português.</dd></div>
+                <div class="spec__row"><dt data-i18n="common.minha-atuacao">Minha atuação</dt><dd data-i18n="study.visao.design-de-produto-interface">Design de produto, interface e design system. O app traz o crédito “Design System by Gabriel Rocha” nas Configurações.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.visao.implementacao">Implementação</dt><dd data-i18n="study.visao.descrita-na-secao-como">Descrita na seção <a class="link" href="#implementacao">Como foi construído</a>.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.visao.dados-do-usuario">Dados do usuário</dt><dd data-i18n="study.visao.ficam-salvos-no-navegador">Ficam salvos no navegador do aparelho.</dd></div>
               </dl>
-              <p class="note">As telas deste case usam dados de demonstração: perfil e histórico de uso fictícios.</p>
+              <p class="note" data-i18n="study.visao.as-telas-deste-case">As telas deste case usam dados de demonstração: perfil e histórico de uso fictícios.</p>
             </section>
 
             <!-- 2. Problema -->
             <section id="problema" aria-labelledby="h-problema">
-              <h2 class="h2" id="h-problema">Problema que o produto aborda</h2>
+              <h2 class="h2" id="h-problema" data-i18n="study.problema.problema-que-o-produto">Problema que o produto aborda</h2>
               <div class="callout callout--hyp">
-                <span class="tag tag--hyp">Hipótese</span>
-                <p>Quem estuda por conta própria encontra muito conteúdo e pouca estrutura. Decidir o que estudar, em que ordem e por quanto tempo vira um trabalho antes mesmo de começar a estudar.</p>
-                <p>Não fiz pesquisa com estudantes. Este é o problema que o produto se propõe a resolver, não um problema que eu tenha validado.</p>
+                <span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span>
+                <p data-i18n="study.problema.quem-estuda-por-conta">Quem estuda por conta própria encontra muito conteúdo e pouca estrutura. Decidir o que estudar, em que ordem e por quanto tempo vira um trabalho antes mesmo de começar a estudar.</p>
+                <p data-i18n="study.problema.nao-fiz-pesquisa-com">Não fiz pesquisa com estudantes. Este é o problema que o produto se propõe a resolver, não um problema que eu tenha validado.</p>
               </div>
-              <h3 class="h3">O que o produto assume</h3>
+              <h3 class="h3" data-i18n="study.problema.o-que-o-produto">O que o produto assume</h3>
               <div class="read">
                 <ul>
-                  <li><strong>A ordem importa.</strong> Os módulos de uma jornada liberam em sequência, da videoaula à avaliação final. <span class="tag tag--doc">Design</span></li>
-                  <li><strong>Esforço real vale mais que intenção.</strong> Progresso, horas e ofensiva vêm das sessões de foco registradas, não de itens marcados à mão. <span class="tag tag--doc">Design</span></li>
-                  <li><strong>Concluir precisa de um critério claro.</strong> A avaliação final pede nota mínima de 7,0. <span class="tag tag--doc">Design</span></li>
+                  <li data-i18n="study.problema.a-ordem-importa-os"><strong>A ordem importa.</strong> Os módulos de uma jornada liberam em sequência, da videoaula à avaliação final. <span class="tag tag--doc">Design</span></li>
+                  <li data-i18n="study.problema.esforco-real-vale-mais"><strong>Esforço real vale mais que intenção.</strong> Progresso, horas e ofensiva vêm das sessões de foco registradas, não de itens marcados à mão. <span class="tag tag--doc">Design</span></li>
+                  <li data-i18n="study.problema.concluir-precisa-de-um"><strong>Concluir precisa de um critério claro.</strong> A avaliação final pede nota mínima de 7,0. <span class="tag tag--doc">Design</span></li>
                 </ul>
               </div>
             </section>
 
             <!-- 3. Objetivos -->
             <section id="objetivos" aria-labelledby="h-objetivos">
-              <h2 class="h2" id="h-objetivos">Objetivos e proposta de valor</h2>
-              <p class="lead">Escolha um tema, siga a trilha, estude com foco e veja o progresso, sem montar nada à mão.</p>
+              <h2 class="h2" id="h-objetivos" data-i18n="study.toc.objetivos-e-proposta-de">Objetivos e proposta de valor</h2>
+              <p class="lead" data-i18n="study.objetivos.escolha-um-tema-siga">Escolha um tema, siga a trilha, estude com foco e veja o progresso, sem montar nada à mão.</p>
               <div class="read">
                 <ul>
-                  <li>Tirar da pessoa o trabalho de decidir por onde começar.</li>
-                  <li>Reunir vídeo, leitura, prática e avaliação no mesmo lugar.</li>
-                  <li>Registrar o esforço real, com sessões de foco e ofensiva de dias seguidos.</li>
-                  <li>Mostrar a evolução por matéria e por semana.</li>
-                  <li>Manter a interface simples: quatro abas e uma ação principal por tela.</li>
+                  <li data-i18n="study.objetivos.tirar-da-pessoa-o">Tirar da pessoa o trabalho de decidir por onde começar.</li>
+                  <li data-i18n="study.objetivos.reunir-video-leitura-pratica">Reunir vídeo, leitura, prática e avaliação no mesmo lugar.</li>
+                  <li data-i18n="study.objetivos.registrar-o-esforco-real">Registrar o esforço real, com sessões de foco e ofensiva de dias seguidos.</li>
+                  <li data-i18n="study.objetivos.mostrar-a-evolucao-por">Mostrar a evolução por matéria e por semana.</li>
+                  <li data-i18n="study.objetivos.manter-a-interface-simples">Manter a interface simples: quatro abas e uma ação principal por tela.</li>
                 </ul>
               </div>
             </section>
 
             <!-- 4. Público -->
             <section id="publico" aria-labelledby="h-publico">
-              <h2 class="h2" id="h-publico">Público e necessidades</h2>
+              <h2 class="h2" id="h-publico" data-i18n="common.publico-e-necessidades">Público e necessidades</h2>
               <div class="callout callout--hyp">
-                <span class="tag tag--hyp">Hipótese</span>
-                <p>O público de partida são pessoas que estudam por conta própria, no celular, em sessões curtas. O tempo de foco padrão é de 25 minutos, e dá para ajustá-lo de 5 a 120. Não houve entrevistas nem testes com esse público.</p>
+                <span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span>
+                <p data-i18n="study.publico.o-publico-de-partida">O público de partida são pessoas que estudam por conta própria, no celular, em sessões curtas. O tempo de foco padrão é de 25 minutos, e dá para ajustá-lo de 5 a 120. Não houve entrevistas nem testes com esse público.</p>
               </div>
-              <h3 class="h3">Necessidades consideradas no desenho</h3>
+              <h3 class="h3" data-i18n="study.publico.necessidades-consideradas-no-desenho">Necessidades consideradas no desenho</h3>
               <div class="read">
                 <ul>
-                  <li>Saber o que estudar agora, sem escolher entre dezenas de opções.</li>
-                  <li>Continuar de onde parou, mesmo depois de dias.</li>
-                  <li>Registrar tempo e sequência de dias estudados.</li>
-                  <li>Ver a evolução por matéria.</li>
-                  <li>Estudar sem sair do app: vídeo, leitura e prática na mesma trilha.</li>
+                  <li data-i18n="study.publico.saber-o-que-estudar">Saber o que estudar agora, sem escolher entre dezenas de opções.</li>
+                  <li data-i18n="study.publico.continuar-de-onde-parou">Continuar de onde parou, mesmo depois de dias.</li>
+                  <li data-i18n="study.publico.registrar-tempo-e-sequencia">Registrar tempo e sequência de dias estudados.</li>
+                  <li data-i18n="study.publico.ver-a-evolucao-por">Ver a evolução por matéria.</li>
+                  <li data-i18n="study.publico.estudar-sem-sair-do">Estudar sem sair do app: vídeo, leitura e prática na mesma trilha.</li>
                 </ul>
               </div>
             </section>
 
             <!-- 5. MVP -->
             <section id="mvp" aria-labelledby="h-mvp">
-              <h2 class="h2" id="h-mvp">Escopo e MVP</h2>
+              <h2 class="h2" id="h-mvp" data-i18n="study.toc.escopo-e-mvp">Escopo e MVP</h2>
               <div class="read">
-                <p>O recorte que está no ar fecha o ciclo completo de estudo: escolher, estudar, registrar e acompanhar. Ficaram para depois as pausas do Pomodoro, os sons de sessão, o lembrete diário e as notificações, que o próprio app lista como Em breve. Não documentei um método formal de priorização.</p>
+                <p data-i18n="study.mvp.o-recorte-que-esta">O recorte que está no ar fecha o ciclo completo de estudo: escolher, estudar, registrar e acompanhar. Ficaram para depois as pausas do Pomodoro, os sons de sessão, o lembrete diário e as notificações, que o próprio app lista como Em breve. Não documentei um método formal de priorização.</p>
               </div>
               <div class="table-wrap">
                 <table class="table">
-                  <caption class="visually-hidden">Funcionalidades do MVP e o estado de cada uma</caption>
-                  <thead><tr><th scope="col">Funcionalidade</th><th scope="col">Estado</th></tr></thead>
+                  <caption class="visually-hidden" data-i18n="study.mvp.funcionalidades-do-mvp-e">Funcionalidades do MVP e o estado de cada uma</caption>
+                  <thead><tr><th scope="col" data-i18n="study.mvp.funcionalidade">Funcionalidade</th><th scope="col" data-i18n="study.hero.estado">Estado</th></tr></thead>
                   <tbody>
-                    <tr><td>Explorar, coleção e criação de conteúdo próprio</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Jornada de aprendizado com módulos em ordem</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Videoaula, leitura, prática e avaliação</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Sessão de foco com cronômetro</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Planner e lista de tarefas</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Progresso, ofensiva e perfil</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Login com Google</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Temas claro, escuro e do sistema</td><td><span class="tag tag--done">Implementado</span></td></tr>
-                    <tr><td>Pausas do Pomodoro, sons, lembrete diário e notificações</td><td><span class="tag tag--soon">Em breve</span></td></tr>
+                    <tr><td data-i18n="study.mvp.explorar-colecao-e-criacao">Explorar, coleção e criação de conteúdo próprio</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.jornada-de-aprendizado-com">Jornada de aprendizado com módulos em ordem</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.videoaula-leitura-pratica-e">Videoaula, leitura, prática e avaliação</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.sessao-de-foco-com">Sessão de foco com cronômetro</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.planner-e-lista-de">Planner e lista de tarefas</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.progresso-ofensiva-e-perfil">Progresso, ofensiva e perfil</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.login-com-google">Login com Google</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.temas-claro-escuro-e">Temas claro, escuro e do sistema</td><td><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td></tr>
+                    <tr><td data-i18n="study.mvp.pausas-do-pomodoro-sons">Pausas do Pomodoro, sons, lembrete diário e notificações</td><td><span class="tag tag--soon" data-i18n="study.hero.em-breve">Em breve</span></td></tr>
                   </tbody>
                 </table>
               </div>
@@ -242,81 +251,81 @@
 
             <!-- 6. Arquitetura e jornada -->
             <section id="jornada" aria-labelledby="h-jornada">
-              <h2 class="h2" id="h-jornada">Arquitetura da informação e jornada</h2>
+              <h2 class="h2" id="h-jornada" data-i18n="study.jornada.arquitetura-da-informacao-e">Arquitetura da informação e jornada</h2>
               <div class="read">
-                <p>A navegação principal tem quatro abas, com texto e ícone. Tudo o que não cabe nelas fica no menu do Perfil. <span class="tag tag--doc">Design</span></p>
+                <p data-i18n="study.jornada.a-navegacao-principal-tem">A navegação principal tem quatro abas, com texto e ícone. Tudo o que não cabe nelas fica no menu do Perfil. <span class="tag tag--doc">Design</span></p>
               </div>
               <div class="ia">
                 <div>
-                  <h3>Início</h3>
+                  <h3 data-i18n="common.inicio">Início</h3>
                   <ul>
-                    <li>Pronto para focar?</li>
-                    <li>Recomendado agora</li>
-                    <li>Progresso de hoje</li>
-                    <li>Lista de tarefas</li>
+                    <li data-i18n="study.hero.pronto-para-focar">Pronto para focar?</li>
+                    <li data-i18n="common.recomendado-agora">Recomendado agora</li>
+                    <li data-i18n="study.jornada.progresso-de-hoje">Progresso de hoje</li>
+                    <li data-i18n="study.jornada.lista-de-tarefas">Lista de tarefas</li>
                   </ul>
                 </div>
                 <div>
-                  <h3>Explorar</h3>
+                  <h3 data-i18n="study.hero.explorar">Explorar</h3>
                   <ul>
-                    <li>Busca e categorias</li>
-                    <li>Jornada de aprendizado</li>
-                    <li>Minha coleção</li>
-                    <li>Descobrir novos conteúdos</li>
-                    <li>Criar conteúdo</li>
+                    <li data-i18n="study.jornada.busca-e-categorias">Busca e categorias</li>
+                    <li data-i18n="study.jornada.jornada-de-aprendizado">Jornada de aprendizado</li>
+                    <li data-i18n="study.jornada.minha-colecao">Minha coleção</li>
+                    <li data-i18n="study.jornada.descobrir-novos-conteudos">Descobrir novos conteúdos</li>
+                    <li data-i18n="study.jornada.criar-conteudo">Criar conteúdo</li>
                   </ul>
                 </div>
                 <div>
-                  <h3>Progresso</h3>
+                  <h3 data-i18n="common.progresso">Progresso</h3>
                   <ul>
-                    <li>Progresso médio</li>
-                    <li>Últimos 7 dias</li>
-                    <li>Progresso por matéria</li>
+                    <li data-i18n="study.jornada.progresso-medio">Progresso médio</li>
+                    <li data-i18n="common.ultimos-7-dias">Últimos 7 dias</li>
+                    <li data-i18n="study.jornada.progresso-por-materia">Progresso por matéria</li>
                     <li>Planner</li>
                   </ul>
                 </div>
                 <div>
-                  <h3>Perfil</h3>
+                  <h3 data-i18n="study.jornada.perfil">Perfil</h3>
                   <ul>
-                    <li>Estatísticas e histórico</li>
-                    <li>Jornada, tarefas e matérias</li>
-                    <li>Configurações</li>
-                    <li>Ajuda e sair</li>
+                    <li data-i18n="study.jornada.estatisticas-e-historico">Estatísticas e histórico</li>
+                    <li data-i18n="study.jornada.jornada-tarefas-e-materias">Jornada, tarefas e matérias</li>
+                    <li data-i18n="study.jornada.configuracoes">Configurações</li>
+                    <li data-i18n="study.jornada.ajuda-e-sair">Ajuda e sair</li>
                   </ul>
                 </div>
               </div>
 
-              <h3 class="h3">O caminho de quem estuda</h3>
+              <h3 class="h3" data-i18n="study.jornada.o-caminho-de-quem">O caminho de quem estuda</h3>
               <ol class="steps">
-                <li><span><strong>Buscar um tema em Explorar</strong>A pessoa digita um assunto ou escolhe uma categoria.</span></li>
-                <li><span><strong>Adicionar à coleção</strong>O Study monta a trilha de módulos para aquele tema.</span></li>
-                <li><span><strong>Abrir a jornada</strong>Os módulos aparecem em ordem; o próximo fica em destaque e os seguintes ficam bloqueados.</span></li>
-                <li><span><strong>Estudar o módulo</strong>Videoaula, leitura, prática com flashcards e, no fim, a avaliação.</span></li>
-                <li><span><strong>Iniciar uma sessão de foco</strong>Uma tela de pré-sessão define roteiro e duração; depois vem o cronômetro e o resumo da sessão.</span></li>
-                <li><span><strong>Acompanhar o progresso</strong>Tempo estudado, sessões, ofensiva e evolução por matéria.</span></li>
+                <li><span data-i18n="study.jornada.buscar-um-tema-em"><strong>Buscar um tema em Explorar</strong>A pessoa digita um assunto ou escolhe uma categoria.</span></li>
+                <li><span data-i18n="study.jornada.adicionar-a-colecao-o"><strong>Adicionar à coleção</strong>O Study monta a trilha de módulos para aquele tema.</span></li>
+                <li><span data-i18n="study.jornada.abrir-a-jornada-os"><strong>Abrir a jornada</strong>Os módulos aparecem em ordem; o próximo fica em destaque e os seguintes ficam bloqueados.</span></li>
+                <li><span data-i18n="study.jornada.estudar-o-modulo-videoaula"><strong>Estudar o módulo</strong>Videoaula, leitura, prática com flashcards e, no fim, a avaliação.</span></li>
+                <li><span data-i18n="study.jornada.iniciar-uma-sessao-de"><strong>Iniciar uma sessão de foco</strong>Uma tela de pré-sessão define roteiro e duração; depois vem o cronômetro e o resumo da sessão.</span></li>
+                <li><span data-i18n="study.jornada.acompanhar-o-progresso-tempo"><strong>Acompanhar o progresso</strong>Tempo estudado, sessões, ofensiva e evolução por matéria.</span></li>
               </ol>
 
               <div class="panel">
-                <div class="shots shots--5" role="region" aria-label="Fluxo de foco em cinco telas. Role para o lado para ver todas." tabindex="0">
+                <div class="shots shots--5" role="region" aria-label="Fluxo de foco em cinco telas. Role para o lado para ver todas." tabindex="0" data-i18n-aria-label="study.jornada.fluxo-de-foco-em">
                   <figure>
-                    <img class="shot" src="../assets/img/study-explorar.webp" width="804" height="1748" loading="lazy" alt="Tela Explorar com busca, categorias, jornada de aprendizado e coleção.">
-                    <figcaption><strong>Explorar</strong>Busca e coleção.</figcaption>
+                    <img class="shot" src="../assets/img/study-explorar.webp" width="804" height="1748" loading="lazy" alt="Tela Explorar com busca, categorias, jornada de aprendizado e coleção." data-i18n-alt="study.jornada.tela-explorar-com-busca">
+                    <figcaption data-i18n="study.jornada.explorar-busca-e-colecao"><strong>Explorar</strong>Busca e coleção.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-jornada.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 0% concluído, próximo passo de leitura e lista de módulos.">
-                    <figcaption><strong>Jornada</strong>Módulos em ordem.</figcaption>
+                    <img class="shot" src="../assets/img/study-jornada.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 0% concluído, próximo passo de leitura e lista de módulos." data-i18n-alt="study.jornada.jornada-phrasal-verbs-com">
+                    <figcaption data-i18n="study.jornada.jornada-modulos-em-ordem"><strong>Jornada</strong>Módulos em ordem.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-presessao.webp" width="804" height="1748" loading="lazy" alt="Tela de pré-sessão com roteiro sugerido, duração de foco de 25 minutos e botão Iniciar sessão.">
-                    <figcaption><strong>Pré-sessão</strong>Roteiro e duração.</figcaption>
+                    <img class="shot" src="../assets/img/study-presessao.webp" width="804" height="1748" loading="lazy" alt="Tela de pré-sessão com roteiro sugerido, duração de foco de 25 minutos e botão Iniciar sessão." data-i18n-alt="study.jornada.tela-de-pre-sessao">
+                    <figcaption data-i18n="study.jornada.pre-sessao-roteiro-e"><strong>Pré-sessão</strong>Roteiro e duração.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-foco.webp" width="804" height="1748" loading="lazy" alt="Sessão de foco com cronômetro circular em 12:16 e meta de 25 minutos.">
-                    <figcaption><strong>Foco</strong>Cronômetro em tela cheia.</figcaption>
+                    <img class="shot" src="../assets/img/study-foco.webp" width="804" height="1748" loading="lazy" alt="Sessão de foco com cronômetro circular em 12:16 e meta de 25 minutos." data-i18n-alt="study.jornada.sessao-de-foco-com">
+                    <figcaption data-i18n="study.jornada.foco-cronometro-em-tela"><strong>Foco</strong>Cronômetro em tela cheia.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-concluida.webp" width="804" height="1748" loading="lazy" alt="Tela Sessão concluída, com 25:00 de tempo focado, 1 sessão hoje e ofensiva de 4 dias.">
-                    <figcaption><strong>Conclusão</strong>Resumo da sessão.</figcaption>
+                    <img class="shot" src="../assets/img/study-concluida.webp" width="804" height="1748" loading="lazy" alt="Tela Sessão concluída, com 25:00 de tempo focado, 1 sessão hoje e ofensiva de 4 dias." data-i18n-alt="study.jornada.tela-sessao-concluida-com">
+                    <figcaption data-i18n="study.jornada.conclusao-resumo-da-sessao"><strong>Conclusão</strong>Resumo da sessão.</figcaption>
                   </figure>
                 </div>
               </div>
@@ -324,46 +333,46 @@
 
             <!-- 7. Design -->
             <section id="design" aria-labelledby="h-design">
-              <h2 class="h2" id="h-design">Processo de design e decisões de interface</h2>
+              <h2 class="h2" id="h-design" data-i18n="study.design.processo-de-design-e">Processo de design e decisões de interface</h2>
               <div class="read">
-                <p>Desenhei a interface no Figma e a mantive como um design system com tokens de cor, superfícies e estados. A paleta abaixo vem dos tokens do produto. <span class="tag tag--done">Implementado</span></p>
+                <p data-i18n="study.design.desenhei-a-interface-no">Desenhei a interface no Figma e a mantive como um design system com tokens de cor, superfícies e estados. A paleta abaixo vem dos tokens do produto. <span class="tag tag--done">Implementado</span></p>
               </div>
-              <ul class="swatches" aria-label="Paleta do tema escuro">
-                <li class="swatch"><span class="swatch__chip" style="background:#09090B"></span><span class="swatch__info"><span class="swatch__name">Fundo</span><span class="swatch__hex">#09090B</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#111827"></span><span class="swatch__info"><span class="swatch__name">Superfície</span><span class="swatch__hex">#111827</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#2563EB"></span><span class="swatch__info"><span class="swatch__name">Ação principal</span><span class="swatch__hex">#2563EB</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#E8EEFF"></span><span class="swatch__info"><span class="swatch__name">Texto</span><span class="swatch__hex">#E8EEFF</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#8B9CC8"></span><span class="swatch__info"><span class="swatch__name">Texto secundário</span><span class="swatch__hex">#8B9CC8</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#60A5FA"></span><span class="swatch__info"><span class="swatch__name">Videoaula</span><span class="swatch__hex">#60A5FA</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#10B981"></span><span class="swatch__info"><span class="swatch__name">Leitura</span><span class="swatch__hex">#10B981</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#F59E0B"></span><span class="swatch__info"><span class="swatch__name">Prática</span><span class="swatch__hex">#F59E0B</span></span></li>
-                <li class="swatch"><span class="swatch__chip" style="background:#A78BFA"></span><span class="swatch__info"><span class="swatch__name">Avaliação</span><span class="swatch__hex">#A78BFA</span></span></li>
+              <ul class="swatches" aria-label="Paleta do tema escuro" data-i18n-aria-label="study.design.paleta-do-tema-escuro">
+                <li class="swatch"><span class="swatch__chip" style="background:#09090B"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.fundo">Fundo</span><span class="swatch__hex">#09090B</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#111827"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.superficie">Superfície</span><span class="swatch__hex">#111827</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#2563EB"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.acao-principal">Ação principal</span><span class="swatch__hex">#2563EB</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#E8EEFF"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.texto">Texto</span><span class="swatch__hex">#E8EEFF</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#8B9CC8"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.texto-secundario">Texto secundário</span><span class="swatch__hex">#8B9CC8</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#60A5FA"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.videoaula">Videoaula</span><span class="swatch__hex">#60A5FA</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#10B981"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.leitura">Leitura</span><span class="swatch__hex">#10B981</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#F59E0B"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.pratica">Prática</span><span class="swatch__hex">#F59E0B</span></span></li>
+                <li class="swatch"><span class="swatch__chip" style="background:#A78BFA"></span><span class="swatch__info"><span class="swatch__name" data-i18n="study.design.avaliacao">Avaliação</span><span class="swatch__hex">#A78BFA</span></span></li>
               </ul>
 
-              <h3 class="h3">Decisões de interface</h3>
+              <h3 class="h3" data-i18n="study.design.decisoes-de-interface">Decisões de interface</h3>
               <div class="cards cards--2">
                 <div>
-                  <h4>Tema do sistema, claro ou escuro</h4>
-                  <p>Por padrão o app segue o tema do aparelho, e o escuro é o ponto de partida quando o sistema não informa. A escolha fica salva no navegador. No tema claro, as cores dos módulos escurecem para manter o contraste.</p>
-                  <p class="to-validate"><strong>A validar.</strong> Não testei com pessoas se o tema claro funciona bem em uso real, por exemplo ao ar livre.</p>
-                  <span class="tag tag--done">Implementado</span>
+                  <h4 data-i18n="study.design.tema-do-sistema-claro">Tema do sistema, claro ou escuro</h4>
+                  <p data-i18n="study.design.por-padrao-o-app">Por padrão o app segue o tema do aparelho, e o escuro é o ponto de partida quando o sistema não informa. A escolha fica salva no navegador. No tema claro, as cores dos módulos escurecem para manter o contraste.</p>
+                  <p class="to-validate" data-i18n="study.design.a-validar-nao-testei"><strong>A validar.</strong> Não testei com pessoas se o tema claro funciona bem em uso real, por exemplo ao ar livre.</p>
+                  <span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span>
                 </div>
                 <div>
-                  <h4>Uma cor por tipo de módulo</h4>
-                  <p>Videoaula, leitura, prática e avaliação têm cor, ícone e rótulo próprios, então a informação nunca depende só da cor.</p>
-                  <p class="to-validate"><strong>A validar.</strong> Não sei se as pessoas distinguem os quatro tipos de relance. Não testei.</p>
+                  <h4 data-i18n="study.design.uma-cor-por-tipo">Uma cor por tipo de módulo</h4>
+                  <p data-i18n="study.design.videoaula-leitura-pratica-e">Videoaula, leitura, prática e avaliação têm cor, ícone e rótulo próprios, então a informação nunca depende só da cor.</p>
+                  <p class="to-validate" data-i18n="study.design.a-validar-nao-sei"><strong>A validar.</strong> Não sei se as pessoas distinguem os quatro tipos de relance. Não testei.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
                 <div>
-                  <h4>Cores de feedback não identificam matérias</h4>
-                  <p>Verde, âmbar e vermelho ficam reservados a sucesso, alerta e erro, para que ninguém confunda uma matéria com um estado.</p>
-                  <p class="to-validate"><strong>A validar.</strong> É uma regra de projeto. Não observei ninguém confundindo ou deixando de confundir.</p>
+                  <h4 data-i18n="study.design.cores-de-feedback-nao">Cores de feedback não identificam matérias</h4>
+                  <p data-i18n="study.design.verde-ambar-e-vermelho">Verde, âmbar e vermelho ficam reservados a sucesso, alerta e erro, para que ninguém confunda uma matéria com um estado.</p>
+                  <p class="to-validate" data-i18n="study.design.a-validar-e-uma"><strong>A validar.</strong> É uma regra de projeto. Não observei ninguém confundindo ou deixando de confundir.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
                 <div>
-                  <h4>Metas de acessibilidade nos tokens</h4>
-                  <p>Texto com contraste mínimo de 4,5:1 sobre as superfícies, contorno de campos com pelo menos 3:1, controles de toque de 44 px, rótulos para tecnologias assistivas e respeito à preferência por movimento reduzido.</p>
-                  <p class="to-validate"><strong>A validar.</strong> São metas dos tokens. Não testei com leitor de tela nem com pessoas que usam tecnologias assistivas.</p>
+                  <h4 data-i18n="study.design.metas-de-acessibilidade-nos">Metas de acessibilidade nos tokens</h4>
+                  <p data-i18n="study.design.texto-com-contraste-minimo">Texto com contraste mínimo de 4,5:1 sobre as superfícies, contorno de campos com pelo menos 3:1, controles de toque de 44 px, rótulos para tecnologias assistivas e respeito à preferência por movimento reduzido.</p>
+                  <p class="to-validate" data-i18n="study.design.a-validar-sao-metas"><strong>A validar.</strong> São metas dos tokens. Não testei com leitor de tela nem com pessoas que usam tecnologias assistivas.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
               </div>
@@ -371,36 +380,36 @@
               <div class="panel">
                 <div class="compare compare--narrow">
                   <figure>
-                    <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study no tema escuro.">
-                    <figcaption><strong>Tema escuro</strong>Ponto de partida do produto.</figcaption>
+                    <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study no tema escuro." data-i18n-alt="study.design.tela-inicio-do-study">
+                    <figcaption data-i18n="study.design.tema-escuro-ponto-de"><strong>Tema escuro</strong>Ponto de partida do produto.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-home-claro.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study no tema claro.">
-                    <figcaption><strong>Tema claro</strong>Mesma estrutura, cores de módulo mais escuras.</figcaption>
+                    <img class="shot" src="../assets/img/study-home-claro.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study no tema claro." data-i18n-alt="study.design.tela-inicio-do-study-2">
+                    <figcaption data-i18n="study.design.tema-claro-mesma-estrutura"><strong>Tema claro</strong>Mesma estrutura, cores de módulo mais escuras.</figcaption>
                   </figure>
                 </div>
               </div>
 
-              <h3 class="h3">Do Figma ao produto</h3>
+              <h3 class="h3" data-i18n="study.design.do-figma-ao-produto">Do Figma ao produto</h3>
               <div class="read">
-                <p>A Home implementada mantém a pergunta “Pronto para focar?” e o bloco de progresso do dia, mas mudou em quatro pontos em relação ao mockup. <span class="tag tag--doc">Design</span></p>
+                <p data-i18n="study.design.a-home-implementada-mantem">A Home implementada mantém a pergunta “Pronto para focar?” e o bloco de progresso do dia, mas mudou em quatro pontos em relação ao mockup. <span class="tag tag--doc">Design</span></p>
                 <ul>
-                  <li>O cronômetro circular e o botão Iniciar Sessão saíram da Home. Hoje a sessão começa por uma tela de pré-sessão, com roteiro e duração ajustável.</li>
-                  <li>“Continuar onde parou” e “Recomendado agora” viraram um só cartão de recomendação.</li>
-                  <li>A barra de abas ganhou rótulos de texto, além dos ícones.</li>
-                  <li>“Streak” virou “Ofensiva”, com uma frase que explica o termo.</li>
+                  <li data-i18n="study.design.o-cronometro-circular-e">O cronômetro circular e o botão Iniciar Sessão saíram da Home. Hoje a sessão começa por uma tela de pré-sessão, com roteiro e duração ajustável.</li>
+                  <li data-i18n="study.design.continuar-onde-parou-e">“Continuar onde parou” e “Recomendado agora” viraram um só cartão de recomendação.</li>
+                  <li data-i18n="study.design.a-barra-de-abas">A barra de abas ganhou rótulos de texto, além dos ícones.</li>
+                  <li data-i18n="study.design.streak-virou-ofensiva-com">“Streak” virou “Ofensiva”, com uma frase que explica o termo.</li>
                 </ul>
-                <p>O material do projeto registra o que mudou, mas não o motivo. Nenhuma dessas mudanças foi validada com pessoas. <span class="tag tag--soon">Em aberto</span></p>
+                <p data-i18n="study.design.o-material-do-projeto">O material do projeto registra o que mudou, mas não o motivo. Nenhuma dessas mudanças foi validada com pessoas. <span class="tag tag--soon">Em aberto</span></p>
               </div>
               <div class="panel">
                 <div class="compare compare--narrow">
                   <figure>
-                    <img class="shot" src="../assets/img/study-figma-home.webp" width="804" height="1748" loading="lazy" alt="Mockup da Home no Figma, com cronômetro de foco de 25:00, progresso de hoje, continuar onde parou e recomendação.">
-                    <figcaption><strong>Mockup no Figma</strong>Home com cronômetro e Iniciar Sessão.</figcaption>
+                    <img class="shot" src="../assets/img/study-figma-home.webp" width="804" height="1748" loading="lazy" alt="Mockup da Home no Figma, com cronômetro de foco de 25:00, progresso de hoje, continuar onde parou e recomendação." data-i18n-alt="study.design.mockup-da-home-no">
+                    <figcaption data-i18n="study.design.mockup-no-figma-home"><strong>Mockup no Figma</strong>Home com cronômetro e Iniciar Sessão.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Home implementada, com cartão Recomendado agora, botão Estudar agora e progresso de hoje.">
-                    <figcaption><strong>Produto implementado</strong>Home com cartão de recomendação.</figcaption>
+                    <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Home implementada, com cartão Recomendado agora, botão Estudar agora e progresso de hoje." data-i18n-alt="study.design.home-implementada-com-cartao">
+                    <figcaption data-i18n="study.design.produto-implementado-home-com"><strong>Produto implementado</strong>Home com cartão de recomendação.</figcaption>
                   </figure>
                 </div>
               </div>
@@ -408,40 +417,40 @@
 
             <!-- 8. Funcionalidades -->
             <section id="funcionalidades" aria-labelledby="h-func">
-              <h2 class="h2" id="h-func">Funcionalidades desenvolvidas</h2>
-              <p class="lead">Tudo o que está abaixo existe no produto. O que ainda não existe aparece com a etiqueta Em breve.</p>
+              <h2 class="h2" id="h-func" data-i18n="study.funcionalidades.funcionalidades-desenvolvidas">Funcionalidades desenvolvidas</h2>
+              <p class="lead" data-i18n="study.funcionalidades.tudo-o-que-esta">Tudo o que está abaixo existe no produto. O que ainda não existe aparece com a etiqueta Em breve.</p>
               <div class="cards cards--3">
-                <div><h3>Explorar e coleção</h3><p>Busca por tema, categorias e coleção pessoal. Também dá para criar um conteúdo próprio, com título, matéria, tipo e duração.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Jornada de aprendizado</h3><p>Módulos em ordem, com o próximo em destaque e os seguintes bloqueados até a conclusão do anterior.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Videoaulas</h3><p>Cinco vídeos curados por tema a partir da API do YouTube, com filtros para conteúdo educacional.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Leitura</h3><p>Texto explicativo do módulo, gerado a partir do tema e validado antes de chegar à tela.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Prática</h3><p>Flashcards por tema, de 4 a 12 cartões.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Avaliação</h3><p>Quiz de 10 questões, cada uma com uma alternativa correta, e nota mínima de 7,0.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Sessão de foco</h3><p>Pré-sessão com roteiro, cronômetro de 5 a 120 minutos, pausa, tela cheia, encerramento e resumo. Um cronômetro flutuante acompanha a navegação.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Planner</h3><p>Calendário mensal com itens por dia, como estudo, revisão, prova, tarefa e lembrete. Um item pode iniciar uma sessão de foco.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Lista de tarefas</h3><p>Tarefas por matéria, com marcação de concluído e exclusão confirmada.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Progresso e ofensiva</h3><p>Média de progresso, tempo estudado, últimos 7 dias, evolução por matéria e dias seguidos de estudo.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Login e configurações</h3><p>Login com Google, duração padrão do foco, tema claro, escuro ou do sistema e ajuda dentro do app.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Pomodoro completo e lembretes</h3><p>Pausas curtas e longas, sons de início e fim de sessão, lembrete diário e notificações.</p><span class="tag tag--soon">Em breve</span></div>
+                <div><h3 data-i18n="study.funcionalidades.explorar-e-colecao">Explorar e coleção</h3><p data-i18n="study.funcionalidades.busca-por-tema-categorias">Busca por tema, categorias e coleção pessoal. Também dá para criar um conteúdo próprio, com título, matéria, tipo e duração.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.jornada.jornada-de-aprendizado">Jornada de aprendizado</h3><p data-i18n="study.funcionalidades.modulos-em-ordem-com">Módulos em ordem, com o próximo em destaque e os seguintes bloqueados até a conclusão do anterior.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.funcionalidades.videoaulas">Videoaulas</h3><p data-i18n="study.funcionalidades.cinco-videos-curados-por">Cinco vídeos curados por tema a partir da API do YouTube, com filtros para conteúdo educacional.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.design.leitura">Leitura</h3><p data-i18n="study.funcionalidades.texto-explicativo-do-modulo">Texto explicativo do módulo, gerado a partir do tema e validado antes de chegar à tela.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.design.pratica">Prática</h3><p data-i18n="study.funcionalidades.flashcards-por-tema-de">Flashcards por tema, de 4 a 12 cartões.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.design.avaliacao">Avaliação</h3><p data-i18n="study.funcionalidades.quiz-de-10-questoes">Quiz de 10 questões, cada uma com uma alternativa correta, e nota mínima de 7,0.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.funcionalidades.sessao-de-foco">Sessão de foco</h3><p data-i18n="study.funcionalidades.pre-sessao-com-roteiro">Pré-sessão com roteiro, cronômetro de 5 a 120 minutos, pausa, tela cheia, encerramento e resumo. Um cronômetro flutuante acompanha a navegação.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3>Planner</h3><p data-i18n="study.funcionalidades.calendario-mensal-com-itens">Calendário mensal com itens por dia, como estudo, revisão, prova, tarefa e lembrete. Um item pode iniciar uma sessão de foco.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.jornada.lista-de-tarefas">Lista de tarefas</h3><p data-i18n="study.funcionalidades.tarefas-por-materia-com">Tarefas por matéria, com marcação de concluído e exclusão confirmada.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.funcionalidades.progresso-e-ofensiva">Progresso e ofensiva</h3><p data-i18n="study.funcionalidades.media-de-progresso-tempo">Média de progresso, tempo estudado, últimos 7 dias, evolução por matéria e dias seguidos de estudo.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.funcionalidades.login-e-configuracoes">Login e configurações</h3><p data-i18n="study.funcionalidades.login-com-google-duracao">Login com Google, duração padrão do foco, tema claro, escuro ou do sistema e ajuda dentro do app.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.funcionalidades.pomodoro-completo-e-lembretes">Pomodoro completo e lembretes</h3><p data-i18n="study.funcionalidades.pausas-curtas-e-longas">Pausas curtas e longas, sons de início e fim de sessão, lembrete diário e notificações.</p><span class="tag tag--soon" data-i18n="study.hero.em-breve">Em breve</span></div>
               </div>
 
               <div class="panel">
                 <div class="shots shots--4">
                   <figure>
-                    <img class="shot" src="../assets/img/study-leitura.webp" width="804" height="1748" loading="lazy" alt="Módulo de leitura O que são Phrasal Verbs?, com texto explicativo.">
-                    <figcaption><strong>Leitura</strong>Texto do módulo.</figcaption>
+                    <img class="shot" src="../assets/img/study-leitura.webp" width="804" height="1748" loading="lazy" alt="Módulo de leitura O que são Phrasal Verbs?, com texto explicativo." data-i18n-alt="study.funcionalidades.modulo-de-leitura-o">
+                    <figcaption data-i18n="study.funcionalidades.leitura-texto-do-modulo"><strong>Leitura</strong>Texto do módulo.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-timer.webp" width="804" height="1748" loading="lazy" alt="Cronômetro flutuante em 12:15 sobre a tela da jornada, com botões Pausar, Tela completa e Encerrar sessão.">
-                    <figcaption><strong>Cronômetro flutuante</strong>Acompanha a navegação.</figcaption>
+                    <img class="shot" src="../assets/img/study-timer.webp" width="804" height="1748" loading="lazy" alt="Cronômetro flutuante em 12:15 sobre a tela da jornada, com botões Pausar, Tela completa e Encerrar sessão." data-i18n-alt="study.funcionalidades.cronometro-flutuante-em-12">
+                    <figcaption data-i18n="study.funcionalidades.cronometro-flutuante-acompanha-a"><strong>Cronômetro flutuante</strong>Acompanha a navegação.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-planner.webp" width="804" height="1748" loading="lazy" alt="Planner de outubro de 2026, com calendário mensal, dia 10 selecionado e sessões registradas.">
-                    <figcaption><strong>Planner</strong>Calendário e sessões.</figcaption>
+                    <img class="shot" src="../assets/img/study-planner.webp" width="804" height="1748" loading="lazy" alt="Planner de outubro de 2026, com calendário mensal, dia 10 selecionado e sessões registradas." data-i18n-alt="study.funcionalidades.planner-de-outubro-de">
+                    <figcaption data-i18n="study.funcionalidades.planner-calendario-e-sessoes"><strong>Planner</strong>Calendário e sessões.</figcaption>
                   </figure>
                   <figure>
-                    <img class="shot" src="../assets/img/study-perfil.webp" width="804" height="1748" loading="lazy" alt="Perfil com 2h50 estudadas, 6 sessões, ofensiva de 4 dias, histórico recente e menu.">
-                    <figcaption><strong>Perfil</strong>Estatísticas e menu.</figcaption>
+                    <img class="shot" src="../assets/img/study-perfil.webp" width="804" height="1748" loading="lazy" alt="Perfil com 2h50 estudadas, 6 sessões, ofensiva de 4 dias, histórico recente e menu." data-i18n-alt="study.funcionalidades.perfil-com-2h50-estudadas">
+                    <figcaption data-i18n="study.funcionalidades.perfil-estatisticas-e-menu"><strong>Perfil</strong>Estatísticas e menu.</figcaption>
                   </figure>
                 </div>
               </div>
@@ -449,149 +458,149 @@
 
             <!-- 9. Implementação -->
             <section id="implementacao" aria-labelledby="h-impl">
-              <h2 class="h2" id="h-impl">Como foi construído</h2>
+              <h2 class="h2" id="h-impl" data-i18n="study.toc.como-foi-construido">Como foi construído</h2>
               <div class="read">
-                <p>Esta seção descreve o que existe no código do produto. <span class="tag tag--done">Implementado</span></p>
+                <p data-i18n="study.implementacao.esta-secao-descreve-o">Esta seção descreve o que existe no código do produto. <span class="tag tag--done">Implementado</span></p>
               </div>
               <dl class="spec">
-                <div class="spec__row"><dt>Front-end</dt><dd>Um único arquivo HTML, com React 18 e Tailwind CSS carregados por CDN e compilados no navegador. Não há etapa de build.</dd></div>
-                <div class="spec__row"><dt>Servidor</dt><dd>Node 20 ou superior e Express 5. O mesmo servidor entrega o app e a API.</dd></div>
-                <div class="spec__row"><dt>Rotas da API</dt><dd>Jornada de aprendizado, leitura, quiz, flashcards, resumo da matéria, vídeos e verificação de saúde.</dd></div>
-                <div class="spec__row"><dt>Dados</dt><dd>No navegador do usuário. O servidor guarda em disco apenas um cache das respostas geradas.</dd></div>
-                <div class="spec__row"><dt>Hospedagem</dt><dd>Render, plano gratuito.</dd></div>
+                <div class="spec__row"><dt>Front-end</dt><dd data-i18n="study.implementacao.um-unico-arquivo-html">Um único arquivo HTML, com React 18 e Tailwind CSS carregados por CDN e compilados no navegador. Não há etapa de build.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.implementacao.servidor">Servidor</dt><dd data-i18n="study.implementacao.node-20-ou-superior">Node 20 ou superior e Express 5. O mesmo servidor entrega o app e a API.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.implementacao.rotas-da-api">Rotas da API</dt><dd data-i18n="study.implementacao.jornada-de-aprendizado-leitura">Jornada de aprendizado, leitura, quiz, flashcards, resumo da matéria, vídeos e verificação de saúde.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.implementacao.dados">Dados</dt><dd data-i18n="study.implementacao.no-navegador-do-usuario">No navegador do usuário. O servidor guarda em disco apenas um cache das respostas geradas.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.implementacao.hospedagem">Hospedagem</dt><dd data-i18n="study.implementacao.render-plano-gratuito">Render, plano gratuito.</dd></div>
               </dl>
 
-              <h3 class="h3">Quem fez o quê</h3>
+              <h3 class="h3" data-i18n="study.implementacao.quem-fez-o-que">Quem fez o quê</h3>
               <div class="cards cards--3">
                 <div>
-                  <h4>Decisões de design</h4>
-                  <p>Design de produto, telas no Figma, design system e as decisões de interface descritas neste case. É a parte que assino. O app traz o crédito “Design System by Gabriel Rocha”.</p>
+                  <h4 data-i18n="study.implementacao.decisoes-de-design">Decisões de design</h4>
+                  <p data-i18n="study.implementacao.design-de-produto-telas">Design de produto, telas no Figma, design system e as decisões de interface descritas neste case. É a parte que assino. O app traz o crédito “Design System by Gabriel Rocha”.</p>
                   <span class="tag tag--doc">Design</span>
                 </div>
                 <div>
-                  <h4>Conteúdo gerado dentro do produto</h4>
-                  <p>Quem gera a jornada, a leitura, o quiz e os flashcards, quando alguém usa o app, é a API do Gemini. Essa é a IA que está no produto.</p>
-                  <span class="tag tag--done">Implementado</span>
+                  <h4 data-i18n="study.implementacao.conteudo-gerado-dentro-do">Conteúdo gerado dentro do produto</h4>
+                  <p data-i18n="study.implementacao.quem-gera-a-jornada">Quem gera a jornada, a leitura, o quiz e os flashcards, quando alguém usa o app, é a API do Gemini. Essa é a IA que está no produto.</p>
+                  <span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span>
                 </div>
                 <div>
-                  <h4>Escrita do código</h4>
-                  <p>Este case ainda não registra como o código foi escrito, nem com quais ferramentas. Até isso estar documentado, a seção acima descreve o que existe no código, sem atribuí-lo a mim.</p>
-                  <span class="tag tag--soon">Em aberto</span>
+                  <h4 data-i18n="study.implementacao.escrita-do-codigo">Escrita do código</h4>
+                  <p data-i18n="study.implementacao.este-case-ainda-nao">Este case ainda não registra como o código foi escrito, nem com quais ferramentas. Até isso estar documentado, a seção acima descreve o que existe no código, sem atribuí-lo a mim.</p>
+                  <span class="tag tag--soon" data-i18n="common.em-aberto">Em aberto</span>
                 </div>
               </div>
 
-              <h3 class="h3">Desafios técnicos</h3>
+              <h3 class="h3" data-i18n="study.implementacao.desafios-tecnicos">Desafios técnicos</h3>
               <div class="read">
-                <p><strong>Respostas de IA nem sempre vêm no formato esperado.</strong> O servidor valida cada resposta antes de entregá-la: o quiz precisa de 10 questões com uma alternativa correta, os flashcards ficam entre 4 e 12, a jornada exige ao menos dois módulos de estudo mais uma revisão e uma avaliação finais, e a leitura precisa ter pelo menos 60 palavras. Quando a resposta não passa, o servidor tenta de novo e passa por uma cadeia de modelos alternativos.</p>
-                <p><strong>Cota, tempo e custo.</strong> As chamadas à IA entram em uma fila (duas ao mesmo tempo, até 40 esperando) e têm um orçamento de 38 segundos por pedido. As respostas ficam em cache por 24 horas, e uma resposta antiga pode ser reaproveitada por até 14 dias se o serviço falhar. Há limite de requisições por IP.</p>
-                <p><strong>Vídeos adequados.</strong> A busca no YouTube devolve cinco vídeos por tema e aplica filtros de palavras bloqueadas e de termos educacionais, para reduzir resultados fora de contexto.</p>
-                <p><strong>Entradas do usuário dentro de um prompt.</strong> Os textos que a pessoa digita são tratados e escapados antes de entrar nos prompts enviados à IA.</p>
+                <p data-i18n="study.implementacao.respostas-de-ia-nem"><strong>Respostas de IA nem sempre vêm no formato esperado.</strong> O servidor valida cada resposta antes de entregá-la: o quiz precisa de 10 questões com uma alternativa correta, os flashcards ficam entre 4 e 12, a jornada exige ao menos dois módulos de estudo mais uma revisão e uma avaliação finais, e a leitura precisa ter pelo menos 60 palavras. Quando a resposta não passa, o servidor tenta de novo e passa por uma cadeia de modelos alternativos.</p>
+                <p data-i18n="study.implementacao.cota-tempo-e-custo"><strong>Cota, tempo e custo.</strong> As chamadas à IA entram em uma fila (duas ao mesmo tempo, até 40 esperando) e têm um orçamento de 38 segundos por pedido. As respostas ficam em cache por 24 horas, e uma resposta antiga pode ser reaproveitada por até 14 dias se o serviço falhar. Há limite de requisições por IP.</p>
+                <p data-i18n="study.implementacao.videos-adequados-a-busca"><strong>Vídeos adequados.</strong> A busca no YouTube devolve cinco vídeos por tema e aplica filtros de palavras bloqueadas e de termos educacionais, para reduzir resultados fora de contexto.</p>
+                <p data-i18n="study.implementacao.entradas-do-usuario-dentro"><strong>Entradas do usuário dentro de um prompt.</strong> Os textos que a pessoa digita são tratados e escapados antes de entrar nos prompts enviados à IA.</p>
               </div>
             </section>
 
             <!-- 10. IA e serviços -->
             <section id="ia" aria-labelledby="h-ia">
-              <h2 class="h2" id="h-ia">IA e serviços externos</h2>
+              <h2 class="h2" id="h-ia" data-i18n="study.toc.ia-e-servicos-externos">IA e serviços externos</h2>
               <div class="cards cards--3">
-                <div><h3>API do Gemini</h3><p>Gera a jornada de módulos, o texto de leitura, o quiz, os flashcards e o resumo de cada matéria.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>API de dados do YouTube</h3><p>Busca e filtra as videoaulas de cada tema.</p><span class="tag tag--done">Implementado</span></div>
-                <div><h3>Login com Google</h3><p>Identifica a pessoa no navegador, com o serviço de identidade do Google.</p><span class="tag tag--done">Implementado</span></div>
+                <div><h3 data-i18n="study.ia.api-do-gemini">API do Gemini</h3><p data-i18n="study.ia.gera-a-jornada-de">Gera a jornada de módulos, o texto de leitura, o quiz, os flashcards e o resumo de cada matéria.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.ia.api-de-dados-do">API de dados do YouTube</h3><p data-i18n="study.ia.busca-e-filtra-as">Busca e filtra as videoaulas de cada tema.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
+                <div><h3 data-i18n="study.mvp.login-com-google">Login com Google</h3><p data-i18n="study.ia.identifica-a-pessoa-no">Identifica a pessoa no navegador, com o serviço de identidade do Google.</p><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></div>
               </div>
               <div class="read">
-                <p>As chaves das APIs ficam no servidor, em variáveis de ambiente, nunca no navegador.</p>
-                <p>O conteúdo gerado não passa por revisão humana. Os validadores garantem o formato, não a precisão: um texto bem formatado ainda pode conter erros.</p>
+                <p data-i18n="study.ia.as-chaves-das-apis">As chaves das APIs ficam no servidor, em variáveis de ambiente, nunca no navegador.</p>
+                <p data-i18n="study.ia.o-conteudo-gerado-nao">O conteúdo gerado não passa por revisão humana. Os validadores garantem o formato, não a precisão: um texto bem formatado ainda pode conter erros.</p>
               </div>
             </section>
 
             <!-- 11. Estado atual e demo -->
             <section id="demo" aria-labelledby="h-demo">
-              <h2 class="h2" id="h-demo">Estado atual e demo</h2>
-              <p class="lead">O Study está no ar e pode ser testado. Antes de abrir, vale conhecer os limites.</p>
+              <h2 class="h2" id="h-demo" data-i18n="study.toc.estado-atual-e-demo">Estado atual e demo</h2>
+              <p class="lead" data-i18n="study.demo.o-study-esta-no">O Study está no ar e pode ser testado. Antes de abrir, vale conhecer os limites.</p>
               <div class="cta-row">
-                <a class="btn btn--dark" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
+                <a class="btn btn--dark" href="https://studyapp-kyi5.onrender.com/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
               </div>
               <dl class="spec">
-                <div class="spec__row"><dt>Acesso</dt><dd>É preciso entrar com uma conta Google.</dd></div>
-                <div class="spec__row"><dt>Hospedagem gratuita</dt><dd>O servidor dorme depois de cerca de 15 minutos sem uso. O primeiro acesso depois disso pode demorar.</dd></div>
-                <div class="spec__row"><dt>Cotas das APIs</dt><dd>A geração de conteúdo depende das cotas da IA e do YouTube. Se uma geração falhar, tente de novo mais tarde.</dd></div>
-                <div class="spec__row"><dt>Seus dados</dt><dd>Ficam no navegador. Limpar os dados do site apaga o progresso.</dd></div>
-                <div class="spec__row"><dt>Código-fonte</dt><dd>Ainda não está em um repositório público.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.demo.acesso">Acesso</dt><dd data-i18n="study.demo.e-preciso-entrar-com">É preciso entrar com uma conta Google.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.demo.hospedagem-gratuita">Hospedagem gratuita</dt><dd data-i18n="study.demo.o-servidor-dorme-depois">O servidor dorme depois de cerca de 15 minutos sem uso. O primeiro acesso depois disso pode demorar.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.demo.cotas-das-apis">Cotas das APIs</dt><dd data-i18n="study.demo.a-geracao-de-conteudo">A geração de conteúdo depende das cotas da IA e do YouTube. Se uma geração falhar, tente de novo mais tarde.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.demo.seus-dados">Seus dados</dt><dd data-i18n="study.demo.ficam-no-navegador-limpar">Ficam no navegador. Limpar os dados do site apaga o progresso.</dd></div>
+                <div class="spec__row"><dt data-i18n="study.demo.codigo-fonte">Código-fonte</dt><dd data-i18n="study.demo.ainda-nao-esta-em">Ainda não está em um repositório público.</dd></div>
               </dl>
               <div class="callout">
-                <span class="tag tag--soon">Limitação conhecida</span>
-                <p>O login com Google acontece no navegador, e o servidor ainda não valida a identidade. Por isso o Study não tem contas de verdade nem sincronização entre aparelhos.</p>
+                <span class="tag tag--soon" data-i18n="study.demo.limitacao-conhecida">Limitação conhecida</span>
+                <p data-i18n="study.demo.o-login-com-google">O login com Google acontece no navegador, e o servidor ainda não valida a identidade. Por isso o Study não tem contas de verdade nem sincronização entre aparelhos.</p>
               </div>
-              <h3 class="h3">Como testar em poucos minutos</h3>
+              <h3 class="h3" data-i18n="study.demo.como-testar-em-poucos">Como testar em poucos minutos</h3>
               <ol class="steps">
-                <li><span><strong>Entrar</strong>Abra a demo e entre com sua conta Google.</span></li>
-                <li><span><strong>Escolher um conteúdo</strong>Em Explorar, escolha um conteúdo e adicione à sua coleção.</span></li>
-                <li><span><strong>Abrir a jornada</strong>Entre na jornada e inicie o primeiro módulo.</span></li>
-                <li><span><strong>Fazer uma sessão de foco</strong>Inicie uma sessão, encerre e veja o resumo.</span></li>
-                <li><span><strong>Ver o progresso</strong>Abra a aba Progresso para ver tempo estudado e ofensiva.</span></li>
+                <li><span data-i18n="study.demo.entrar-abra-a-demo"><strong>Entrar</strong>Abra a demo e entre com sua conta Google.</span></li>
+                <li><span data-i18n="study.demo.escolher-um-conteudo-em"><strong>Escolher um conteúdo</strong>Em Explorar, escolha um conteúdo e adicione à sua coleção.</span></li>
+                <li><span data-i18n="study.demo.abrir-a-jornada-entre"><strong>Abrir a jornada</strong>Entre na jornada e inicie o primeiro módulo.</span></li>
+                <li><span data-i18n="study.demo.fazer-uma-sessao-de"><strong>Fazer uma sessão de foco</strong>Inicie uma sessão, encerre e veja o resumo.</span></li>
+                <li><span data-i18n="study.demo.ver-o-progresso-abra"><strong>Ver o progresso</strong>Abra a aba Progresso para ver tempo estudado e ofensiva.</span></li>
               </ol>
             </section>
 
             <!-- 12. Aprendizados e próximos passos -->
             <section id="proximos" aria-labelledby="h-prox">
-              <h2 class="h2" id="h-prox">Aprendizados e próximos passos</h2>
-              <h3 class="h3">O que o produto me mostrou</h3>
+              <h2 class="h2" id="h-prox" data-i18n="study.toc.aprendizados-e-proximos-passos">Aprendizados e próximos passos</h2>
+              <h3 class="h3" data-i18n="study.proximos.o-que-o-produto">O que o produto me mostrou</h3>
               <div class="cards cards--3">
-                <div><h4>Interface de IA é interface de falha</h4><p>Respostas geradas podem vir lentas, incompletas ou erradas. Carregamento, erro e nova tentativa fazem parte do desenho, não são detalhe técnico.</p></div>
-                <div><h4>Termo novo precisa de legenda</h4><p>“Streak” virou “Ofensiva” e ganhou uma frase explicando o que conta como dia de estudo. Um nome em português não basta se o conceito é novo.</p></div>
-                <div><h4>Separar o que existe do que se assume</h4><p>Escrever este case me obrigou a dizer o que o produto faz e o que ele só supõe sobre quem estuda.</p></div>
+                <div><h4 data-i18n="study.proximos.interface-de-ia-e">Interface de IA é interface de falha</h4><p data-i18n="study.proximos.respostas-geradas-podem-vir">Respostas geradas podem vir lentas, incompletas ou erradas. Carregamento, erro e nova tentativa fazem parte do desenho, não são detalhe técnico.</p></div>
+                <div><h4 data-i18n="study.proximos.termo-novo-precisa-de">Termo novo precisa de legenda</h4><p data-i18n="study.proximos.streak-virou-ofensiva-e">“Streak” virou “Ofensiva” e ganhou uma frase explicando o que conta como dia de estudo. Um nome em português não basta se o conceito é novo.</p></div>
+                <div><h4 data-i18n="study.proximos.separar-o-que-existe">Separar o que existe do que se assume</h4><p data-i18n="study.proximos.escrever-este-case-me">Escrever este case me obrigou a dizer o que o produto faz e o que ele só supõe sobre quem estuda.</p></div>
               </div>
 
-              <h3 class="h3">Plano de teste de usabilidade <span class="tag tag--hyp">Proposta</span></h3>
+              <h3 class="h3" data-i18n="common.plano-de-teste-de">Plano de teste de usabilidade <span class="tag tag--hyp">Proposta</span></h3>
               <div class="read">
-                <p>Um teste moderado na demo pública, com cerca de cinco pessoas que estudam por conta própria. Ainda não aconteceu.</p>
+                <p data-i18n="study.proximos.um-teste-moderado-na">Um teste moderado na demo pública, com cerca de cinco pessoas que estudam por conta própria. Ainda não aconteceu.</p>
               </div>
               <div class="cards cards--3">
                 <div>
-                  <h4>Tarefas</h4>
+                  <h4 data-i18n="common.tarefas">Tarefas</h4>
                   <ol>
-                    <li>Entrar, encontrar um conteúdo em Explorar e adicioná-lo à coleção.</li>
-                    <li>Abrir a jornada e concluir o primeiro módulo.</li>
-                    <li>Fazer uma sessão de foco de 10 minutos e ler o resumo.</li>
-                    <li>Descobrir quanto tempo estudou na semana, em Progresso.</li>
-                    <li>Trocar o tema e a duração padrão do foco nas Configurações.</li>
+                    <li data-i18n="study.proximos.entrar-encontrar-um-conteudo">Entrar, encontrar um conteúdo em Explorar e adicioná-lo à coleção.</li>
+                    <li data-i18n="study.proximos.abrir-a-jornada-e">Abrir a jornada e concluir o primeiro módulo.</li>
+                    <li data-i18n="study.proximos.fazer-uma-sessao-de">Fazer uma sessão de foco de 10 minutos e ler o resumo.</li>
+                    <li data-i18n="study.proximos.descobrir-quanto-tempo-estudou">Descobrir quanto tempo estudou na semana, em Progresso.</li>
+                    <li data-i18n="study.proximos.trocar-o-tema-e">Trocar o tema e a duração padrão do foco nas Configurações.</li>
                   </ol>
                 </div>
                 <div>
-                  <h4>O que observar</h4>
+                  <h4 data-i18n="common.o-que-observar">O que observar</h4>
                   <ul>
-                    <li>Erros e hesitações em cada tarefa.</li>
-                    <li>Se entende “Ofensiva” sem ajuda.</li>
-                    <li>Se percebe por que os módulos seguintes estão bloqueados.</li>
-                    <li>Se começa por Explorar ou pela jornada.</li>
-                    <li>Se acha a sessão de foco sem o cronômetro na Home.</li>
+                    <li data-i18n="study.proximos.erros-e-hesitacoes-em">Erros e hesitações em cada tarefa.</li>
+                    <li data-i18n="study.proximos.se-entende-ofensiva-sem">Se entende “Ofensiva” sem ajuda.</li>
+                    <li data-i18n="study.proximos.se-percebe-por-que">Se percebe por que os módulos seguintes estão bloqueados.</li>
+                    <li data-i18n="study.proximos.se-comeca-por-explorar">Se começa por Explorar ou pela jornada.</li>
+                    <li data-i18n="study.proximos.se-acha-a-sessao">Se acha a sessão de foco sem o cronômetro na Home.</li>
                   </ul>
                 </div>
                 <div>
-                  <h4>O que eu poderia mudar</h4>
+                  <h4 data-i18n="common.o-que-eu-poderia">O que eu poderia mudar</h4>
                   <ul>
-                    <li>Se poucos acharem a sessão de foco, devolvo o cronômetro à Home.</li>
-                    <li>Se “Ofensiva” não for entendida, troco o nome ou reforço a legenda.</li>
-                    <li>Se o bloqueio dos módulos frustrar, libero a ordem.</li>
-                    <li>Se as cores dos módulos se confundirem, revejo a paleta.</li>
+                    <li data-i18n="study.proximos.se-poucos-acharem-a">Se poucos acharem a sessão de foco, devolvo o cronômetro à Home.</li>
+                    <li data-i18n="study.proximos.se-ofensiva-nao-for">Se “Ofensiva” não for entendida, troco o nome ou reforço a legenda.</li>
+                    <li data-i18n="study.proximos.se-o-bloqueio-dos">Se o bloqueio dos módulos frustrar, libero a ordem.</li>
+                    <li data-i18n="study.proximos.se-as-cores-dos">Se as cores dos módulos se confundirem, revejo a paleta.</li>
                   </ul>
                 </div>
               </div>
 
-              <h3 class="h3">Próximos passos</h3>
+              <h3 class="h3" data-i18n="study.proximos.proximos-passos">Próximos passos</h3>
               <div class="read">
-                <p><strong>Já listados no app como Em breve</strong> <span class="tag tag--soon">Em breve</span></p>
+                <p><strong data-i18n="study.proximos.ja-listados-no-app">Já listados no app como Em breve</strong> <span class="tag tag--soon" data-i18n="study.hero.em-breve">Em breve</span></p>
                 <ul>
-                  <li>Pausas curtas e longas do Pomodoro.</li>
-                  <li>Sons de início e fim de sessão.</li>
-                  <li>Lembrete diário e notificações.</li>
+                  <li data-i18n="study.proximos.pausas-curtas-e-longas">Pausas curtas e longas do Pomodoro.</li>
+                  <li data-i18n="study.proximos.sons-de-inicio-e">Sons de início e fim de sessão.</li>
+                  <li data-i18n="study.proximos.lembrete-diario-e-notificacoes">Lembrete diário e notificações.</li>
                 </ul>
-                <p class="list-title"><strong>Passos que eu daria em seguida</strong></p>
+                <p class="list-title"><strong data-i18n="study.proximos.passos-que-eu-daria">Passos que eu daria em seguida</strong></p>
                 <ul>
-                  <li>Validar a hipótese do problema com entrevistas e testes de usabilidade com estudantes.</li>
-                  <li>Validar o login no servidor e criar contas, para sincronizar os dados entre aparelhos.</li>
-                  <li>Separar o front-end em módulos e gerar um build, sem compilar no navegador.</li>
-                  <li>Permitir que a pessoa sinalize erros no conteúdo gerado por IA.</li>
-                  <li>Testar a acessibilidade com tecnologias assistivas e com pessoas reais.</li>
+                  <li data-i18n="study.proximos.validar-a-hipotese-do">Validar a hipótese do problema com entrevistas e testes de usabilidade com estudantes.</li>
+                  <li data-i18n="study.proximos.validar-o-login-no">Validar o login no servidor e criar contas, para sincronizar os dados entre aparelhos.</li>
+                  <li data-i18n="study.proximos.separar-o-front-end">Separar o front-end em módulos e gerar um build, sem compilar no navegador.</li>
+                  <li data-i18n="study.proximos.permitir-que-a-pessoa">Permitir que a pessoa sinalize erros no conteúdo gerado por IA.</li>
+                  <li data-i18n="study.proximos.testar-a-acessibilidade-com">Testar a acessibilidade com tecnologias assistivas e com pessoas reais.</li>
                 </ul>
               </div>
             </section>
@@ -601,15 +610,15 @@
       </div>
     </div>
 
-    <aside class="on-dark next" aria-label="Navegação entre estudos de caso">
+    <aside class="on-dark next" aria-label="Navegação entre estudos de caso" data-i18n-aria-label="common.navegacao-entre-estudos-de">
       <div class="container next__grid">
         <a class="next__link" href="circuito-cinemas.html">
-          <span>Estudo de caso anterior</span>
+          <span data-i18n="study.next.estudo-de-caso-anterior">Estudo de caso anterior</span>
           <strong>Circuito Cinemas</strong>
         </a>
         <a class="next__link" href="../index.html#projetos">
-          <span>Voltar</span>
-          <strong>Todos os projetos</strong>
+          <span data-i18n="common.voltar">Voltar</span>
+          <strong data-i18n="common.todos-os-projetos">Todos os projetos</strong>
         </a>
       </div>
     </aside>
@@ -617,11 +626,13 @@
 
   <footer class="site-footer on-black">
     <div class="container site-footer__row">
-      <p>© 2026 Gabriel Rocha. <a href="../index.html#contato">Falar comigo</a></p>
-      <p>As telas do Study usam dados de demonstração. O Study é um projeto independente e não tem vínculo com os serviços de terceiros que utiliza.</p>
+      <p data-i18n="common.2026-gabriel-rocha-falar">© 2026 Gabriel Rocha. <a href="../index.html#contato">Falar comigo</a></p>
+      <p data-i18n="study.footer.as-telas-do-study">As telas do Study usam dados de demonstração. O Study é um projeto independente e não tem vínculo com os serviços de terceiros que utiliza.</p>
     </div>
   </footer>
 
+  <script src="../assets/js/translations.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
 </body>
 </html>

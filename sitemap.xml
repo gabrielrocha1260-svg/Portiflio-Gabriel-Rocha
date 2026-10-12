@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/</loc></url>
-  <url><loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html</loc></url>
-  <url><loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/"/>
+  </url>
+  <url>
+    <loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/"/>
+  </url>
+  <url>
+    <loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html"/>
+  </url>
+  <url>
+    <loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html"/>
+  </url>
+  <url>
+    <loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html"/>
+  </url>
+  <url>
+    <loc>https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html"/>
+  </url>
 </urlset>
