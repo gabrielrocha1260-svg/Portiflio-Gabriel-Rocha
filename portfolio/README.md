@@ -27,7 +27,7 @@ Abrir o `index.html` direto no navegador também funciona.
 
 1. **Endereço do site.** Depois de escolher onde hospedar (GitHub Pages, Netlify, Vercel ou outro), troque `assets/img/og.png` no `og:image` das três páginas pelo endereço completo da imagem e acrescente `<link rel="canonical">` e `og:url` com o endereço de cada página. Sem isso, o cartão de compartilhamento pode não aparecer no LinkedIn e no WhatsApp.
 2. **Protótipo do Circuito Cinemas.** O botão "Abrir protótipo no Figma" aponta para o protótipo do arquivo, com início na tela Home. No Figma, em Compartilhar, deixe o acesso como "Qualquer pessoa com o link pode ver"; do contrário, quem visita o portfólio cai numa tela de pedido de acesso. Abra o link em uma janela anônima para conferir.
-3. **Demo do Study.** O link é `https://studyapp-kyi5.onrender.com/` e abre em nova aba. Se o login com Google estiver no modo de testes, só contas autorizadas conseguem entrar. Vale publicar o app OAuth ou avisar na página.
+3. **Demo do Study.** O link é `https://gabrielrocha1260-svg.github.io/Studyapp/` e abre em nova aba. Se o login com Google estiver no modo de testes, só contas autorizadas conseguem entrar. Vale publicar o app OAuth ou avisar na página.
 
 ## Origem do conteúdo
 
