@@ -395,8 +395,6 @@ window.SITE_I18N = {
     "cc.solucao.home-redesenhada-do-circuito": "Redesigned Circuito Cinemas home screen, with a welcome message, a featured movie with a Buy button, a Circuito Club Bronze card, and the Coming soon and Now showing carousels.",
     "cc.solucao.tela-de-escolha-de": "Ticket selection screen in the current app, with a five-step indicator, a Circuito Club notice, and promotions.",
     "cc.solucao.tela-de-pagamento-redesenhada": "Redesigned payment screen, with a session summary, Card, Pix, and Wallet payment methods, a promo code field, and a Complete purchase button.",
-    "cc.solucao.circuito-club-antes-e": "Circuito Club, before and after",
-    "cc.solucao.antes-e-depois-do": "Circuito Club before and after. In the current app, the Circuito Club tab opens an institutional page asking people to sign in. In the proposal, the screen shows the Bronze tier, 9 points earned, a progress bar, and rewards to redeem.",
     "cc.design-system.paleta-do-design-system": "Design system palette",
     "cc.design-system.escala-tipografica-familia-inter": "Type scale, Inter family",
     "cc.justificativas.evidencia": "Evidence",
@@ -546,7 +544,6 @@ window.SITE_I18N = {
     "cc.solucao.antes-escolha-de-ingressos": "<strong>Before: ticket selection</strong>A five-step indicator, a Club notice asking you to sign in and reload the page, and a lot of text on one screen.",
     "cc.solucao.depois-pagamento-indicador-de": "<strong>After: payment</strong>A four-step indicator, a session summary with the total, payment methods, a Club points notice, and one primary button.",
     "cc.solucao.as-duas-telas-nao": "The two screens aren’t one-to-one equivalents. They show different steps of the flow, one from each version, to compare density and clarity.",
-    "cc.solucao.antes-e-depois-do-2": "On the left, the Club tab in the current app, with the page asking people to sign in. On the right, the proposed screen, with tier, points, rewards, history, and benefits.",
     "cc.design-system.o-design-system-responde": "The design system responds to what the audit found: inconsistent card, button, and icon patterns. On the design system page in Figma, it brings together 12 colors, a type scale in Inter, spacing on an 8 pt grid, a corner radius scale (from 4 px to pill), and 19 interface elements. It’s an initial design system: the elements are drawn as frames, not yet as Figma components with variants.",
     "cc.design-system.botoes": "Buttons",
     "cc.design-system.comprar-ingresso-ver-sessoes": "Four 44 px tall buttons: Buy ticket, See showtimes, Add, and See all.",
@@ -1000,6 +997,10 @@ window.SITE_I18N = {
     "cc.r.aprendizados.p1": "<strong>Fix the Figma file</strong>Naming, step indicator, ticket type, and sample data.",
     "cc.r.aprendizados.p2": "<strong>Adjust contrast</strong>Main button in Brand Dark and links in Brand Light.",
     "cc.r.aprendizados.p3": "<strong>Turn the elements into components</strong>With variants and properties in Figma, so the design system becomes more than a reference page.",
-    "cc.r.aprendizados.p5": "<strong>Navigation tree test</strong>Compare four and five tabs before settling the structure."
+    "cc.r.aprendizados.p5": "<strong>Navigation tree test</strong>Compare four and five tabs before settling the structure.",
+    "cc.r.club.alt-antes": "Circuito Club tab in the current app: an institutional page with a Sign in button that asks people to log in to see their progress, plus Benefits, Rules, and FAQ tabs.",
+    "cc.r.club.cap-antes": "<strong>Before: Club tab</strong>An institutional page that asks people to sign in, with no balance or progress in view.",
+    "cc.r.club.alt-depois": "Redesigned Circuito Club screen, with Bronze tier, 9 points earned, a progress bar up to 20 points, and rewards to redeem.",
+    "cc.r.club.cap-depois": "<strong>After: Club screen</strong>Tier, points, and how far to go, with rewards and a Redeem button."
   }
 };
