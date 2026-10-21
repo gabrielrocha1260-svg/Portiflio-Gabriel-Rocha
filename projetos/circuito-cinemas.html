@@ -6,7 +6,7 @@
   <title data-i18n="cc.meta.title">Circuito Cinemas, estudo de caso | Gabriel Rocha</title>
   <meta name="description" content="Estudo conceitual de redesign do app de uma rede de cinemas: auditoria heurística com 34 pontos de atrito mapeados, nova navegação, compra em 4 etapas, Circuito Club com saldo à vista e design system inicial." data-i18n-content="cc.meta.description">
   <meta name="author" content="Gabriel Rocha">
-  <meta name="theme-color" content="#0A1630">
+  <meta name="theme-color" content="#F4F2ED">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/circuito-cinemas.html">
@@ -33,12 +33,12 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script>(function(d){d.className+=" js";var l=null;try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("site-lang")}catch(e){}if(l==="en"){d.lang="en";d.className+=" i18n-pending";setTimeout(function(){d.classList.remove("i18n-pending")},2500)}})(document.documentElement);</script>
 </head>
-<body>
+<body data-case="cc">
   <a class="skip-link" href="#conteudo" data-i18n="common.pular-para-o-conteudo">Pular para o conteúdo</a>
 
   <header class="site-header">
     <div class="container site-header__bar">
-      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha</a>
+      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha<span class="wordmark__role" aria-hidden="true">Product Designer</span></a>
       <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="ui.lang-group">
         <button class="lang-switch__btn" type="button" data-set-lang="pt" lang="pt-BR" aria-pressed="true">PT<span class="visually-hidden"> – Português</span></button>
         <span class="lang-switch__sep" aria-hidden="true">|</span>
@@ -54,13 +54,13 @@
           <li><a class="nav__link" href="../index.html#projetos" aria-current="true" data-i18n="common.projetos">Projetos</a></li>
           <li><a class="nav__link" href="../index.html#sobre" data-i18n="common.sobre">Sobre</a></li>
         </ul>
-        <a class="btn btn--light btn--sm" href="../index.html#contato" data-i18n="common.falar-comigo">Falar comigo</a>
+        <a class="btn btn--primary btn--sm" href="../index.html#contato" data-i18n="common.falar-comigo">Falar comigo</a>
       </nav>
     </div>
   </header>
 
   <main id="conteudo" tabindex="-1">
-    <div class="on-dark">
+    <div class="case-top">
       <div class="container">
         <nav class="crumbs" aria-label="Você está em" data-i18n-aria-label="common.voce-esta-em">
           <ol>
@@ -73,6 +73,7 @@
 
       <section class="case-hero" aria-labelledby="case-title">
         <div class="container">
+          <p class="case-hero__eyebrow"><span>Case 01</span><span data-i18n="common.estudo-conceitual-de-redesign">Estudo conceitual de redesign</span></p>
           <h1 class="case-hero__title" id="case-title">Circuito Cinemas</h1>
           <p class="case-hero__summary" data-i18n="cc.hero.estudo-conceitual-de-redesign">Estudo conceitual de redesign do app de uma rede de cinemas: da auditoria heurística a uma home de descoberta, uma compra em 4 etapas com progresso visível, o saldo do programa de fidelidade à vista e um design system inicial.</p>
           <dl class="meta">
@@ -85,7 +86,7 @@
             <p data-i18n="cc.hero.sem-vinculo-com-a"><strong>Sem vínculo com a empresa e sem pesquisa com usuários.</strong> A auditoria heurística é uma avaliação feita por mim, não uma pesquisa empírica. Personas, jornada e efeitos esperados são hipóteses e estão identificados como tal. O protótipo ainda não foi testado com pessoas.</p>
           </div>
           <div class="cta-row cta-row--hero">
-            <a class="btn btn--light" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener" data-i18n="cc.hero.abrir-prototipo-no-figma">Abrir protótipo no Figma<span class="visually-hidden"> (abre em nova aba)</span></a>
+            <a class="btn btn--primary" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener" data-i18n="cc.hero.abrir-prototipo-no-figma">Abrir protótipo no Figma<span class="visually-hidden"> (abre em nova aba)</span></a>
             <a class="link link--arrow" href="#solucao" data-i18n="cc.hero.ver-a-solucao-final">Ver a solução final</a>
           </div>
         </div>
@@ -106,7 +107,7 @@
       </section>
     </div>
 
-    <div class="on-light section case-layout-wrap">
+    <div class="case-layout-wrap">
       <div class="container">
         <div class="case">
 
@@ -121,9 +122,9 @@
               <li><a href="#priorizacao" data-i18n="cc.r.toc.priorizacao">Priorização</a></li>
               <li><a href="#publico" data-i18n="cc.r.toc.publico">Público (hipótese)</a></li>
               <li><a href="#decisoes" data-i18n="cc.r.toc.navegacao">Navegação e fluxos</a></li>
-              <li><a href="#alternativas" data-i18n="cc.r.toc.alternativas">Alternativas</a></li>
               <li><a href="#solucao" data-i18n="cc.r.toc.antes-depois">Antes e depois</a></li>
               <li><a href="#justificativas" data-i18n="cc.r.toc.decisoes">Decisões de design</a></li>
+              <li><a href="#alternativas" data-i18n="cc.r.toc.alternativas">Alternativas</a></li>
               <li><a href="#design-system">Design system</a></li>
               <li><a href="#acessibilidade" data-i18n="cc.r.toc.acessibilidade">Acessibilidade</a></li>
               <li><a href="#limites" data-i18n="cc.r.toc.testar">O que testar</a></li>
@@ -143,9 +144,9 @@
               <li><a href="#priorizacao" data-i18n="cc.r.toc.priorizacao">Priorização</a></li>
               <li><a href="#publico" data-i18n="cc.r.toc.publico">Público (hipótese)</a></li>
               <li><a href="#decisoes" data-i18n="cc.r.toc.navegacao">Navegação e fluxos</a></li>
-              <li><a href="#alternativas" data-i18n="cc.r.toc.alternativas">Alternativas</a></li>
               <li><a href="#solucao" data-i18n="cc.r.toc.antes-depois">Antes e depois</a></li>
               <li><a href="#justificativas" data-i18n="cc.r.toc.decisoes">Decisões de design</a></li>
+              <li><a href="#alternativas" data-i18n="cc.r.toc.alternativas">Alternativas</a></li>
               <li><a href="#design-system">Design system</a></li>
               <li><a href="#acessibilidade" data-i18n="cc.r.toc.acessibilidade">Acessibilidade</a></li>
               <li><a href="#limites" data-i18n="cc.r.toc.testar">O que testar</a></li>
@@ -163,6 +164,12 @@
               <div class="read">
                 <p data-i18n="cc.visao-geral.e-um-estudo-conceitual">É um estudo conceitual, feito a partir do app existente. Comecei por uma auditoria heurística, comparei o app com outros oito e transformei o diagnóstico em uma nova arquitetura de navegação, um fluxo de compra mais curto, uma home de descoberta e um design system.</p>
               </div>
+              <dl class="glance" aria-label="Resumo em 30 segundos" data-i18n-aria-label="common.resumo-30s">
+                <div class="glance__item"><dt data-i18n="common.problema">Problema</dt><dd data-i18n="cc.glance.problema">A navegação mistura função e destino, a compra se espalha por seis decisões em telas separadas e o Circuito Club aparece sem saldo nem progresso.</dd></div>
+                <div class="glance__item"><dt data-i18n="common.o-que-fiz">O que fiz</dt><dd data-i18n="cc.glance.fiz">Auditoria heurística, benchmark de 8 apps, priorização de três problemas, nova arquitetura, fluxos, 21 quadros no Figma e um design system inicial.</dd></div>
+                <div class="glance__item"><dt data-i18n="common.decisoes-chave">Decisões-chave</dt><dd><ul><li data-i18n="cc.glance.d1">4 abas, todas destinos</li><li data-i18n="cc.glance.d2">Compra em 4 etapas, com progresso e resumo</li><li data-i18n="cc.glance.d3">Saldo do Club na home, no pagamento e na confirmação</li></ul></dd></div>
+                <div class="glance__item"><dt data-i18n="common.situacao">Situação</dt><dd data-i18n="cc.glance.situacao">Conceito ainda não testado com pessoas. Próximo passo: teste moderado com cerca de cinco participantes e tree test da navegação.</dd></div>
+              </dl>
               <dl class="spec">
                 <div class="spec__row"><dt data-i18n="common.tipo">Tipo</dt><dd data-i18n="cc.visao-geral.estudo-conceitual-de-redesign">Estudo conceitual de redesign e projeto autoral, 2026. Sem vínculo com a empresa.</dd></div>
                 <div class="spec__row"><dt data-i18n="common.plataforma">Plataforma</dt><dd data-i18n="cc.visao-geral.ios-e-android">iOS e Android.</dd></div>
@@ -230,7 +237,6 @@
               </div>
               <div class="read">
                 <p data-i18n="cc.problema.a-oportunidade-estava-no">A oportunidade estava no que o app já tinha. O Circuito Club é, na minha análise, o principal diferencial da rede, mas aparecia sem o que interessa a quem participa: quantos pontos tem e quanto falta para um benefício. A compra podia ser reorganizada em menos etapas, e a home podia deixar de ser um catálogo para virar uma porta de entrada.</p>
-                <p data-i18n="cc.r.problema.correcao"><strong>Correção feita na revisão deste case.</strong> Versões anteriores diziam que o Club ficava escondido em menus secundários. As próprias capturas do app atual mostram o Club como primeira aba da barra, então o problema foi reescrito como falta de contexto, e não como falta de acesso.</p>
               </div>
             </section>
 
@@ -244,7 +250,7 @@
               </div>
               <div class="table-wrap table-wrap--stack">
                 <table class="table table--stack">
-                  <caption data-i18n="cc.r.audit.caption">Os 16 pontos detalhados da auditoria. A heurística relacionada e a recomendação marcadas com * foram associadas na revisão deste case, em outubro de 2026.</caption>
+                  <caption data-i18n="cc.r.audit.caption">Os 16 pontos detalhados da auditoria. A heurística relacionada e a recomendação marcadas com * foram associadas depois da auditoria original, em outubro de 2026.</caption>
                   <thead><tr><th scope="col">ID</th><th scope="col" data-i18n="cc.r.audit.problema">Problema observado</th><th scope="col" data-i18n="cc.r.audit.onde">Onde</th><th scope="col" data-i18n="cc.r.audit.gravidade">Gravidade</th><th scope="col" data-i18n="cc.r.audit.heuristica">Heurística relacionada</th><th scope="col" data-i18n="cc.r.audit.recomendacao">Recomendação</th></tr></thead>
                   <tbody>
                     <tr><td>H1</td><td data-label="Problema observado" data-i18n-label="cc.r.audit.problema" data-i18n="cc.r.audit.h1-p">Sem contraste hierárquico entre elementos primários e secundários</td><td data-label="Onde" data-i18n-label="cc.r.audit.onde" data-i18n="cc.r.audit.varias">Várias telas</td><td data-label="Gravidade" data-i18n-label="cc.r.audit.gravidade" data-i18n="cc.r.audit.critico">Crítico</td><td data-label="Heurística relacionada" data-i18n-label="cc.r.audit.heuristica" data-i18n="cc.r.audit.h8">Design estético e minimalista*</td><td data-label="Recomendação" data-i18n-label="cc.r.audit.recomendacao" data-i18n="cc.r.audit.h1-r">Um ponto focal por tela e escala tipográfica do design system.</td></tr>
@@ -427,7 +433,7 @@
 
               <h3 class="h3" data-i18n="cc.r.decisoes.nomenclatura">Nomenclatura adotada</h3>
               <div class="read">
-                <p data-i18n="cc.r.decisoes.nomenclatura-intro">O arquivo do Figma e as pranchas usavam nomes diferentes para a mesma coisa. Na revisão deste case, em outubro de 2026, fixei os termos abaixo. A regra: <strong>Ingressos</strong> é o lugar onde ficam os ingressos comprados; <strong>compra</strong> é a ação e o fluxo de pagar. Assim a barra não repete a confusão entre Comprar e Compras que a auditoria apontou no app atual.</p>
+                <p data-i18n="cc.r.decisoes.nomenclatura-intro">O arquivo do Figma e as pranchas usavam nomes diferentes para a mesma coisa. Fixei os termos abaixo para o case e para as correções do protótipo. A regra: <strong>Ingressos</strong> é o lugar onde ficam os ingressos comprados; <strong>compra</strong> é a ação e o fluxo de pagar. Assim a barra não repete a confusão entre Comprar e Compras que a auditoria apontou no app atual.</p>
               </div>
               <div class="table-wrap table-wrap--stack">
                 <table class="table table--stack">
@@ -459,7 +465,7 @@
                   <li data-i18n="cc.decisoes.extras-combos-opcionais-sem"><strong>Extras:</strong> combos opcionais, sem interromper quem não quer.</li>
                   <li data-i18n="cc.decisoes.pagar-resumo-completo-antes"><strong>Pagamento:</strong> resumo completo antes de confirmar, com Cartão, Pix e Wallet e o aviso de pontos do Club.</li>
                 </ul>
-                <p data-i18n="cc.decisoes.um-indicador-de-progresso">As duas sequências começam depois da escolha do filme. Na versão anterior deste case, eu comparava 7 etapas com 4, mas as 7 incluíam buscar e filtrar, que a proposta não conta. No app atual são seis decisões em telas separadas. Na proposta, as decisões ficam agrupadas em quatro etapas com indicador de progresso, mas a etapa Sessão ainda ocupa duas telas (data e horário no detalhe do filme, cinema na seguinte). O ganho está mais em agrupar e mostrar o progresso do que em cortar decisões. É uma leitura do desenho, não um resultado medido.</p>
+                <p data-i18n="cc.decisoes.um-indicador-de-progresso">As duas sequências começam depois da escolha do filme. No app atual são seis decisões em telas separadas. Na proposta, as decisões ficam agrupadas em quatro etapas com indicador de progresso, mas a etapa Sessão ainda ocupa duas telas (data e horário no detalhe do filme, cinema na seguinte). O ganho está mais em agrupar e mostrar o progresso do que em cortar decisões. É uma leitura do desenho, não um resultado medido.</p>
               </div>
               <div class="callout">
                 <span class="tag tag--soon" data-i18n="common.em-aberto">Em aberto</span>
@@ -488,34 +494,12 @@
               </div>
             </section>
 
-            <!-- 9. Alternativas -->
-            <section id="alternativas" aria-labelledby="h-alternativas">
-              <h2 class="h2" id="h-alternativas" data-i18n="cc.r.toc.alternativas">Alternativas</h2>
-              <div class="read">
-                <p data-i18n="cc.r.alt.intro">As alternativas exploradas durante o projeto original não ficaram documentadas, então não as reconstruo de memória. As duas abaixo foram consideradas na revisão deste case, em outubro de 2026, e ficam registradas como próximos experimentos.</p>
-              </div>
-              <div class="cards cards--2">
-                <div>
-                  <h3 class="h4" data-i18n="cc.r.alt.a1-t">Cinco abas, com Filmes</h3>
-                  <p data-i18n="cc.r.alt.a1-p">Seguir a taxonomia à risca: Home, Filmes, Ingressos, Clube e Perfil. Ganha acesso direto ao catálogo; perde espaço e volta a cinco itens, o mesmo número do app atual.</p>
-                  <p class="to-validate" data-i18n="cc.r.alt.a1-v"><strong>Como decidir.</strong> Teste A/B de navegação ou tree test com as duas estruturas.</p>
-                  <span class="tag tag--hyp" data-i18n="cc.r.alt.tag">Alternativa da revisão</span>
-                </div>
-                <div>
-                  <h3 class="h4" data-i18n="cc.r.alt.a2-t">Extras dentro do pagamento</h3>
-                  <p data-i18n="cc.r.alt.a2-p">Oferecer combos como um bloco opcional no pagamento, e não como etapa. Deixaria três etapas, mas pode esconder uma fonte de receita da rede.</p>
-                  <p class="to-validate" data-i18n="cc.r.alt.a2-v"><strong>Como decidir.</strong> Comparar no protótipo o tempo até pagar e quantas pessoas notam os combos.</p>
-                  <span class="tag tag--hyp" data-i18n="cc.r.alt.tag">Alternativa da revisão</span>
-                </div>
-              </div>
-            </section>
-
-            <!-- 10. Antes e depois -->
+            <!-- 9. Antes e depois -->
             <section id="solucao" aria-labelledby="h-solucao">
               <h2 class="h2" id="h-solucao" data-i18n="cc.r.solucao.titulo">Antes e depois</h2>
-              <p class="lead" data-i18n="cc.solucao.as-telas-abaixo-sao">As telas abaixo são as que tenho em alta resolução: a nova home, o pagamento e o Circuito Club.</p>
+              <p class="lead" data-i18n="cc.solucao.as-telas-abaixo-sao">Três momentos da proposta: a nova home, o pagamento e o Circuito Club, ao lado do app atual quando há uma tela equivalente.</p>
               <div class="cta-row">
-                <a class="btn btn--dark" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener" data-i18n="cc.hero.abrir-prototipo-no-figma">Abrir protótipo no Figma<span class="visually-hidden"> (abre em nova aba)</span></a>
+                <a class="btn btn--primary" href="https://www.figma.com/proto/7PhbgPQ4ODq0ZpyNWOa0dn/Circuito-Cinemas-%E2%80%94-Redesign?page-id=6%3A2&node-id=7-5&starting-point-node-id=7%3A5&t=WzuFaxNKb168OiBv-1" target="_blank" rel="noopener" data-i18n="cc.hero.abrir-prototipo-no-figma">Abrir protótipo no Figma<span class="visually-hidden"> (abre em nova aba)</span></a>
               </div>
               <p class="demo-note" data-i18n="cc.solucao.o-prototipo-abre-na">O protótipo abre na tela Home. O arquivo reúne 21 quadros: 17 telas e 4 estados de interface (vazio, carregamento, falha de pagamento e sem internet).</p>
 
@@ -563,7 +547,7 @@
               </div>
             </section>
 
-            <!-- 11. Decisões de design -->
+            <!-- 10. Decisões de design -->
             <section id="justificativas" aria-labelledby="h-just">
               <h2 class="h2" id="h-just" data-i18n="cc.justificativas.justificativas-das-decisoes">Justificativas das decisões</h2>
               <div class="read">
@@ -583,6 +567,28 @@
                     <tr><td data-i18n="cc.justificativas.design-system-antes-das">Design system antes das telas finais</td><td data-label="Evidência" data-i18n-label="cc.justificativas.evidencia" data-i18n="cc.justificativas.tres-padroes-de-card">Três padrões de card, botões e ícones inconsistentes.</td><td data-label="Efeito esperado (hipótese)" data-i18n-label="cc.justificativas.efeito-esperado-hipotese" data-i18n="cc.justificativas.consistencia-e-facilidade-de">Consistência e facilidade de evoluir o app.</td></tr>
                   </tbody>
                 </table>
+              </div>
+            </section>
+
+            <!-- 11. Alternativas -->
+            <section id="alternativas" aria-labelledby="h-alternativas">
+              <h2 class="h2" id="h-alternativas" data-i18n="cc.r.toc.alternativas">Alternativas</h2>
+              <div class="read">
+                <p data-i18n="cc.r.alt.intro">As alternativas exploradas durante o projeto original não ficaram documentadas, então não as reconstruo de memória. As duas abaixo foram consideradas depois, em outubro de 2026, e ficam registradas como próximos experimentos.</p>
+              </div>
+              <div class="cards cards--2">
+                <div>
+                  <h3 class="h4" data-i18n="cc.r.alt.a1-t">Cinco abas, com Filmes</h3>
+                  <p data-i18n="cc.r.alt.a1-p">Seguir a taxonomia à risca: Home, Filmes, Ingressos, Clube e Perfil. Ganha acesso direto ao catálogo; perde espaço e volta a cinco itens, o mesmo número do app atual.</p>
+                  <p class="to-validate" data-i18n="cc.r.alt.a1-v"><strong>Como decidir.</strong> Teste A/B de navegação ou tree test com as duas estruturas.</p>
+                  <span class="tag tag--hyp" data-i18n="cc.r.alt.tag">Alternativa da revisão</span>
+                </div>
+                <div>
+                  <h3 class="h4" data-i18n="cc.r.alt.a2-t">Extras dentro do pagamento</h3>
+                  <p data-i18n="cc.r.alt.a2-p">Oferecer combos como um bloco opcional no pagamento, e não como etapa. Deixaria três etapas, mas pode esconder uma fonte de receita da rede.</p>
+                  <p class="to-validate" data-i18n="cc.r.alt.a2-v"><strong>Como decidir.</strong> Comparar no protótipo o tempo até pagar e quantas pessoas notam os combos.</p>
+                  <span class="tag tag--hyp" data-i18n="cc.r.alt.tag">Alternativa da revisão</span>
+                </div>
               </div>
             </section>
 
@@ -706,7 +712,7 @@
             <section id="metricas" aria-labelledby="h-metricas">
               <h2 class="h2" id="h-metricas" data-i18n="cc.r.metricas.titulo">O que eu mediria após a implementação</h2>
               <div class="read">
-                <p data-i18n="cc.r.metricas.intro">Não há resultados: o redesign não foi implementado nem testado. As versões anteriores deste case traziam percentuais de melhoria, que retirei porque não tinham fonte e podiam ser lidos como resultado. Abaixo, o que eu acompanharia e como, sem metas inventadas.</p>
+                <p data-i18n="cc.r.metricas.intro">Não há resultados: o redesign não foi implementado nem testado. Abaixo, o que eu acompanharia e como. Não defini metas numéricas, porque não há linha de base.</p>
               </div>
               <div class="table-wrap table-wrap--stack">
                 <table class="table table--stack">
@@ -762,7 +768,7 @@
     </aside>
   </main>
 
-  <footer class="site-footer on-black">
+  <footer class="site-footer">
     <div class="container site-footer__row">
       <p data-i18n="common.2026-gabriel-rocha-falar">© 2026 Gabriel Rocha. <a href="../index.html#contato">Falar comigo</a></p>
       <p data-i18n="cc.footer.circuito-cinemas-e-um">Circuito Cinemas é um estudo conceitual, sem vínculo com a empresa. Marcas, pôsteres de filmes e telas do app original pertencem aos seus titulares e aparecem apenas para análise e comparação.</p>

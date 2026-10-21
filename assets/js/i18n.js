@@ -78,13 +78,7 @@
         if (el.textContent !== value) el.textContent = value;
         return;
       }
-      var typing = el.hasAttribute("data-typing") && el.classList.contains("is-typing");
-      if (el.innerHTML !== value || typing) el.innerHTML = value;
-      /* Título da home: se a digitação já começou, mostra o texto inteiro. */
-      if (typing) {
-        el.classList.remove("is-typing", "is-done");
-        el.classList.add("is-static");
-      }
+      if (el.innerHTML !== value) el.innerHTML = value;
     });
 
     Object.keys(ATTRS).forEach(function (suffix) {

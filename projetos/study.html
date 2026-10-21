@@ -6,7 +6,7 @@
   <title data-i18n="study.meta.title">Study, estudo de caso | Gabriel Rocha</title>
   <meta name="description" content="Study: aplicativo web que transforma um tema em trilha de estudo, com sessões de foco, planner e progresso. Estudo de caso com o que foi decidido, construído e o que ainda é hipótese." data-i18n-content="study.meta.description">
   <meta name="author" content="Gabriel Rocha">
-  <meta name="theme-color" content="#0A1630">
+  <meta name="theme-color" content="#F4F2ED">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/projetos/study.html">
@@ -33,12 +33,12 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script>(function(d){d.className+=" js";var l=null;try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("site-lang")}catch(e){}if(l==="en"){d.lang="en";d.className+=" i18n-pending";setTimeout(function(){d.classList.remove("i18n-pending")},2500)}})(document.documentElement);</script>
 </head>
-<body>
+<body data-case="study">
   <a class="skip-link" href="#conteudo" data-i18n="common.pular-para-o-conteudo">Pular para o conteúdo</a>
 
   <header class="site-header">
     <div class="container site-header__bar">
-      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha</a>
+      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha<span class="wordmark__role" aria-hidden="true">Product Designer</span></a>
       <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="ui.lang-group">
         <button class="lang-switch__btn" type="button" data-set-lang="pt" lang="pt-BR" aria-pressed="true">PT<span class="visually-hidden"> – Português</span></button>
         <span class="lang-switch__sep" aria-hidden="true">|</span>
@@ -54,13 +54,13 @@
           <li><a class="nav__link" href="../index.html#projetos" aria-current="true" data-i18n="common.projetos">Projetos</a></li>
           <li><a class="nav__link" href="../index.html#sobre" data-i18n="common.sobre">Sobre</a></li>
         </ul>
-        <a class="btn btn--light btn--sm" href="../index.html#contato" data-i18n="common.falar-comigo">Falar comigo</a>
+        <a class="btn btn--primary btn--sm" href="../index.html#contato" data-i18n="common.falar-comigo">Falar comigo</a>
       </nav>
     </div>
   </header>
 
   <main id="conteudo" tabindex="-1">
-    <div class="on-dark">
+    <div class="case-top">
       <div class="container">
         <nav class="crumbs" aria-label="Você está em" data-i18n-aria-label="common.voce-esta-em">
           <ol>
@@ -73,6 +73,7 @@
 
       <section class="case-hero" aria-labelledby="case-title">
         <div class="container">
+          <p class="case-hero__eyebrow"><span>Case 02</span><span data-i18n="study.hero.produto-digital-funcional">Produto digital funcional</span></p>
           <h1 class="case-hero__title" id="case-title">Study</h1>
           <p class="case-hero__summary" data-i18n="study.hero.aplicativo-web-que-transforma">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e usa sessões de foco para mostrar o progresso. Está no ar e pode ser testado.</p>
           <dl class="meta">
@@ -91,7 +92,7 @@
             </ul>
           </div>
           <div class="cta-row cta-row--hero">
-            <a class="btn btn--light" href="https://gabrielrocha1260-svg.github.io/Studyapp/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
+            <a class="btn btn--primary" href="https://gabrielrocha1260-svg.github.io/Studyapp/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
             <a class="link link--arrow" href="#tour" data-i18n="study.r.hero.ver-sem-login">Ver as telas sem login</a>
           </div>
         </div>
@@ -112,7 +113,7 @@
       </section>
     </div>
 
-    <div class="on-light section case-layout-wrap">
+    <div class="case-layout-wrap">
       <div class="container">
         <div class="case">
 
@@ -122,17 +123,17 @@
               <li><a href="#visao" data-i18n="study.r.toc.resumo">Resumo</a></li>
               <li><a href="#problema" data-i18n="study.r.toc.contexto">Contexto e problema</a></li>
               <li><a href="#publico" data-i18n="common.publico-e-necessidades">Público e necessidades</a></li>
-              <li><a href="#fatos" data-i18n="study.r.toc.fatos">Fato e hipótese</a></li>
               <li><a href="#papel" data-i18n="study.r.toc.papel">Meu papel e autoria</a></li>
               <li><a href="#jornada" data-i18n="study.r.toc.jornada">Arquitetura e fluxos</a></li>
               <li><a href="#design" data-i18n="study.r.toc.decisoes">Decisões de UX</a></li>
+              <li><a href="#tour" data-i18n="study.r.toc.tour">O produto, tela a tela</a></li>
               <li><a href="#design-system">Design system</a></li>
               <li><a href="#figma" data-i18n="study.r.toc.figma">Do Figma ao produto</a></li>
               <li><a href="#funcionalidades" data-i18n="study.toc.funcionalidades">Funcionalidades</a></li>
               <li><a href="#ia" data-i18n="study.r.toc.ia">IA, erros e estados</a></li>
               <li><a href="#acessibilidade" data-i18n="study.r.toc.acessibilidade">Acessibilidade</a></li>
-              <li><a href="#tour" data-i18n="study.r.toc.tour">Tour sem login</a></li>
               <li><a href="#demo" data-i18n="study.r.toc.demo">Demo e limitações</a></li>
+              <li><a href="#fatos" data-i18n="study.r.toc.fatos">Fato e hipótese</a></li>
               <li><a href="#validacao" data-i18n="study.r.toc.validacao">Plano de validação</a></li>
               <li><a href="#metricas" data-i18n="study.r.toc.metricas">Métricas</a></li>
               <li><a href="#proximos" data-i18n="study.toc.aprendizados-e-proximos-passos">Aprendizados e próximos passos</a></li>
@@ -145,17 +146,17 @@
               <li><a href="#visao" data-i18n="study.r.toc.resumo">Resumo</a></li>
               <li><a href="#problema" data-i18n="study.r.toc.contexto">Contexto e problema</a></li>
               <li><a href="#publico" data-i18n="common.publico-e-necessidades">Público e necessidades</a></li>
-              <li><a href="#fatos" data-i18n="study.r.toc.fatos">Fato e hipótese</a></li>
               <li><a href="#papel" data-i18n="study.r.toc.papel">Meu papel e autoria</a></li>
               <li><a href="#jornada" data-i18n="study.r.toc.jornada">Arquitetura e fluxos</a></li>
               <li><a href="#design" data-i18n="study.r.toc.decisoes">Decisões de UX</a></li>
+              <li><a href="#tour" data-i18n="study.r.toc.tour">O produto, tela a tela</a></li>
               <li><a href="#design-system">Design system</a></li>
               <li><a href="#figma" data-i18n="study.r.toc.figma">Do Figma ao produto</a></li>
               <li><a href="#funcionalidades" data-i18n="study.toc.funcionalidades">Funcionalidades</a></li>
               <li><a href="#ia" data-i18n="study.r.toc.ia">IA, erros e estados</a></li>
               <li><a href="#acessibilidade" data-i18n="study.r.toc.acessibilidade">Acessibilidade</a></li>
-              <li><a href="#tour" data-i18n="study.r.toc.tour">Tour sem login</a></li>
               <li><a href="#demo" data-i18n="study.r.toc.demo">Demo e limitações</a></li>
+              <li><a href="#fatos" data-i18n="study.r.toc.fatos">Fato e hipótese</a></li>
               <li><a href="#validacao" data-i18n="study.r.toc.validacao">Plano de validação</a></li>
               <li><a href="#metricas" data-i18n="study.r.toc.metricas">Métricas</a></li>
               <li><a href="#proximos" data-i18n="study.toc.aprendizados-e-proximos-passos">Aprendizados e próximos passos</a></li>
@@ -172,6 +173,12 @@
                 <p data-i18n="study.visao.em-explorar-a-pessoa">Em Explorar, a pessoa busca um assunto e o adiciona à sua coleção. O Study monta uma jornada de módulos ordenados: videoaula, leitura, prática com flashcards e avaliação. Sessões de foco, planner e progresso mostram o que foi feito. <span class="tag tag--done">Implementado</span></p>
                 <p data-i18n="study.r.resumo.honestidade">O produto existe e funciona, mas ainda não foi testado com usuários. Por isso este case mostra o raciocínio de produto e as decisões tomadas, e separa com clareza o que está construído, o que é hipótese e o que é trabalho futuro.</p>
               </div>
+              <dl class="glance" aria-label="Resumo em 30 segundos" data-i18n-aria-label="common.resumo-30s">
+                <div class="glance__item"><dt data-i18n="study.glance.problema-t">Problema (hipótese)</dt><dd data-i18n="study.glance.problema">Quem estuda por conta própria encontra muito conteúdo e pouca estrutura para decidir o que estudar, em que ordem e por quanto tempo.</dd></div>
+                <div class="glance__item"><dt data-i18n="common.o-que-fiz">O que fiz</dt><dd data-i18n="study.glance.fiz">Concebi o produto, defini o escopo da versão 1.0, as quatro abas e as regras, e desenhei a interface e o design system em temas claro e escuro.</dd></div>
+                <div class="glance__item"><dt data-i18n="common.decisoes-chave">Decisões-chave</dt><dd><ul><li data-i18n="study.glance.d1">Módulos liberados em ordem</li><li data-i18n="study.glance.d2">Progresso pelo tempo de foco real</li><li data-i18n="study.glance.d3">Estados de falha para o conteúdo gerado por IA</li></ul></dd></div>
+                <div class="glance__item"><dt data-i18n="common.situacao">Situação</dt><dd data-i18n="study.glance.situacao">No ar, versão 1.0.0, com código feito com apoio de IA. Ainda sem testes com usuários; o protocolo de teste está pronto.</dd></div>
+              </dl>
               <dl class="spec">
                 <div class="spec__row"><dt data-i18n="study.hero.estado">Estado</dt><dd data-i18n="study.visao.no-ar-na-demo">No ar, na demo pública. A versão exibida nas Configurações do app é a 1.0.0.</dd></div>
                 <div class="spec__row"><dt data-i18n="common.plataforma">Plataforma</dt><dd data-i18n="study.visao.web-em-uma-coluna">Web, em uma coluna pensada para celular. Em telas largas, a coluna fica centralizada.</dd></div>
@@ -230,31 +237,7 @@
               </div>
             </section>
 
-            <!-- 4. Fato e hipótese -->
-            <section id="fatos" aria-labelledby="h-fatos">
-              <h2 class="h2" id="h-fatos" data-i18n="study.r.fatos.titulo">O que é fato e o que é hipótese</h2>
-              <div class="read">
-                <p data-i18n="study.r.fatos.intro">Um resumo do tipo de evidência que sustenta cada parte do case.</p>
-              </div>
-              <div class="table-wrap table-wrap--stack">
-                <table class="table table--stack">
-                  <caption class="visually-hidden" data-i18n="study.r.fatos.caption">Afirmações do case e o tipo de evidência de cada uma</caption>
-                  <thead><tr><th scope="col" data-i18n="study.r.fatos.afirmacao">Afirmação</th><th scope="col" data-i18n="study.r.fatos.tipo">Tipo</th><th scope="col" data-i18n="study.r.fatos.base">Base</th></tr></thead>
-                  <tbody>
-                    <tr><td data-i18n="study.r.fatos.a1">As funcionalidades listadas existem e funcionam.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b1">Código do produto e demo pública.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a2">Tokens, temas e componentes do design system.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b2">Inventário extraído do código publicado, em outubro de 2026.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a3">Contraste dos pares de cor principais.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--done" data-i18n="study.r.tag.calculado">Calculado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b3">Fórmula de contraste da WCAG aplicada aos tokens. Não é auditoria completa de acessibilidade.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a4">Quem estuda sozinho tem dificuldade de se organizar.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b4">Premissa de projeto. Sem entrevistas.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a5">As decisões de interface facilitam o uso.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b5">Justificativas de design, sem observação de uso.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a6">Testes de usabilidade.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--soon" data-i18n="study.r.tag.planejado">Planejado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b6">Protocolo pronto, nenhuma sessão realizada.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a7">Benchmark de apps de estudo.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--soon" data-i18n="study.r.tag.planejado">Planejado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b7">Não realizado. Há uma matriz de critérios pronta para preencher.</td></tr>
-                    <tr><td data-i18n="study.r.fatos.a8">Métricas de uso e de resultado.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--soon" data-i18n="study.r.tag.planejado">Planejado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b8">O app não coleta dados de uso. Nenhum número foi medido.</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            <!-- 5. Meu papel e autoria -->
+            <!-- 4. Meu papel e autoria -->
             <section id="papel" aria-labelledby="h-papel">
               <h2 class="h2" id="h-papel" data-i18n="study.r.papel.titulo">Meu papel, autoria e ferramentas</h2>
               <div class="read">
@@ -285,7 +268,7 @@
               </div>
             </section>
 
-            <!-- 6. Arquitetura e fluxos -->
+            <!-- 5. Arquitetura e fluxos -->
             <section id="jornada" aria-labelledby="h-jornada">
               <h2 class="h2" id="h-jornada" data-i18n="study.jornada.arquitetura-da-informacao-e">Arquitetura da informação e jornada</h2>
               <div class="read">
@@ -367,7 +350,7 @@
               </div>
             </section>
 
-            <!-- 7. Decisões de UX -->
+            <!-- 6. Decisões de UX -->
             <section id="design" aria-labelledby="h-design">
               <h2 class="h2" id="h-design" data-i18n="study.r.decisoes.titulo">Decisões de UX e justificativas</h2>
               <div class="read">
@@ -433,6 +416,58 @@
                   <figure>
                     <img class="shot" src="../assets/img/study-home-claro.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study no tema claro." data-i18n-alt="study.design.tela-inicio-do-study-2">
                     <figcaption data-i18n="study.design.tema-claro-mesma-estrutura"><strong>Tema claro</strong>Mesma estrutura, cores de módulo mais escuras.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <!-- 7. O produto, tela a tela -->
+            <section id="tour" aria-labelledby="h-tour">
+              <h2 class="h2" id="h-tour" data-i18n="study.r.tour.titulo">O produto, tela a tela</h2>
+              <div class="read">
+                <p data-i18n="study.r.tour.intro">O caminho principal do produto, na ordem em que uma pessoa o percorre, para ver sem precisar de login nem esperar o servidor gratuito acordar. As telas usam dados de demonstração.</p>
+              </div>
+              <div class="panel">
+                <div class="shots shots--4" role="region" aria-label="Tour pelas telas do Study. Role para o lado para ver todas." tabindex="0" data-i18n-aria-label="study.r.tour.regiao">
+                  <figure>
+                    <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início com a recomendação Phrasal Verbs e o progresso do dia." data-i18n-alt="study.r.tour.alt1">
+                    <figcaption data-i18n="study.r.tour.c1"><strong>1. Início</strong>O que estudar agora.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-explorar.webp" width="804" height="1748" loading="lazy" alt="Tela Explorar com busca, categorias e coleção." data-i18n-alt="study.r.tour.alt2">
+                    <figcaption data-i18n="study.r.tour.c2"><strong>2. Explorar</strong>Escolher um tema.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-jornada-progresso.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 14% concluído e lista de módulos." data-i18n-alt="study.r.tour.alt3">
+                    <figcaption data-i18n="study.r.tour.c3"><strong>3. Jornada</strong>Módulos em ordem.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-leitura.webp" width="804" height="1748" loading="lazy" alt="Módulo de leitura com texto explicativo gerado para o tema." data-i18n-alt="study.r.tour.alt4">
+                    <figcaption data-i18n="study.r.tour.c4"><strong>4. Leitura</strong>Conteúdo gerado.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-presessao.webp" width="804" height="1748" loading="lazy" alt="Pré-sessão com roteiro e duração de 25 minutos." data-i18n-alt="study.r.tour.alt5">
+                    <figcaption data-i18n="study.r.tour.c5"><strong>5. Pré-sessão</strong>Roteiro e duração.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-timer.webp" width="804" height="1748" loading="lazy" alt="Cronômetro flutuante sobre a tela da jornada." data-i18n-alt="study.r.tour.alt6">
+                    <figcaption data-i18n="study.r.tour.c6"><strong>6. Foco</strong>Cronômetro flutuante.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-concluida.webp" width="804" height="1748" loading="lazy" alt="Sessão concluída com 25 minutos de foco e ofensiva de 4 dias." data-i18n-alt="study.r.tour.alt7">
+                    <figcaption data-i18n="study.r.tour.c7"><strong>7. Conclusão</strong>Resumo da sessão.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-progresso.webp" width="804" height="1748" loading="lazy" alt="Progresso com tempo estudado e gráfico dos últimos 7 dias." data-i18n-alt="study.r.tour.alt8">
+                    <figcaption data-i18n="study.r.tour.c8"><strong>8. Progresso</strong>Últimos 7 dias.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-planner.webp" width="804" height="1748" loading="lazy" alt="Planner mensal com sessões registradas." data-i18n-alt="study.r.tour.alt9">
+                    <figcaption data-i18n="study.r.tour.c9"><strong>9. Planner</strong>Calendário do mês.</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="shot" src="../assets/img/study-perfil.webp" width="804" height="1748" loading="lazy" alt="Perfil com estatísticas, histórico e menu." data-i18n-alt="study.r.tour.alt10">
+                    <figcaption data-i18n="study.r.tour.c10"><strong>10. Perfil</strong>Estatísticas e menu.</figcaption>
                   </figure>
                 </div>
               </div>
@@ -637,64 +672,12 @@
               </div>
             </section>
 
-            <!-- 13. Tour sem login -->
-            <section id="tour" aria-labelledby="h-tour">
-              <h2 class="h2" id="h-tour" data-i18n="study.r.tour.titulo">Tour pelas telas, sem login</h2>
-              <div class="read">
-                <p data-i18n="study.r.tour.intro">Para quem não quer entrar com uma conta Google ou esperar o servidor gratuito acordar: o caminho principal do produto, na ordem em que uma pessoa o percorre. As telas usam dados de demonstração.</p>
-              </div>
-              <div class="panel">
-                <div class="shots shots--4" role="region" aria-label="Tour pelas telas do Study. Role para o lado para ver todas." tabindex="0" data-i18n-aria-label="study.r.tour.regiao">
-                  <figure>
-                    <img class="shot" src="../assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início com a recomendação Phrasal Verbs e o progresso do dia." data-i18n-alt="study.r.tour.alt1">
-                    <figcaption data-i18n="study.r.tour.c1"><strong>1. Início</strong>O que estudar agora.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-explorar.webp" width="804" height="1748" loading="lazy" alt="Tela Explorar com busca, categorias e coleção." data-i18n-alt="study.r.tour.alt2">
-                    <figcaption data-i18n="study.r.tour.c2"><strong>2. Explorar</strong>Escolher um tema.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-jornada-progresso.webp" width="804" height="1748" loading="lazy" alt="Jornada Phrasal Verbs com 14% concluído e lista de módulos." data-i18n-alt="study.r.tour.alt3">
-                    <figcaption data-i18n="study.r.tour.c3"><strong>3. Jornada</strong>Módulos em ordem.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-leitura.webp" width="804" height="1748" loading="lazy" alt="Módulo de leitura com texto explicativo gerado para o tema." data-i18n-alt="study.r.tour.alt4">
-                    <figcaption data-i18n="study.r.tour.c4"><strong>4. Leitura</strong>Conteúdo gerado.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-presessao.webp" width="804" height="1748" loading="lazy" alt="Pré-sessão com roteiro e duração de 25 minutos." data-i18n-alt="study.r.tour.alt5">
-                    <figcaption data-i18n="study.r.tour.c5"><strong>5. Pré-sessão</strong>Roteiro e duração.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-timer.webp" width="804" height="1748" loading="lazy" alt="Cronômetro flutuante sobre a tela da jornada." data-i18n-alt="study.r.tour.alt6">
-                    <figcaption data-i18n="study.r.tour.c6"><strong>6. Foco</strong>Cronômetro flutuante.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-concluida.webp" width="804" height="1748" loading="lazy" alt="Sessão concluída com 25 minutos de foco e ofensiva de 4 dias." data-i18n-alt="study.r.tour.alt7">
-                    <figcaption data-i18n="study.r.tour.c7"><strong>7. Conclusão</strong>Resumo da sessão.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-progresso.webp" width="804" height="1748" loading="lazy" alt="Progresso com tempo estudado e gráfico dos últimos 7 dias." data-i18n-alt="study.r.tour.alt8">
-                    <figcaption data-i18n="study.r.tour.c8"><strong>8. Progresso</strong>Últimos 7 dias.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-planner.webp" width="804" height="1748" loading="lazy" alt="Planner mensal com sessões registradas." data-i18n-alt="study.r.tour.alt9">
-                    <figcaption data-i18n="study.r.tour.c9"><strong>9. Planner</strong>Calendário do mês.</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="shot" src="../assets/img/study-perfil.webp" width="804" height="1748" loading="lazy" alt="Perfil com estatísticas, histórico e menu." data-i18n-alt="study.r.tour.alt10">
-                    <figcaption data-i18n="study.r.tour.c10"><strong>10. Perfil</strong>Estatísticas e menu.</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </section>
-
-            <!-- 14. Demo e limitações -->
+            <!-- 13. Demo e limitações -->
             <section id="demo" aria-labelledby="h-demo">
               <h2 class="h2" id="h-demo" data-i18n="study.r.demo.titulo">Demo e limitações atuais</h2>
               <p class="lead" data-i18n="study.demo.o-study-esta-no">O Study está no ar e pode ser testado. Antes de abrir, vale conhecer os limites.</p>
               <div class="cta-row">
-                <a class="btn btn--dark" href="https://gabrielrocha1260-svg.github.io/Studyapp/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
+                <a class="btn btn--primary" href="https://gabrielrocha1260-svg.github.io/Studyapp/" target="_blank" rel="noopener" data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></a>
               </div>
               <dl class="spec">
                 <div class="spec__row"><dt data-i18n="study.demo.acesso">Acesso</dt><dd data-i18n="study.demo.e-preciso-entrar-com">É preciso entrar com uma conta Google.</dd></div>
@@ -720,6 +703,30 @@
                 <li><span data-i18n="study.demo.fazer-uma-sessao-de"><strong>Fazer uma sessão de foco</strong>Inicie uma sessão, encerre e veja o resumo.</span></li>
                 <li><span data-i18n="study.demo.ver-o-progresso-abra"><strong>Ver o progresso</strong>Abra a aba Progresso para ver tempo estudado e ofensiva.</span></li>
               </ol>
+            </section>
+
+            <!-- 14. Fato e hipótese -->
+            <section id="fatos" aria-labelledby="h-fatos">
+              <h2 class="h2" id="h-fatos" data-i18n="study.r.fatos.titulo">O que é fato e o que é hipótese</h2>
+              <div class="read">
+                <p data-i18n="study.r.fatos.intro">Um resumo do tipo de evidência que sustenta cada parte do case.</p>
+              </div>
+              <div class="table-wrap table-wrap--stack">
+                <table class="table table--stack">
+                  <caption class="visually-hidden" data-i18n="study.r.fatos.caption">Afirmações do case e o tipo de evidência de cada uma</caption>
+                  <thead><tr><th scope="col" data-i18n="study.r.fatos.afirmacao">Afirmação</th><th scope="col" data-i18n="study.r.fatos.tipo">Tipo</th><th scope="col" data-i18n="study.r.fatos.base">Base</th></tr></thead>
+                  <tbody>
+                    <tr><td data-i18n="study.r.fatos.a1">As funcionalidades listadas existem e funcionam.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b1">Código do produto e demo pública.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a2">Tokens, temas e componentes do design system.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--done" data-i18n="study.hero.implementado">Implementado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b2">Inventário extraído do código publicado, em outubro de 2026.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a3">Contraste dos pares de cor principais.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--done" data-i18n="study.r.tag.calculado">Calculado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b3">Fórmula de contraste da WCAG aplicada aos tokens. Não é auditoria completa de acessibilidade.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a4">Quem estuda sozinho tem dificuldade de se organizar.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b4">Premissa de projeto. Sem entrevistas.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a5">As decisões de interface facilitam o uso.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--hyp" data-i18n="common.hipotese">Hipótese</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b5">Justificativas de design, sem observação de uso.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a6">Testes de usabilidade.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--soon" data-i18n="study.r.tag.planejado">Planejado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b6">Protocolo pronto, nenhuma sessão realizada.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a7">Benchmark de apps de estudo.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--soon" data-i18n="study.r.tag.planejado">Planejado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b7">Não realizado. Há uma matriz de critérios pronta para preencher.</td></tr>
+                    <tr><td data-i18n="study.r.fatos.a8">Métricas de uso e de resultado.</td><td data-label="Tipo" data-i18n-label="study.r.fatos.tipo"><span class="tag tag--soon" data-i18n="study.r.tag.planejado">Planejado</span></td><td data-label="Base" data-i18n-label="study.r.fatos.base" data-i18n="study.r.fatos.b8">O app não coleta dados de uso. Nenhum número foi medido.</td></tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
 
             <!-- 15. Plano de validação -->
@@ -842,7 +849,7 @@
     </aside>
   </main>
 
-  <footer class="site-footer on-black">
+  <footer class="site-footer">
     <div class="container site-footer__row">
       <p data-i18n="common.2026-gabriel-rocha-falar">© 2026 Gabriel Rocha. <a href="../index.html#contato">Falar comigo</a></p>
       <p data-i18n="study.footer.as-telas-do-study">As telas do Study usam dados de demonstração. O Study é um projeto independente e não tem vínculo com os serviços de terceiros que utiliza.</p>

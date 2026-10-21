@@ -179,80 +179,36 @@
     });
   }
 
-  /* ---------- Título da home: efeito de digitação ----------
-     O texto continua inteiro e legível para leitores de tela (span oculto).
-     A parte visual é escrita aos poucos; o que falta digitar fica invisível,
-     mas ocupa espaço, para a quebra de linha não mudar durante o efeito.
-     Não roda com "reduzir movimento" nem quando a pessoa volta para a home
-     vindo de outra página do próprio site. */
-  var title = doc.querySelector("[data-typing]");
-  if (title) {
-    var full = title.textContent.replace(/\s+/g, " ").trim();
-    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var entry = window.performance && performance.getEntriesByType ? performance.getEntriesByType("navigation")[0] : null;
-    var cameFromSite = false;
-    try {
-      cameFromSite = !!doc.referrer && new URL(doc.referrer).origin === location.origin;
-    } catch (err) {}
-    var seen = entry && (entry.type === "back_forward" || (entry.type === "navigate" && cameFromSite));
+  /* ---------- Cabeçalho: linha fina depois que a página rola ---------- */
+  var header = doc.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () {
+      header.classList.toggle("is-scrolled", window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 
-    if (reduce || seen || !full) {
-      title.classList.add("is-static");
+  /* ---------- Entrada suave ao rolar ----------
+     O CSS só esconde [data-reveal] quando há JavaScript e o sistema não pede
+     movimento reduzido. Sem IntersectionObserver, tudo aparece de uma vez. */
+  var reveals = [].slice.call(doc.querySelectorAll("[data-reveal]"));
+  if (reveals.length) {
+    if (!("IntersectionObserver" in window)) {
+      reveals.forEach(function (el) { el.classList.add("is-in"); });
     } else {
-      typeTitle(title);
+      var ro = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              en.target.classList.add("is-in");
+              ro.unobserve(en.target);
+            }
+          });
+        },
+        { rootMargin: "0px 0px -8% 0px" }
+      );
+      reveals.forEach(function (el) { ro.observe(el); });
     }
-  }
-
-  function typeTitle(el) {
-    var fontsReady = doc.fonts && doc.fonts.ready ? doc.fonts.ready : Promise.resolve();
-    var cap = new Promise(function (resolve) { setTimeout(resolve, 600); });
-    Promise.race([fontsReady, cap]).then(function () {
-      /* Lê o texto só agora: o idioma pode ter mudado durante a espera. */
-      if (el.classList.contains("is-static")) return;
-      var text = el.textContent.replace(/\s+/g, " ").trim();
-      if (text) build(el, text);
-    });
-  }
-
-  function build(el, text) {
-    var chars = Array.from(text);
-    var sr = doc.createElement("span");
-    var vis = doc.createElement("span");
-    var done = doc.createElement("span");
-    var caret = doc.createElement("span");
-    var rest = doc.createElement("span");
-    sr.className = "visually-hidden";
-    sr.textContent = text;
-    vis.setAttribute("aria-hidden", "true");
-    done.className = "type__done";
-    caret.className = "type__caret";
-    rest.className = "type__rest";
-    rest.textContent = text;
-    vis.appendChild(done);
-    vis.appendChild(caret);
-    vis.appendChild(rest);
-    el.textContent = "";
-    el.appendChild(sr);
-    el.appendChild(vis);
-    el.classList.add("is-typing");
-
-    var n = 0;
-    function step() {
-      /* A troca de idioma no meio da digitação mostra o título inteiro. */
-      if (!el.classList.contains("is-typing")) return;
-      n += 1;
-      done.textContent = chars.slice(0, n).join("");
-      rest.textContent = chars.slice(n).join("");
-      if (n >= chars.length) {
-        el.classList.add("is-done");
-        return;
-      }
-      var last = chars[n - 1];
-      var wait = 45 + Math.random() * 45;
-      if (last === ",") wait += 380;
-      setTimeout(step, wait);
-    }
-
-    setTimeout(step, 350);
   }
 })();
