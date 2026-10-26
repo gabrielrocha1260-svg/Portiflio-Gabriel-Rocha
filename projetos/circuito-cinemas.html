@@ -27,9 +27,8 @@
   <meta property="og:image:alt" content="Telas do redesign conceitual do app Circuito Cinemas." data-i18n-content="cc.meta.og-image-alt">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="preload" href="../assets/fonts/inter-display-500.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-display-600.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="../assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="../assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script>(function(d){d.className+=" js";var l=null;try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("site-lang")}catch(e){}if(l==="en"){d.lang="en";d.className+=" i18n-pending";setTimeout(function(){d.classList.remove("i18n-pending")},2500)}})(document.documentElement);</script>
 </head>
@@ -38,7 +37,7 @@
 
   <header class="site-header">
     <div class="container site-header__bar">
-      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha<span class="wordmark__role" aria-hidden="true">Product Designer</span></a>
+      <a class="wordmark" href="../index.html" aria-label="Gabriel Rocha, página inicial" data-i18n-aria-label="common.gabriel-rocha-pagina-inicial">Gabriel Rocha</a>
       <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="ui.lang-group">
         <button class="lang-switch__btn" type="button" data-set-lang="pt" lang="pt-BR" aria-pressed="true">PT<span class="visually-hidden"> – Português</span></button>
         <span class="lang-switch__sep" aria-hidden="true">|</span>
@@ -50,7 +49,6 @@
       </button>
       <nav class="nav" id="site-nav" aria-label="Principal" data-i18n-aria-label="common.principal">
         <ul class="nav__list">
-          <li><a class="nav__link" href="../index.html" data-i18n="common.inicio">Início</a></li>
           <li><a class="nav__link" href="../index.html#projetos" aria-current="true" data-i18n="common.projetos">Projetos</a></li>
           <li><a class="nav__link" href="../index.html#sobre" data-i18n="common.sobre">Sobre</a></li>
         </ul>
@@ -73,7 +71,7 @@
 
       <section class="case-hero" aria-labelledby="case-title">
         <div class="container">
-          <p class="case-hero__eyebrow"><span>Case 01</span><span data-i18n="common.estudo-conceitual-de-redesign">Estudo conceitual de redesign</span></p>
+          <p class="case-hero__eyebrow"><span data-i18n="common.estudo-de-caso">Estudo de caso</span><span data-i18n="common.estudo-conceitual-de-redesign">Estudo conceitual de redesign</span></p>
           <h1 class="case-hero__title" id="case-title">Circuito Cinemas</h1>
           <p class="case-hero__summary" data-i18n="cc.hero.estudo-conceitual-de-redesign">Estudo conceitual de redesign do app de uma rede de cinemas: da auditoria heurística a uma home de descoberta, uma compra em 4 etapas com progresso visível, o saldo do programa de fidelidade à vista e um design system inicial.</p>
           <dl class="meta">
@@ -82,6 +80,7 @@
             <div><dt data-i18n="common.ferramentas">Ferramentas</dt><dd data-i18n="common.figma-e-notion">Figma e Notion</dd></div>
             <div><dt data-i18n="cc.hero.ano">Ano</dt><dd>2026</dd></div>
           </dl>
+          <div class="case-tokens"><span class="case-tokens__label" data-i18n="home.projetos.cores">Cores do projeto</span><span class="token" style="--c:#0D0D0D">#0D0D0D</span><span class="token" style="--c:#E8400A">#E8400A</span><span class="token" style="--c:#B52F05">#B52F05</span><span class="token" style="--c:#FF6B35">#FF6B35</span><span class="token" style="--c:#FFFFFF">#FFFFFF</span></div>
           <div class="status" role="note">
             <p data-i18n="cc.hero.sem-vinculo-com-a"><strong>Sem vínculo com a empresa e sem pesquisa com usuários.</strong> A auditoria heurística é uma avaliação feita por mim, não uma pesquisa empírica. Personas, jornada e efeitos esperados são hipóteses e estão identificados como tal. O protótipo ainda não foi testado com pessoas.</p>
           </div>
@@ -754,7 +753,7 @@
       </div>
     </div>
 
-    <aside class="on-dark next" aria-label="Navegação entre estudos de caso" data-i18n-aria-label="common.navegacao-entre-estudos-de">
+    <aside class="next" aria-label="Navegação entre estudos de caso" data-i18n-aria-label="common.navegacao-entre-estudos-de">
       <div class="container next__grid">
         <a class="next__link" href="../index.html#projetos">
           <span data-i18n="common.voltar">Voltar</span>

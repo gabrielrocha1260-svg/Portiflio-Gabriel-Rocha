@@ -188,27 +188,4 @@
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
   }
-
-  /* ---------- Entrada suave ao rolar ----------
-     O CSS só esconde [data-reveal] quando há JavaScript e o sistema não pede
-     movimento reduzido. Sem IntersectionObserver, tudo aparece de uma vez. */
-  var reveals = [].slice.call(doc.querySelectorAll("[data-reveal]"));
-  if (reveals.length) {
-    if (!("IntersectionObserver" in window)) {
-      reveals.forEach(function (el) { el.classList.add("is-in"); });
-    } else {
-      var ro = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (en) {
-            if (en.isIntersecting) {
-              en.target.classList.add("is-in");
-              ro.unobserve(en.target);
-            }
-          });
-        },
-        { rootMargin: "0px 0px -8% 0px" }
-      );
-      reveals.forEach(function (el) { ro.observe(el); });
-    }
-  }
 })();

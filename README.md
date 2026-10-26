@@ -14,25 +14,35 @@ assets/js/i18n.js                Seletor de idioma PT | EN (troca sem recarregar
 assets/js/translations.js        Todas as traduções para o inglês, por chave
 assets/docs/                     Currículo em PDF (cópia de entregaveis/curriculos/final)
 assets/img/                      Imagens em WebP (telas, pranchas, imagem de compartilhamento)
-assets/fonts/                    Inter e Lora hospedadas junto com o site
+assets/fonts/                    Inter e Inter Display hospedadas junto com o site
 favicon.svg, robots.txt, sitemap.xml
 ```
 
-## Sistema visual (v2, outubro de 2026)
+## Sistema visual (v3, outubro de 2026)
 
-Editorial claro com "placas" escuras para cada projeto. Tudo sai dos tokens no
-topo de `assets/css/styles.css`:
+Palco neutro, grafite e branco, sem cor de marca. A cor entra pelos projetos:
+cada um aparece sobre os tokens reais do próprio design system. Referência:
+Apple Human Interface Guidelines (marca cede lugar ao conteúdo, uma cor por
+significado, movimento só com propósito, contraste 4,5:1, alvos de 44 px).
+Tudo sai dos tokens no topo de `assets/css/styles.css`:
 
-- **Cores:** papel `--bg` #F4F2ED, tinta `--ink` #121211, um acento vermelhão
-  (`--accent` para elementos gráficos e texto grande, `--accent-ink` para texto
-  pequeno). Placas: `--plate-cc` (Circuito Cinemas), `--plate-study` (Study) e
-  `--plate-ink` (contato, rodapé). Modo escuro troca só os tokens.
-- **Tipografia:** Inter Display nos títulos, Lora itálico para a voz editorial
-  (palavras em `<em>` nos títulos), Inter na leitura e na interface.
-- **Cor do case:** `<body data-case="cc">` ou `data-case="study"` define a cor das
-  placas e painéis daquela página.
-- **Movimento:** `data-reveal` faz o bloco entrar ao rolar (uma vez). Nada fica
-  escondido sem JavaScript ou com "reduzir movimento".
+- **Cores do site:** fundo `--bg` #F4F5F7, grupos `--surface` #FFFFFF, texto
+  `--ink` #15171C (16,4:1), `--ink-2` (7,5:1), `--ink-3` (5,4:1). Links e foco
+  `--link` #1F5BD6 (5,5:1). Status `--ok`. Modo escuro troca só os tokens.
+- **Cores dos projetos:** `--cc-*` (#0D0D0D, laranja acessível #FF6B35) e
+  `--study-*` (#111827, #60A5FA). Nos cases, `<body data-case="cc|study">`
+  aplica essas cores ao palco de abertura e aos painéis de telas.
+- **Assinatura:** a ficha técnica de cada projeto (`.spec-sheet`, `.case-tokens`)
+  com as cores reais em amostras (`.token`, cor em `--c`).
+- **Tipografia:** Inter Display nos títulos (600), Inter na leitura (17 px) e
+  na interface. Escala fluida em `--fs-*`.
+- **Componentes:** `.btn` (`--primary`, `--secondary`, `--lg`, `--sm`; 44 px de
+  altura, exceto o `--sm` da barra no desktop, com 36 px; estados de hover, pressão, foco e desabilitado), `.link` (`--arrow`,
+  `--external`, `--download`), ícones por máscara (`.icon`, uma só família),
+  `.group` (lista agrupada para dados), `.showcase` (vitrine do projeto).
+- **Movimento:** só feedback de estado. Sem animação de entrada. Respeita
+  "reduzir movimento", "reduzir transparência" e "aumentar contraste".
+- **Breakpoints:** 640 px, 900 px (menu de tela cheia) e 1100 px (sumário do case).
 
 ## Idiomas
 
