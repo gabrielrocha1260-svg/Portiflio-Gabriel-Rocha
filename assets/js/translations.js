@@ -100,7 +100,7 @@ window.SITE_I18N = {
     "home.inicio.cred-google": "Google UX Design Certificate, Coursera, 2025",
     "home.inicio.cred-pos": "UX Design and Digital Products, Mackenzie, 2026",
     "home.inicio.formacao": "Education",
-    "home.inicio.cargo": "UX/UI and product designer.",
+    "home.inicio.cargo": "UX/UI and Product Designer.",
     "home.contato.curriculo-v": "PDF in Portuguese, 80 KB",
     "home.contato.curriculo": "Résumé",
     "home.contato.eyebrow": "Contact",
