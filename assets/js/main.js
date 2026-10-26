@@ -188,4 +188,81 @@
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
   }
+
+  /* ---------- Palco da abertura ----------
+     Alterna os dois projetos. A troca automática é dirigida pela barra de
+     tempo do CSS (evento animationend), então pausar a animação pausa tudo.
+     Para sozinho com o mouse em cima, com o foco do teclado dentro, com a aba
+     escondida ou com o palco fora da tela. Com "reduzir movimento", não troca
+     sozinho: só pelas abas. */
+  var stage = doc.querySelector("[data-stage]");
+  if (stage) {
+    var slides = [].slice.call(stage.querySelectorAll("[data-slide]"));
+    var tabs = [].slice.call(stage.querySelectorAll("[data-go]"));
+    var pauseBtn = stage.querySelector("[data-pause]");
+    var reduceMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var current = 0;
+    var userPaused = false;
+    var hovered = false;
+    var focused = false;
+    var offscreen = false;
+
+    var show = function (i) {
+      current = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) {
+        var on = n === current;
+        s.classList.toggle("is-active", on);
+        if (on) {
+          s.removeAttribute("aria-hidden");
+          s.removeAttribute("inert");
+        } else {
+          s.setAttribute("aria-hidden", "true");
+          s.setAttribute("inert", "");
+        }
+      });
+      tabs.forEach(function (b, n) {
+        b.setAttribute("aria-pressed", String(n === current));
+      });
+    };
+
+    var sync = function () {
+      var auto = !reduceMq.matches;
+      stage.classList.toggle("is-auto", auto);
+      stage.classList.toggle("is-paused", userPaused || hovered || focused || offscreen || doc.hidden);
+      if (pauseBtn) {
+        pauseBtn.setAttribute("aria-pressed", String(userPaused));
+        pauseBtn.setAttribute("aria-label", userPaused ? t("ui.play", "Continuar a apresentação") : t("ui.pause", "Pausar a apresentação"));
+      }
+    };
+
+    tabs.forEach(function (b, n) {
+      b.addEventListener("click", function () { show(n); });
+    });
+    if (pauseBtn) {
+      pauseBtn.addEventListener("click", function () {
+        userPaused = !userPaused;
+        sync();
+      });
+    }
+    stage.addEventListener("animationend", function (e) {
+      if (e.target.classList && e.target.classList.contains("stage__bar")) show(current + 1);
+    });
+    stage.addEventListener("mouseenter", function () { hovered = true; sync(); });
+    stage.addEventListener("mouseleave", function () { hovered = false; sync(); });
+    stage.addEventListener("focusin", function () { focused = true; sync(); });
+    stage.addEventListener("focusout", function (e) {
+      if (!stage.contains(e.relatedTarget)) { focused = false; sync(); }
+    });
+    doc.addEventListener("visibilitychange", sync);
+    doc.addEventListener("langchange", sync);
+    if (reduceMq.addEventListener) reduceMq.addEventListener("change", sync);
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        offscreen = !entries[0].isIntersecting;
+        sync();
+      }).observe(stage);
+    }
+    show(0);
+    sync();
+  }
 })();

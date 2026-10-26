@@ -61,16 +61,52 @@
 
     <!-- Abertura: quem sou, que designer estou me tornando, por que ver os projetos -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="container">
-        <p class="availability" data-i18n="home.inicio.disponivel">Disponível para vagas júnior em Product Design e UX/UI</p>
-        <h1 class="hero__name" id="hero-title">Gabriel Rocha <span class="hero__role" data-i18n="home.inicio.cargo">Designer de UX/UI e produto.</span></h1>
-        <div class="hero__row">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="availability" data-i18n="home.inicio.disponivel">Disponível para vagas júnior em Product Design e UX/UI</p>
+          <h1 class="hero__name" id="hero-title">Gabriel Rocha <span class="hero__role" data-i18n="home.inicio.cargo">Designer de UX/UI e produto.</span></h1>
           <p class="hero__intro" data-i18n="home.inicio.intro">Venho do design gráfico, me pós-graduei em UX Design e Produtos Digitais e desenho interfaces a partir do problema que cada produto precisa resolver. Aqui estão dois projetos independentes: o redesign conceitual de um app de cinema e um app de estudos que concebi e que está no ar.</p>
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="#projetos"><span data-i18n="home.inicio.ver-projetos">Ver projetos</span><span class="icon icon--down" aria-hidden="true"></span></a>
             <a class="btn btn--secondary btn--lg" href="assets/docs/Gabriel-Rocha_CV_Product-Designer.pdf" download><span data-i18n="home.inicio.curriculo">Baixar currículo<span class="visually-hidden"> (PDF, 80 KB)</span></span><span class="icon icon--download" aria-hidden="true"></span></a>
           </div>
         </div>
+
+        <!-- Palco: as telas reais, anotadas como numa revisão de design -->
+        <div class="stage" data-stage role="group" aria-label="Prévia dos projetos, com as decisões de design anotadas" data-i18n-aria-label="home.stage.label">
+          <div class="stage__slides">
+            <figure class="slide is-active" data-slide style="--accent:#E8400A;--glow:rgba(232,64,10,.30)">
+              <div class="slide__device">
+                <img class="shot" src="assets/img/cc-nova-home.webp" width="724" height="1566" fetchpriority="high" alt="Home redesenhada do Circuito Cinemas, com filme em destaque, cartão do Circuito Club com 9 de 20 pontos e seções Em breve e Em cartaz." data-i18n-alt="common.home-redesenhada-do-circuito">
+                <ul class="annos">
+                  <li class="anno" style="--x:.14;--y:.24;--i:0"><span class="anno__text" data-i18n="home.stage.cc-1">Um filme em destaque: um só ponto focal</span><span class="anno__line"></span><span class="anno__dot"></span></li>
+                  <li class="anno" style="--x:.1;--y:.39;--i:1"><span class="anno__text" data-i18n="home.stage.cc-2">Saldo do Club à vista: 9 de 20 pontos</span><span class="anno__line"></span><span class="anno__dot"></span></li>
+                  <li class="anno" style="--x:.16;--y:.94;--i:2"><span class="anno__text" data-i18n="home.stage.cc-3">Quatro abas, todas destinos</span><span class="anno__line"></span><span class="anno__dot"></span></li>
+                </ul>
+              </div>
+              <figcaption class="slide__caption"><strong>Circuito Cinemas</strong><span data-i18n="common.estudo-conceitual-de-redesign">Estudo conceitual de redesign</span><a class="link link--arrow" href="projetos/circuito-cinemas.html" data-i18n="home.stage.ver-case">Ver o case</a></figcaption>
+            </figure>
+            <figure class="slide" data-slide aria-hidden="true" inert style="--accent:#2563EB;--glow:rgba(37,99,235,.32)">
+              <div class="slide__device">
+                <img class="shot" src="assets/img/study-home.webp" width="804" height="1748" loading="lazy" alt="Tela Início do Study, com a pergunta Pronto para focar?, a recomendação Phrasal Verbs e o progresso do dia." data-i18n-alt="home.projetos.tela-inicio-do-study">
+                <ul class="annos">
+                  <li class="anno" style="--x:.09;--y:.4;--i:0"><span class="anno__text" data-i18n="home.stage.study-1">O que estudar agora, em um cartão</span><span class="anno__line"></span><span class="anno__dot"></span></li>
+                  <li class="anno" style="--x:.09;--y:.65;--i:1"><span class="anno__text" data-i18n="home.stage.study-2">Progresso vem do tempo de foco registrado</span><span class="anno__line"></span><span class="anno__dot"></span></li>
+                  <li class="anno" style="--x:.13;--y:.97;--i:2"><span class="anno__text" data-i18n="home.stage.study-3">Quatro abas, com texto e ícone</span><span class="anno__line"></span><span class="anno__dot"></span></li>
+                </ul>
+              </div>
+              <figcaption class="slide__caption"><strong>Study</strong><span data-i18n="home.projetos.produto-funcional-no-ar">Produto funcional, no ar</span><a class="link link--arrow" href="projetos/study.html" data-i18n="home.stage.ver-case">Ver o case</a></figcaption>
+            </figure>
+          </div>
+          <div class="stage__controls">
+            <button class="stage__tab" type="button" data-go="0" aria-pressed="true">Circuito Cinemas<span class="stage__bar" aria-hidden="true"></span></button>
+            <button class="stage__tab" type="button" data-go="1" aria-pressed="false">Study<span class="stage__bar" aria-hidden="true"></span></button>
+            <button class="stage__pause" type="button" data-pause aria-pressed="false" aria-label="Pausar a apresentação"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
         <dl class="credentials group" aria-label="Formação" data-i18n-aria-label="home.inicio.formacao">
           <div><dt data-i18n="home.sobre.pos-graduacao">Pós-graduação</dt><dd data-i18n="home.inicio.cred-pos">UX Design e Produtos Digitais, Mackenzie, 2026</dd></div>
           <div><dt data-i18n="home.sobre.certificado">Certificado</dt><dd data-i18n="home.inicio.cred-google">Google UX Design Certificate, Coursera, 2025</dd></div>
@@ -130,7 +166,7 @@
               <p class="showcase__desc" data-i18n="home.projetos.study-desc">Aplicativo web que transforma um tema em uma trilha de estudo, com videoaula, leitura, prática e avaliação, e mede o progresso pelas sessões de foco.</p>
               <div class="showcase__links">
                 <a class="btn btn--primary" href="projetos/study.html"><span data-i18n="home.projetos.ler-estudo-de-caso">Ler estudo de caso</span><span class="icon" aria-hidden="true"></span></a>
-                <a class="btn btn--secondary" href="https://gabrielrocha1260-svg.github.io/Studyapp/" target="_blank" rel="noopener"><span data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></span><span class="icon icon--external" aria-hidden="true"></span></a>
+                <a class="btn btn--secondary" href="https://gabrielrocha1260-svg.github.io/Portiflio-Gabriel-Rocha/Studyapp/" target="_blank" rel="noopener"><span data-i18n="common.abrir-demo-abre-em">Abrir demo<span class="visually-hidden"> (abre em nova aba)</span></span><span class="icon icon--external" aria-hidden="true"></span></a>
               </div>
               <p class="showcase__note" data-i18n="home.projetos.a-demo-pede-login">A demo pede login com Google, e o primeiro acesso pode demorar até o servidor gratuito acordar. Para ver sem login, use o <a class="link" href="projetos/study.html#tour">tour das telas no case</a>.</p>
             </div>

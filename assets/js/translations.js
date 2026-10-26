@@ -14,6 +14,16 @@ window.SITE_I18N = {
     "ui.lang-group": "Language",
     "ui.menu": "Menu",
     "ui.close": "Close",
+    "home.stage.ver-case": "See the case study",
+    "home.stage.study-3": "Four tabs, with text and icon",
+    "home.stage.study-2": "Progress comes from logged focus time",
+    "home.stage.study-1": "What to study now, in one card",
+    "home.stage.cc-3": "Four tabs, all of them destinations",
+    "home.stage.cc-2": "Club balance in view: 9 of 20 points",
+    "home.stage.cc-1": "One featured film: a single focal point",
+    "home.stage.label": "Project preview, with design decisions annotated",
+    "ui.play": "Play the slideshow",
+    "ui.pause": "Pause the slideshow",
 
     /* ---------- Comuns a mais de uma página: cabeçalho, navegação, rodapé, rótulos ---------- */
     "common.principal": "Main",
