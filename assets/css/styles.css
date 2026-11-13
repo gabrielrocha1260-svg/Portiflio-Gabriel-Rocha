@@ -582,6 +582,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,3vw,2.5rem);align-items:start}
 .compare figure{display:flex;flex-direction:column;gap:.85rem;min-width:0}
 .compare--narrow{max-width:44rem;margin-inline:auto}
+/* Capturas de computador (Study, nov/2026): cantos de janela em vez do recorte de celular */
+.shot--desk{border-radius:10px;aspect-ratio:16/10;object-fit:cover}
+.desk-shot{display:flex;flex-direction:column;gap:.85rem;margin:0 0 clamp(1.5rem,4vw,2.5rem)}
+.desk-shot figcaption{font-size:var(--fs-caption);line-height:1.45;color:var(--p-ink-2,var(--on-stage-2))}
+.desk-shot figcaption strong{display:block;color:var(--p-ink,var(--on-stage));font-weight:600;margin-bottom:.1rem}
+.compare+.compare{margin-top:clamp(1rem,3vw,2.5rem)}
 .annot{display:grid;grid-template-columns:minmax(0,18rem) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);align-items:center}
 .annot figure{margin:0}
 .annot__list li{display:flex;flex-direction:column;gap:.3rem;padding:1.05rem 0}
