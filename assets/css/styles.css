@@ -630,6 +630,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .ia h3{font-family:var(--font-display);font-weight:600;font-size:1.0625rem;margin-bottom:.6rem}
 .ia li{font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
 .ia li+li{margin-top:.35rem}
+.ia--5{grid-template-columns:repeat(6,minmax(0,1fr))}
+.ia--5>div{grid-column:span 2}
+.ia--5>div:nth-child(n+4){grid-column:span 3}
 
 /* Decisões em detalhe */
 .decisions{display:grid;gap:1rem;margin-top:1.75rem}
@@ -752,6 +755,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .next__grid{grid-template-columns:minmax(0,1fr)}
   .cards--3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .ia{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ia--5>div,.ia--5>div:nth-child(n+4){grid-column:auto}
+  .ia--5>div:last-child{grid-column:1/-1}
   .swatches{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media (max-width:640px){
@@ -784,6 +789,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .glance__item:nth-child(even){box-shadow:none}
   .glance__item+.glance__item{border-top:1px solid var(--line)}
   .cards--2,.cards--3,.ia{grid-template-columns:minmax(0,1fr)}
+  .ia--5>div:last-child{grid-column:auto}
   .decision{padding-inline:1.1rem}
   .decision dl>div{grid-template-columns:minmax(0,1fr)}
   .annot{grid-template-columns:minmax(0,1fr)}
